@@ -1,4 +1,4 @@
 # Project exclude paths
 /target/
 
-ConnectionFactoy.java
+#/src/main/java/br/com/monilog/atmonit/database/ConnectionFactory.java

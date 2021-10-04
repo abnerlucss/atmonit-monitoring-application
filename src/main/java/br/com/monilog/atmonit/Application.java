@@ -2,17 +2,22 @@ package br.com.monilog.atmonit;
 
 import br.com.monilog.atmonit.dao.FuncionarioDAO;
 import br.com.monilog.atmonit.dto.FuncionarioLoginDTO;
+import br.com.monilog.atmonit.util.HardwareInfo;
 
+import java.net.SocketException;
+import java.net.UnknownHostException;
 import java.util.Scanner;
 
 public class Application {
-    public static void main(String[] args) {
+    public static void main(String[] args) throws SocketException, UnknownHostException {
+        System.out.println(HardwareInfo.getMacAddress());
+
         Scanner userInput = new Scanner(System.in);
-        String empresa,login,senha;
+        String empresa, login, senha;
         Integer idEmpresa = null;
         boolean hasLogged = false;
 
-        while (!hasLogged){
+        while (!hasLogged) {
             System.out.println("Digite sua empresa");
             empresa = userInput.nextLine();
 
@@ -28,16 +33,13 @@ public class Application {
 
             idEmpresa = funcionarioDAO.loginFuncionario(funcionarioLogin);
 
-            if(idEmpresa != null){
+            if (idEmpresa != null) {
                 System.out.println("Login realizado com sucesso!");
                 hasLogged = true;
-            }
-            else{
+            } else {
                 System.out.println("Login falhou");
             }
         }
-
-        System.out.println("O id da sua empresa é:" + idEmpresa);
 
 
     }
