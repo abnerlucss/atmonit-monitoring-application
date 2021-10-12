@@ -7,6 +7,6 @@ public class Terminal {
     private String armazenamento;
     private String modeloPlacaMae;
     private String modeloCpu;
-    private String macAddress;
+    private String enderecoMac;
     private Empresa empresa;
 }

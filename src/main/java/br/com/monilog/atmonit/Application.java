@@ -1,6 +1,7 @@
 package br.com.monilog.atmonit;
 
 import br.com.monilog.atmonit.dao.FuncionarioDAO;
+import br.com.monilog.atmonit.dao.TerminalDAO;
 import br.com.monilog.atmonit.dto.FuncionarioLoginDTO;
 import br.com.monilog.atmonit.util.HardwareInfo;
 
@@ -9,8 +10,8 @@ import java.net.UnknownHostException;
 import java.util.Scanner;
 
 public class Application {
+
     public static void main(String[] args) throws SocketException, UnknownHostException {
-        System.out.println(HardwareInfo.getMacAddress());
 
         Scanner userInput = new Scanner(System.in);
         String empresa, login, senha;
@@ -41,7 +42,15 @@ public class Application {
             }
         }
 
+        TerminalDAO terminalDAO = new TerminalDAO();
+
+        if (terminalDAO.checkMachineRegister(HardwareInfo.getMacAddress(), idEmpresa)) {
+            System.out.println("Máquina já possui cadastro");
+        } else {
+            System.out.println("Máquina não possui cadastro");
+        }
 
     }
+
 
 }

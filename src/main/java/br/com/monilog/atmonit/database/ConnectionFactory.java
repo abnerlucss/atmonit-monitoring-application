@@ -10,7 +10,7 @@ public class ConnectionFactory {
 
     public static Connection getConnection(){
         try {
-            return DriverManager.getConnection("jdbc:mysql://localhost:3306/atmonit" ,"root", "");
+            return DriverManager.getConnection("jdbc:mysql://localhost:3306/atmonit" ,"root", "Af1bf2cf3df4");
         } catch (SQLException ex) {
             throw new RuntimeException(ex);
         }
