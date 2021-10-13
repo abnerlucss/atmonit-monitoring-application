@@ -3,6 +3,7 @@ package br.com.monilog.atmonit;
 import br.com.monilog.atmonit.dao.FuncionarioDAO;
 import br.com.monilog.atmonit.dao.TerminalDAO;
 import br.com.monilog.atmonit.dto.FuncionarioLoginDTO;
+import br.com.monilog.atmonit.util.ClienteViaCep;
 import br.com.monilog.atmonit.util.HardwareInfo;
 
 import java.net.SocketException;
@@ -14,7 +15,7 @@ public class Application {
     public static void main(String[] args) throws SocketException, UnknownHostException {
 
         Scanner userInput = new Scanner(System.in);
-        String empresa, login, senha;
+        String empresa, login, senha, cep;
         Integer idEmpresa = null;
         boolean hasLogged = false;
 
@@ -48,6 +49,12 @@ public class Application {
             System.out.println("Máquina já possui cadastro");
         } else {
             System.out.println("Máquina não possui cadastro");
+            System.out.println("Por favor digite o cep onde a máquina será instalada:");
+            cep = userInput.nextLine();
+            ClienteViaCep.getAddressByCep(cep);
+
+
+
         }
 
     }

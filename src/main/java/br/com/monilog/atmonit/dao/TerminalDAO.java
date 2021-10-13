@@ -1,6 +1,8 @@
 package br.com.monilog.atmonit.dao;
 
 import br.com.monilog.atmonit.database.ConnectionFactory;
+import br.com.monilog.atmonit.dto.TerminalDTO;
+import br.com.monilog.atmonit.model.Terminal;
 
 import java.sql.Connection;
 import java.sql.PreparedStatement;
@@ -30,5 +32,10 @@ public class TerminalDAO implements ITerminalDAO {
         } catch (SQLException ex) {
             throw new RuntimeException(ex);
         }
+    }
+
+    @Override
+    public Terminal save(TerminalDTO terminalDTO) {
+        return null;
     }
 }
