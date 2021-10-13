@@ -3,10 +3,7 @@ package br.com.monilog.atmonit.dao;
 import br.com.monilog.atmonit.database.ConnectionFactory;
 import br.com.monilog.atmonit.dto.FuncionarioLoginDTO;
 
-import java.sql.Connection;
-import java.sql.PreparedStatement;
-import java.sql.ResultSet;
-import java.sql.SQLException;
+import java.sql.*;
 
 public class FuncionarioDAO implements IFuncionarioDAO {
     @Override
