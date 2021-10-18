@@ -1,4 +1,4 @@
 package br.com.monilog.atmonit.model;
 
-public class EnderecoTerminal {
+public class TerminalAddress {
 }

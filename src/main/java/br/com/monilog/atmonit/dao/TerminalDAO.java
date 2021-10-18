@@ -13,12 +13,12 @@ import java.util.List;
 
 public class TerminalDAO implements ITerminalDAO {
     @Override
-    public Integer checkMachineRegister(String macAddress, Integer idEmpresa) {
+    public Integer checkMachineRegister(String macAddress, Integer idCompany) {
         ConnectionFactory config = new ConnectionFactory();
         JdbcTemplate con = new JdbcTemplate(config.getDataSource());
 
         String querySql = String.format("select t.* from terminal as t join company as c on t.fk_company = c.id_company" +
-                " where t.mac_address = '%s' and c.id_company = %d limit 1", macAddress, idEmpresa);
+                " where t.mac_address = '%s' and c.id_company = %d limit 1", macAddress, idCompany);
 
         List<Terminal> terminal = con.query(
                 querySql,
@@ -45,13 +45,13 @@ public class TerminalDAO implements ITerminalDAO {
         con.update(connection -> {
 
             PreparedStatement preparedStatement = connection.prepareStatement(sqlQuery, Statement.RETURN_GENERATED_KEYS);
-            preparedStatement.setString(1, terminal.getProcessador());
-            preparedStatement.setString(2, terminal.getRam().toString());
-            preparedStatement.setString(3, terminal.getArmazenamento().toString());
-            preparedStatement.setString(4, terminal.getModeloCpu());
-            preparedStatement.setString(5, terminal.getEnderecoMac());
-            preparedStatement.setInt(6, terminal.getFkEndereco());
-            preparedStatement.setInt(7, terminal.getFkEmpresa());
+            preparedStatement.setString(1, terminal.getProcessor());
+            preparedStatement.setString(2, terminal.getRamMemory());
+            preparedStatement.setString(3, terminal.getTerminalStorage());
+            preparedStatement.setString(4, terminal.getCpuModel());
+            preparedStatement.setString(5, terminal.getMacAddress());
+            preparedStatement.setInt(6, terminal.getIdTerminalAddress());
+            preparedStatement.setInt(7, terminal.getIdCompany());
 
             return preparedStatement;
         }, keyHolder);

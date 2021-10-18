@@ -1,11 +1,11 @@
 package br.com.monilog.atmonit.service;
 
-import br.com.monilog.atmonit.dao.FuncionarioDAO;
-import br.com.monilog.atmonit.model.FuncionarioLogin;
+import br.com.monilog.atmonit.dao.EmployeeDAO;
+import br.com.monilog.atmonit.model.EmployeeLogin;
 
 import java.util.Scanner;
 
-public class FuncionarioService {
+public class EmployeeService {
 
     public Integer loginFuncionario(){
         Scanner userInput = new Scanner(System.in);
@@ -23,11 +23,11 @@ public class FuncionarioService {
             System.out.println("Digite sua senha");
             senha = userInput.nextLine();
 
-            FuncionarioLogin funcionarioLogin = new FuncionarioLogin(login, senha, empresa);
+            EmployeeLogin employeeLogin = new EmployeeLogin(login, senha, empresa);
 
-            FuncionarioDAO funcionarioDAO = new FuncionarioDAO();
+            EmployeeDAO employeeDAO = new EmployeeDAO();
 
-            idEmpresa = funcionarioDAO.loginFuncionario(funcionarioLogin);
+            idEmpresa = employeeDAO.loginFuncionario(employeeLogin);
 
             if (idEmpresa != null) {
                 System.out.println("Login realizado com sucesso!");

@@ -9,7 +9,7 @@ import java.io.InputStreamReader;
 import java.net.URL;
 import java.net.URLConnection;
 
-public class ClienteViaCep {
+public class ClientCep {
 
     public static Cep getAddressByCep(String cep) {
 

@@ -1,9 +1,9 @@
 package br.com.monilog.atmonit.service;
 
-import br.com.monilog.atmonit.dao.TerminalAddressDAO;
+import br.com.monilog.atmonit.dao.TerminalAddressAddressDAO;
 import br.com.monilog.atmonit.dao.TerminalDAO;
 import br.com.monilog.atmonit.model.Terminal;
-import br.com.monilog.atmonit.util.ClienteViaCep;
+import br.com.monilog.atmonit.util.ClientCep;
 import br.com.monilog.atmonit.util.HardwareInfo;
 import com.github.britooo.looca.api.core.Looca;
 
@@ -27,8 +27,8 @@ public class TerminalService {
             System.out.println("Máquina não possui cadastro");
             System.out.println("Por favor digite o cep aonde a máquina será instalada:");
             cep = userInput.nextLine();
-            TerminalAddressDAO terminalAddressDAO = new TerminalAddressDAO();
-            Integer idCep = terminalAddressDAO.save(ClienteViaCep.getAddressByCep(cep));
+            TerminalAddressAddressDAO terminalAddressDAO = new TerminalAddressAddressDAO();
+            Integer idCep = terminalAddressDAO.save(ClientCep.getAddressByCep(cep));
 
             Terminal terminalToSave = new Terminal(
                     looca.getProcessador().getNome(),

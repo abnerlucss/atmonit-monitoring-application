@@ -1,7 +1,7 @@
 package br.com.monilog.atmonit;
 
-import br.com.monilog.atmonit.service.FuncionarioService;
-import br.com.monilog.atmonit.service.RegistroComponenteService;
+import br.com.monilog.atmonit.service.EmployeeService;
+import br.com.monilog.atmonit.service.ComponentRegistrationService;
 import br.com.monilog.atmonit.service.TerminalService;
 import com.github.britooo.looca.api.core.Looca;
 
@@ -16,12 +16,12 @@ public class Application {
         Scanner userInput = new Scanner(System.in);
         String cep;
 
-        FuncionarioService funcionarioService = new FuncionarioService();
+        EmployeeService employeeService = new EmployeeService();
         TerminalService terminalService = new TerminalService();
 
-        Integer idEmpresa = funcionarioService.loginFuncionario();
-        Integer idTerminal = terminalService.checkTerminalRegister(idEmpresa);
-        System.out.println(idTerminal);
-        new RegistroComponenteService(idTerminal);
+        Integer idCompany = employeeService.loginFuncionario();
+        Integer idTerminal = terminalService.checkTerminalRegister(idCompany);
+
+        new ComponentRegistrationService(idTerminal);
     }
 }

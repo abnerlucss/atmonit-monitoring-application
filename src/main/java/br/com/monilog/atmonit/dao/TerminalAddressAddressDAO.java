@@ -6,7 +6,7 @@ import org.springframework.jdbc.core.JdbcTemplate;
 import org.springframework.jdbc.support.GeneratedKeyHolder;
 import org.springframework.jdbc.support.KeyHolder;
 
-public class TerminalAddressDAO implements IEnderecoTerminal {
+public class TerminalAddressAddressDAO implements ITerminalAddress {
     @Override
     public Integer save(Cep cep) {
 

@@ -2,36 +2,22 @@ package br.com.monilog.atmonit.model;
 
 public class Terminal {
     private Integer idTerminal;
-    private String processador;
-    private String ram;
-    private String armazenamento;
-    private String modeloCpu;
-    private String enderecoMac;
-    private Integer fkEndereco;
-    private Integer fkEmpresa;
+    private String processor;
+    private String ramMemory;
+    private String terminalStorage;
+    private String cpuModel;
+    private String macAddress;
+    private Integer idTerminalAddress;
+    private Integer idCompany;
 
-    public Terminal(String processador, String ram, String armazenamento, String modeloCpu, String enderecoMac, Integer fkEndereco, Integer fkEmpresa) {
-        this.processador = processador;
-        this.ram = ram;
-        this.armazenamento = armazenamento;
-        this.modeloCpu = modeloCpu;
-        this.enderecoMac = enderecoMac;
-        this.fkEndereco = fkEndereco;
-        this.fkEmpresa = fkEmpresa;
-    }
-
-    @Override
-    public String toString() {
-        return "Terminal{" +
-                "idTerminal=" + idTerminal +
-                ", processador='" + processador + '\'' +
-                ", ram='" + ram + '\'' +
-                ", armazenamento='" + armazenamento + '\'' +
-                ", modeloCpu='" + modeloCpu + '\'' +
-                ", enderecoMac='" + enderecoMac + '\'' +
-                ", fkEndereco=" + fkEndereco +
-                ", fkEmpresa=" + fkEmpresa +
-                '}';
+    public Terminal(String processor, String ramMemory, String terminalStorage, String cpuModel, String macAddress, Integer idTerminalAddress, Integer idCompany) {
+        this.processor = processor;
+        this.ramMemory = ramMemory;
+        this.terminalStorage = terminalStorage;
+        this.cpuModel = cpuModel;
+        this.macAddress = macAddress;
+        this.idTerminalAddress = idTerminalAddress;
+        this.idCompany = idCompany;
     }
 
     public Terminal() {
@@ -45,59 +31,59 @@ public class Terminal {
         this.idTerminal = idTerminal;
     }
 
-    public String getProcessador() {
-        return processador;
+    public String getProcessor() {
+        return processor;
     }
 
-    public void setProcessador(String processador) {
-        this.processador = processador;
+    public void setProcessor(String processor) {
+        this.processor = processor;
     }
 
-    public String getRam() {
-        return ram;
+    public String getRamMemory() {
+        return ramMemory;
     }
 
-    public void setRam(String ram) {
-        this.ram = ram;
+    public void setRamMemory(String ramMemory) {
+        this.ramMemory = ramMemory;
     }
 
-    public String getArmazenamento() {
-        return armazenamento;
+    public String getTerminalStorage() {
+        return terminalStorage;
     }
 
-    public void setArmazenamento(String armazenamento) {
-        this.armazenamento = armazenamento;
+    public void setTerminalStorage(String terminalStorage) {
+        this.terminalStorage = terminalStorage;
     }
 
-    public String getModeloCpu() {
-        return modeloCpu;
+    public String getCpuModel() {
+        return cpuModel;
     }
 
-    public void setModeloCpu(String modeloCpu) {
-        this.modeloCpu = modeloCpu;
+    public void setCpuModel(String cpuModel) {
+        this.cpuModel = cpuModel;
     }
 
-    public String getEnderecoMac() {
-        return enderecoMac;
+    public String getMacAddress() {
+        return macAddress;
     }
 
-    public void setEnderecoMac(String enderecoMac) {
-        this.enderecoMac = enderecoMac;
+    public void setMacAddress(String macAddress) {
+        this.macAddress = macAddress;
     }
 
-    public Integer getFkEndereco() {
-        return fkEndereco;
+    public Integer getIdTerminalAddress() {
+        return idTerminalAddress;
     }
 
-    public void setFkEndereco(Integer fkEndereco) {
-        this.fkEndereco = fkEndereco;
+    public void setIdTerminalAddress(Integer idTerminalAddress) {
+        this.idTerminalAddress = idTerminalAddress;
     }
 
-    public Integer getFkEmpresa() {
-        return fkEmpresa;
+    public Integer getIdCompany() {
+        return idCompany;
     }
 
-    public void setFkEmpresa(Integer fkEmpresa) {
-        this.fkEmpresa = fkEmpresa;
+    public void setIdCompany(Integer idCompany) {
+        this.idCompany = idCompany;
     }
 }
