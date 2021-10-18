@@ -1,6 +1,6 @@
 package br.com.monilog.atmonit.util;
 
-import br.com.monilog.atmonit.dto.CepDTO;
+import br.com.monilog.atmonit.model.Cep;
 import com.google.gson.Gson;
 
 import java.io.BufferedReader;
@@ -11,7 +11,7 @@ import java.net.URLConnection;
 
 public class ClienteViaCep {
 
-    public static CepDTO getAddressByCep(String cep) {
+    public static Cep getAddressByCep(String cep) {
 
         Gson gson = new Gson();
 
@@ -33,6 +33,6 @@ public class ClienteViaCep {
             throw new RuntimeException(e);
         }
 
-        return gson.fromJson(json, CepDTO.class);
+        return gson.fromJson(json, Cep.class);
     }
 }

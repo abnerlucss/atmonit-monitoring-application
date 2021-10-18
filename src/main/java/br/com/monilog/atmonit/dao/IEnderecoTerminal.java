@@ -1,7 +1,7 @@
 package br.com.monilog.atmonit.dao;
 
-import br.com.monilog.atmonit.dto.CepDTO;
+import br.com.monilog.atmonit.model.Cep;
 
 public interface IEnderecoTerminal {
-    Integer save(CepDTO cepDTO);
+    Integer save(Cep cep);
 }

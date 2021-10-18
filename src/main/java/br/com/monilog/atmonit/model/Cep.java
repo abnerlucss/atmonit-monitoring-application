@@ -1,6 +1,6 @@
-package br.com.monilog.atmonit.dto;
+package br.com.monilog.atmonit.model;
 
-public class CepDTO {
+public class Cep {
     private String cep;
     private String logradouro;
     private String complemento;
@@ -12,7 +12,7 @@ public class CepDTO {
     private String ddd;
     private String siafi;
 
-    public CepDTO(String cep, String logradouro, String complemento, String bairro, String localidade, String uf, String ibge, String gia, String ddd, String siafi) {
+    public Cep(String cep, String logradouro, String complemento, String bairro, String localidade, String uf, String ibge, String gia, String ddd, String siafi) {
         this.cep = cep;
         this.logradouro = logradouro;
         this.complemento = complemento;
@@ -23,23 +23,6 @@ public class CepDTO {
         this.gia = gia;
         this.ddd = ddd;
         this.siafi = siafi;
-    }
-
-
-    @Override
-    public String toString() {
-        return "CepDTO{" +
-                "cep='" + cep + '\'' +
-                ", logradouro='" + logradouro + '\'' +
-                ", complemento='" + complemento + '\'' +
-                ", bairro='" + bairro + '\'' +
-                ", localidade='" + localidade + '\'' +
-                ", uf='" + uf + '\'' +
-                ", ibge='" + ibge + '\'' +
-                ", gia='" + gia + '\'' +
-                ", ddd='" + ddd + '\'' +
-                ", siafi='" + siafi + '\'' +
-                '}';
     }
 
     public String getCep() {

@@ -1,32 +1,24 @@
 package br.com.monilog.atmonit.dao;
 
 import br.com.monilog.atmonit.database.ConnectionFactory;
-import br.com.monilog.atmonit.dto.FuncionarioLoginDTO;
-
-import java.sql.*;
+import br.com.monilog.atmonit.model.FuncionarioLogin;
+import org.springframework.jdbc.core.JdbcTemplate;
 
 public class FuncionarioDAO implements IFuncionarioDAO {
     @Override
-    public Integer loginFuncionario(FuncionarioLoginDTO funcionarioLoginDTO) {
+    public Integer loginFuncionario(FuncionarioLogin funcionarioLogin) {
+        ConnectionFactory config = new ConnectionFactory();
+        JdbcTemplate con = new JdbcTemplate(config.getDataSource());
         Integer idEmpresa = null;
 
-        try (Connection connection = ConnectionFactory.getConnection()) {
-            String sqlQuery = "select e.id_empresa from funcionario as f join empresa as e on f.fk_empresa = e.id_empresa" +
-                    " where e.nome = ? and f.login = ? and f.senha = ?";
+        String sqlQuery = String.format("select c.id_company from employee as e join company as c on e.fk_company = c.id_company" +
+                " where c.company_name = \'%s\' and e.login = \'%s\' and e.password =\'%s\'", funcionarioLogin.getEmpresa(), funcionarioLogin.getLogin(), funcionarioLogin.getSenha());
 
-            PreparedStatement preparedStatement = connection.prepareStatement(sqlQuery);
-            preparedStatement.setString(1, funcionarioLoginDTO.getEmpresa());
-            preparedStatement.setString(2, funcionarioLoginDTO.getLogin());
-            preparedStatement.setString(3, funcionarioLoginDTO.getSenha());
-
-            ResultSet resultSet = preparedStatement.executeQuery();
-            while (resultSet.next()) {
-                idEmpresa = resultSet.getInt("id_empresa");
-            }
-            return idEmpresa;
-        } catch (SQLException ex) {
-
-            throw new RuntimeException(ex);
+        try {
+            idEmpresa = con.queryForObject(sqlQuery, Integer.class);
+        } catch (Exception e) {
         }
+
+        return idEmpresa;
     }
 }

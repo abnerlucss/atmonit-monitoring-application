@@ -1,11 +1,11 @@
-package br.com.monilog.atmonit.dto;
+package br.com.monilog.atmonit.model;
 
-public class FuncionarioLoginDTO {
+public class FuncionarioLogin {
     private String login;
     private String senha;
     private String empresa;
 
-    public FuncionarioLoginDTO(String login, String senha, String empresa) {
+    public FuncionarioLogin(String login, String senha, String empresa) {
         this.login = login;
         this.senha = senha;
         this.empresa = empresa;

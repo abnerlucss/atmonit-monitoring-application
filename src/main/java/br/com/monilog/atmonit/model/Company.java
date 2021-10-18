@@ -1,20 +1,20 @@
 package br.com.monilog.atmonit.model;
 
-public class Empresa {
-    private Integer idEmpresa;
+public class Company {
+    private java.lang.Integer idEmpresa;
     private String nome;
     private String cnpj;
 
-    public Empresa(String nome, String cnpj) {
+    public Company(String nome, String cnpj) {
         this.nome = nome;
         this.cnpj = cnpj;
     }
 
-    public Integer getIdEmpresa() {
+    public java.lang.Integer getIdEmpresa() {
         return idEmpresa;
     }
 
-    public void setIdEmpresa(Integer idEmpresa) {
+    public void setIdEmpresa(java.lang.Integer idEmpresa) {
         this.idEmpresa = idEmpresa;
     }
 

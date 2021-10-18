@@ -1,7 +1,7 @@
 package br.com.monilog.atmonit.dao;
 
-import br.com.monilog.atmonit.dto.FuncionarioLoginDTO;
+import br.com.monilog.atmonit.model.FuncionarioLogin;
 
 public interface IFuncionarioDAO {
-    Integer loginFuncionario(FuncionarioLoginDTO funcionarioLoginDTO);
+    Integer loginFuncionario(FuncionarioLogin funcionarioLogin);
 }

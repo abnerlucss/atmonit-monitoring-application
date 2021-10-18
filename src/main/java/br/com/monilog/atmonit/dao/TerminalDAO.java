@@ -1,62 +1,61 @@
 package br.com.monilog.atmonit.dao;
 
 import br.com.monilog.atmonit.database.ConnectionFactory;
-import br.com.monilog.atmonit.dto.TerminalDTO;
+import br.com.monilog.atmonit.model.Terminal;
+import org.springframework.jdbc.core.BeanPropertyRowMapper;
+import org.springframework.jdbc.core.JdbcTemplate;
+import org.springframework.jdbc.support.GeneratedKeyHolder;
+import org.springframework.jdbc.support.KeyHolder;
 
-import java.sql.*;
+import java.sql.PreparedStatement;
+import java.sql.Statement;
+import java.util.List;
 
 public class TerminalDAO implements ITerminalDAO {
     @Override
-    public boolean checkMachineRegister(String macAddress, Integer idEmpresa) {
-        Integer idTerminal = null;
+    public Integer checkMachineRegister(String macAddress, Integer idEmpresa) {
+        ConnectionFactory config = new ConnectionFactory();
+        JdbcTemplate con = new JdbcTemplate(config.getDataSource());
 
-        try (Connection connection = ConnectionFactory.getConnection()) {
-            String querySql =
-                    "select t.id_terminal from terminal as t join empresa as e on t.fk_empresa = e.id_empresa" +
-                            " where t.endereco_mac = ? and e.id_empresa = ?";
-            PreparedStatement preparedStatement = connection.prepareStatement(querySql);
-            preparedStatement.setString(1, macAddress);
-            preparedStatement.setInt(2, idEmpresa);
+        String querySql = String.format("select t.* from terminal as t join company as c on t.fk_company = c.id_company" +
+                " where t.mac_address = '%s' and c.id_company = %d limit 1", macAddress, idEmpresa);
 
-            ResultSet resultSet = preparedStatement.executeQuery();
-            while (resultSet.next()) {
-                idTerminal = resultSet.getInt("id_terminal");
-            }
+        List<Terminal> terminal = con.query(
+                querySql,
+                new BeanPropertyRowMapper(Terminal.class)
+        );
 
-            return idTerminal != null ? true : false;
-
-        } catch (SQLException ex) {
-            throw new RuntimeException(ex);
+        if(terminal.isEmpty()){
+            return null;
         }
+        return terminal.get(0).getIdTerminal();
     }
 
     @Override
-    public Integer save(TerminalDTO terminalDTO) {
-        try (Connection connection = ConnectionFactory.getConnection()) {
-            String sqlQuery = "Insert into terminal (processador, ram, armazenamento, modelo_placa_mae," +
-                    "modelo_cpu, endereco_mac, fk_endereco, fk_empresa) " +
-                    "values (?, ?, ?, ?, ?, ?, ?, ?)";
+    public Integer save(Terminal terminal) {
+
+        ConnectionFactory config = new ConnectionFactory();
+        JdbcTemplate con = new JdbcTemplate(config.getDataSource());
+        KeyHolder keyHolder = new GeneratedKeyHolder();
+
+        String sqlQuery = "Insert into terminal (processor, ram_memory, terminal_storage, cpu_model," +
+                "mac_address, fk_terminal_address, fk_company) " +
+                "values (?, ?, ?, ?, ?, ?, ?)";
+
+        con.update(connection -> {
 
             PreparedStatement preparedStatement = connection.prepareStatement(sqlQuery, Statement.RETURN_GENERATED_KEYS);
-            preparedStatement.setString(1, terminalDTO.getProcessador());
-            preparedStatement.setString(2, terminalDTO.getRam().toString());
-            preparedStatement.setString(3, terminalDTO.getArmazenamento().toString());
-            preparedStatement.setString(4, terminalDTO.getModeloPlacaMae());
-            preparedStatement.setString(5, terminalDTO.getModeloCpu());
-            preparedStatement.setString(6, terminalDTO.getEnderecoMac());
-            preparedStatement.setInt(7, terminalDTO.getIdEndereco());
-            preparedStatement.setInt(8, terminalDTO.getIdEmpresa());
+            preparedStatement.setString(1, terminal.getProcessador());
+            preparedStatement.setString(2, terminal.getRam().toString());
+            preparedStatement.setString(3, terminal.getArmazenamento().toString());
+            preparedStatement.setString(4, terminal.getModeloCpu());
+            preparedStatement.setString(5, terminal.getEnderecoMac());
+            preparedStatement.setInt(6, terminal.getFkEndereco());
+            preparedStatement.setInt(7, terminal.getFkEmpresa());
 
-            preparedStatement.executeUpdate();
+            return preparedStatement;
+        }, keyHolder);
 
-            ResultSet rs = preparedStatement.getGeneratedKeys();
-
-            if(rs.next()){
-                return rs.getInt(1);
-            }
-            return null;
-        } catch (SQLException e) {
-            throw new RuntimeException();
-        }
+        return keyHolder.getKey().intValue();
     }
 }
