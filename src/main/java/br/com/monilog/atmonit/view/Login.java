@@ -32,30 +32,30 @@ public class Login extends javax.swing.JFrame {
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
-        imgMonilog = new javax.swing.JLabel();
-        textFieldEmpresa = new javax.swing.JTextField();
-        lblEmpresa = new javax.swing.JLabel();
+        imgAtmonit = new javax.swing.JLabel();
+        textFieldCompany = new javax.swing.JTextField();
+        lblCompany = new javax.swing.JLabel();
         lblLogin = new javax.swing.JLabel();
         textFieldLogin = new javax.swing.JTextField();
-        lblSenha = new javax.swing.JLabel();
+        lblPassword = new javax.swing.JLabel();
         lblCep = new javax.swing.JLabel();
         textFieldCep = new javax.swing.JTextField();
-        btnEntrar = new javax.swing.JButton();
-        passwordFieldSenha = new javax.swing.JPasswordField();
+        btnEnter = new javax.swing.JButton();
+        passwordField = new javax.swing.JPasswordField();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setTitle("Monilog - ATMonit");
         setBackground(new java.awt.Color(255, 159, 67));
 
-        imgMonilog.setIcon(new javax.swing.ImageIcon(getClass().getResource("/atmonit.png"))); // NOI18N
+        imgAtmonit.setIcon(new javax.swing.ImageIcon(getClass().getResource("/atmonit.png"))); // NOI18N
 
-        textFieldEmpresa.addActionListener(new java.awt.event.ActionListener() {
+        textFieldCompany.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                textFieldEmpresaActionPerformed(evt);
+                textFieldCompanyActionPerformed(evt);
             }
         });
 
-        lblEmpresa.setText("Empresa");
+        lblCompany.setText("Empresa");
 
         lblLogin.setText("Login");
 
@@ -65,7 +65,7 @@ public class Login extends javax.swing.JFrame {
             }
         });
 
-        lblSenha.setText("Senha");
+        lblPassword.setText("Senha");
 
         lblCep.setText("Cep");
 
@@ -76,19 +76,19 @@ public class Login extends javax.swing.JFrame {
             }
         });
 
-        btnEntrar.setBackground(new java.awt.Color(16, 172, 132));
-        btnEntrar.setForeground(new java.awt.Color(255, 255, 255));
-        btnEntrar.setText("Entrar");
-        btnEntrar.setBorder(null);
-        btnEntrar.setBorderPainted(false);
-        btnEntrar.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
-        btnEntrar.addActionListener(new java.awt.event.ActionListener() {
+        btnEnter.setBackground(new java.awt.Color(16, 172, 132));
+        btnEnter.setForeground(new java.awt.Color(255, 255, 255));
+        btnEnter.setText("Entrar");
+        btnEnter.setBorder(null);
+        btnEnter.setBorderPainted(false);
+        btnEnter.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
+        btnEnter.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                btnEntrarActionPerformed(evt);
+                btnEnterActionPerformed(evt);
             }
         });
 
-        passwordFieldSenha.setToolTipText("");
+        passwordField.setToolTipText("");
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
@@ -100,51 +100,51 @@ public class Login extends javax.swing.JFrame {
                         .addGap(102, 102, 102)
                         .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
                             .addComponent(lblLogin, javax.swing.GroupLayout.PREFERRED_SIZE, 45, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(lblSenha)
+                            .addComponent(lblPassword)
                             .addComponent(lblCep)
-                            .addComponent(lblEmpresa)
-                            .addComponent(imgMonilog, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                            .addComponent(textFieldEmpresa)
+                            .addComponent(lblCompany)
+                            .addComponent(imgAtmonit, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                            .addComponent(textFieldCompany)
                             .addComponent(textFieldLogin)
                             .addComponent(textFieldCep)
-                            .addComponent(passwordFieldSenha)))
+                            .addComponent(passwordField)))
                     .addGroup(layout.createSequentialGroup()
                         .addGap(181, 181, 181)
-                        .addComponent(btnEntrar, javax.swing.GroupLayout.PREFERRED_SIZE, 53, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                        .addComponent(btnEnter, javax.swing.GroupLayout.PREFERRED_SIZE, 53, javax.swing.GroupLayout.PREFERRED_SIZE)))
                 .addContainerGap(103, Short.MAX_VALUE))
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
                 .addGap(34, 34, 34)
-                .addComponent(imgMonilog, javax.swing.GroupLayout.PREFERRED_SIZE, 100, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addComponent(imgAtmonit, javax.swing.GroupLayout.PREFERRED_SIZE, 100, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                .addComponent(lblEmpresa)
+                .addComponent(lblCompany)
                 .addGap(3, 3, 3)
-                .addComponent(textFieldEmpresa, javax.swing.GroupLayout.PREFERRED_SIZE, 28, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addComponent(textFieldCompany, javax.swing.GroupLayout.PREFERRED_SIZE, 28, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addComponent(lblLogin)
                 .addGap(3, 3, 3)
                 .addComponent(textFieldLogin, javax.swing.GroupLayout.PREFERRED_SIZE, 28, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(lblSenha)
+                .addComponent(lblPassword)
                 .addGap(3, 3, 3)
-                .addComponent(passwordFieldSenha, javax.swing.GroupLayout.PREFERRED_SIZE, 28, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addComponent(passwordField, javax.swing.GroupLayout.PREFERRED_SIZE, 28, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addComponent(lblCep)
                 .addGap(3, 3, 3)
                 .addComponent(textFieldCep, javax.swing.GroupLayout.PREFERRED_SIZE, 28, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                .addComponent(btnEntrar, javax.swing.GroupLayout.PREFERRED_SIZE, 28, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addComponent(btnEnter, javax.swing.GroupLayout.PREFERRED_SIZE, 28, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(30, 30, 30))
         );
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
 
-    private void textFieldEmpresaActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_textFieldEmpresaActionPerformed
+    private void textFieldCompanyActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_textFieldCompanyActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_textFieldEmpresaActionPerformed
+    }//GEN-LAST:event_textFieldCompanyActionPerformed
 
     private void textFieldLoginActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_textFieldLoginActionPerformed
         // TODO add your handling code here:
@@ -155,9 +155,9 @@ public class Login extends javax.swing.JFrame {
         //textFieldCep
     }//GEN-LAST:event_textFieldCepActionPerformed
 
-    private void btnEntrarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnEntrarActionPerformed
+    private void btnEnterActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnEnterActionPerformed
         
-    }//GEN-LAST:event_btnEntrarActionPerformed
+    }//GEN-LAST:event_btnEnterActionPerformed
 
     /**
      * @param args the command line arguments
@@ -195,15 +195,15 @@ public class Login extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
-    private javax.swing.JButton btnEntrar;
-    private javax.swing.JLabel imgMonilog;
+    private javax.swing.JButton btnEnter;
+    private javax.swing.JLabel imgAtmonit;
     private javax.swing.JLabel lblCep;
-    private javax.swing.JLabel lblEmpresa;
+    private javax.swing.JLabel lblCompany;
     private javax.swing.JLabel lblLogin;
-    private javax.swing.JLabel lblSenha;
-    private javax.swing.JPasswordField passwordFieldSenha;
+    private javax.swing.JLabel lblPassword;
+    private javax.swing.JPasswordField passwordField;
     private javax.swing.JTextField textFieldCep;
-    private javax.swing.JTextField textFieldEmpresa;
+    private javax.swing.JTextField textFieldCompany;
     private javax.swing.JTextField textFieldLogin;
     // End of variables declaration//GEN-END:variables
 }
