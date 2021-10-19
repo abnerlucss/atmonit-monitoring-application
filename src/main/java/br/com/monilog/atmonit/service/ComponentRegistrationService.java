@@ -65,7 +65,7 @@ public class ComponentRegistrationService {
         }
 
         private double getFrequency() {
-            return (looca.getProcessador().getFrequencia() - looca.getProcessador().getUso()) / looca.getProcessador().getFrequencia() * 100;
+            return looca.getProcessador().getFrequencia() * (looca.getProcessador().getFrequencia() - looca.getProcessador().getUso() / 100);
         }
     }
 }
