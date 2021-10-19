@@ -21,9 +21,9 @@ public class Login extends javax.swing.JFrame {
         initComponents();
         getContentPane().setBackground(new java.awt.Color(255, 255, 255));
         this.setLocationRelativeTo(null);
-//        this.textFieldCep.setVisible(false);
-//        this.lblCep.setVisible(false);
-//        setSize(this.getWidth(), this.getHeight()-50);
+        this.textFieldCep.setVisible(false);
+        this.lblCep.setVisible(false);
+        setSize(this.getWidth(), this.getHeight()-50);
     }
 
     /**
@@ -145,7 +145,7 @@ public class Login extends javax.swing.JFrame {
         pack();
     }// </editor-fold>//GEN-END:initComponents
 
-    public Integer loginEnter(){
+    public Integer loginEmployee(){
         boolean hasLogged = false;
         String empresa, login, senha;
         Integer idEmpresa = null;
@@ -184,7 +184,7 @@ public class Login extends javax.swing.JFrame {
     }//GEN-LAST:event_textFieldCepActionPerformed
 
     private void btnEnterActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnEnterActionPerformed
-        loginEnter();
+        loginEmployee();
     }//GEN-LAST:event_btnEnterActionPerformed
 
     /**
