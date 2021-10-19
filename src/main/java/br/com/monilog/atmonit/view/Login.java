@@ -5,6 +5,9 @@
  */
 package br.com.monilog.atmonit.view;
 
+import br.com.monilog.atmonit.dao.EmployeeDAO;
+import br.com.monilog.atmonit.model.EmployeeLogin;
+
 /**
  *
  * @author jonas
@@ -142,7 +145,31 @@ public class Login extends javax.swing.JFrame {
         pack();
     }// </editor-fold>//GEN-END:initComponents
 
-    
+    public Integer loginEnter(){
+        boolean hasLogged = false;
+        String empresa, login, senha;
+        Integer idEmpresa = null;
+
+        empresa = textFieldCompany.getText();
+        login = textFieldLogin.getText();
+        senha = passwordField.getText();
+
+        EmployeeLogin employeeLogin = new EmployeeLogin(login, senha, empresa);
+
+        EmployeeDAO employeeDAO = new EmployeeDAO();
+
+        idEmpresa = employeeDAO.loginFuncionario(employeeLogin);
+
+        if (idEmpresa != null) {
+            System.out.println("Login realizado com sucesso!");
+            hasLogged = true;
+            return idEmpresa;
+        } else {
+            System.out.println("Login falhou");
+        }
+        return null;
+    }
+
     private void textFieldCompanyActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_textFieldCompanyActionPerformed
         // TODO add your handling code here:
     }//GEN-LAST:event_textFieldCompanyActionPerformed
