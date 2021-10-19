@@ -3,7 +3,10 @@ package br.com.monilog.atmonit.service;
 import br.com.monilog.atmonit.dao.ComponentRegistrationDAO;
 import br.com.monilog.atmonit.model.ComponentRegistration;
 import com.github.britooo.looca.api.core.Looca;
+import com.github.britooo.looca.api.group.discos.Volume;
 
+import java.util.ArrayList;
+import java.util.List;
 import java.util.Timer;
 import java.util.TimerTask;
 
@@ -19,18 +22,50 @@ public class ComponentRegistrationService {
 
     class RemindTask extends TimerTask {
         Looca looca = new Looca();
+        List<Volume> diskList = looca.getGrupoDeDiscos().getVolumes();
 
         public void run() {
             ComponentRegistrationDAO componentRegistrationDAO = new ComponentRegistrationDAO();
-            ComponentRegistration componentRegistration = new ComponentRegistration(
-                    looca.getProcessador().getUso(),
-                    looca.getProcessador().getFrequencia().doubleValue(),
-                    looca.getProcessador().getUso(),
-                    idTerminal,
-                    looca.getProcessador().getNome()
-            );
 
-            componentRegistrationDAO.save(componentRegistration);
+            List<ComponentRegistration> componentsList = new ArrayList();
+
+            componentsList.add(new ComponentRegistration(
+                    looca.getProcessador().getUso(),
+                    getFrequency(),
+                    null,
+                    idTerminal,
+                    "Processor"
+            ));
+
+            componentsList.add(new ComponentRegistration(
+                    looca.getMemoria().getEmUso().doubleValue(),
+                    null,
+                    null,
+                    idTerminal,
+                    "Ram memory"
+            ));
+
+            for (Integer i = 0; i < diskList.size(); i++) {
+                componentsList.add(new ComponentRegistration(
+                        getPercentageUsageDisk(i),
+                        null,
+                        null,
+                        idTerminal,
+                        "Hard Disk " + (i + 1)
+                ));
+            }
+
+            for (ComponentRegistration component : componentsList) {
+                componentRegistrationDAO.save(component);
+            }
+        }
+
+        private double getPercentageUsageDisk(Integer i) {
+            return (double) (diskList.get(i).getTotal() * ((diskList.get(i).getTotal() - diskList.get(i).getDisponivel()) / 100));
+        }
+
+        private double getFrequency() {
+            return (looca.getProcessador().getFrequencia() - looca.getProcessador().getUso()) / looca.getProcessador().getFrequencia() * 100;
         }
     }
 }

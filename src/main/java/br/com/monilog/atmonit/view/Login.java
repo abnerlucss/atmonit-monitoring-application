@@ -18,9 +18,9 @@ public class Login extends javax.swing.JFrame {
         initComponents();
         getContentPane().setBackground(new java.awt.Color(255, 255, 255));
         this.setLocationRelativeTo(null);
-        this.textFieldCep.setVisible(false);
-        this.lblCep.setVisible(false);
-        setSize(this.getWidth(), this.getHeight()-50);
+//        this.textFieldCep.setVisible(false);
+//        this.lblCep.setVisible(false);
+//        setSize(this.getWidth(), this.getHeight()-50);
     }
 
     /**

@@ -19,22 +19,18 @@ public class ComponentRegistrationDAO implements IComponentRegistrationDAO {
 
 
         String sqlQuery =
-                "insert into component_registration (nome_component, percentage_usage, frequency, fk_terminal)" +
+                "insert into component_registration (name_component, percentage_usage, frequency, fk_terminal)" +
                         " values (?, ?, ?, ?)";
 
         con.update(connection -> {
-
             PreparedStatement preparedStatement = connection.prepareStatement(sqlQuery, Statement.RETURN_GENERATED_KEYS);
             preparedStatement.setString(1, componentRegistration.getNameComponent());
-            preparedStatement.setDouble(2, componentRegistration.getPercentageUsage());
-            preparedStatement.setDouble(3, componentRegistration.getFrequency());
+            preparedStatement.setDouble(2, componentRegistration.getPercentageUsage() == null ? 0.0: componentRegistration.getPercentageUsage());
+            preparedStatement.setDouble(3, componentRegistration.getFrequency() == null ? 0.0 : componentRegistration.getFrequency());
             preparedStatement.setInt(4, componentRegistration.getIdTerminal());
 
-            System.out.println(preparedStatement);
             return preparedStatement;
         }, keyHolder);
-
-        System.out.println(keyHolder.getKey().intValue());
 
         return keyHolder.getKey().intValue();
     }

@@ -15,6 +15,17 @@ public class ComponentRegistration {
         this.nameComponent = nameComponent;
     }
 
+    @Override
+    public String toString() {
+        return "ComponentRegistration{" +
+                "percentageUsage=" + percentageUsage +
+                ", frequency=" + frequency +
+                ", temperature=" + temperature +
+                ", idTerminal=" + idTerminal +
+                ", nameComponent='" + nameComponent + '\'' +
+                '}';
+    }
+
     public Double getPercentageUsage() {
         return percentageUsage;
     }
