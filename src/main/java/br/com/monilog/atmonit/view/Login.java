@@ -26,8 +26,8 @@ import java.net.UnknownHostException;
  * @author jonas
  */
 public class Login extends javax.swing.JFrame {
-    Image image = Toolkit.getDefaultToolkit().getImage("br/com/monilog/atmonit/view/systemtray/icon.png");
-    TrayClass trayClass = new TrayClass(image);
+    Image image = Toolkit.getDefaultToolkit().getImage("C:\\Users\\abner\\Documents\\atmonit\\src\\main\\java\\br\\com\\monilog\\atmonit\\view\\systemtray\\icon.png");
+
 
     public Login() {
         initComponents();
@@ -189,6 +189,8 @@ public class Login extends javax.swing.JFrame {
                 JOptionPane.showMessageDialog(this, "Identificação do cadastro da máquina feito com sucesso, " +
                         "Iniciando o monitoramento dos recursos... ");
                 new ComponentRegistrationService(idTerminal);
+                setVisible(false);
+                TrayClass trayClass = new TrayClass(image);
 
             } else {
                 Integer idAddress = saveAddress(terminalAddressDAO);
@@ -201,6 +203,8 @@ public class Login extends javax.swing.JFrame {
                 if (idTerminal != null) {
                     JOptionPane.showMessageDialog(this, "Terminal cadastrado com sucesso, iniciando monitoramento de recursos!");
                     new ComponentRegistrationService(idTerminal);
+                    setVisible(false);
+                    TrayClass trayClass = new TrayClass(image);
                 }
             }
         } else {
