@@ -5,6 +5,12 @@
  */
 package br.com.monilog.atmonit.view;
 
+import br.com.monilog.atmonit.dao.EmployeeDAO;
+import br.com.monilog.atmonit.model.EmployeeLogin;
+
+import javax.swing.*;
+import java.awt.*;
+
 /**
  *
  * @author jonas
@@ -18,9 +24,9 @@ public class Login extends javax.swing.JFrame {
         initComponents();
         getContentPane().setBackground(new java.awt.Color(255, 255, 255));
         this.setLocationRelativeTo(null);
-//        this.textFieldCep.setVisible(false);
-//        this.lblCep.setVisible(false);
-//        setSize(this.getWidth(), this.getHeight()-50);
+        this.textFieldCep.setVisible(false);
+        this.lblCep.setVisible(false);
+        setSize(this.getWidth(), this.getHeight()-50);
     }
 
     /**
@@ -142,6 +148,57 @@ public class Login extends javax.swing.JFrame {
         pack();
     }// </editor-fold>//GEN-END:initComponents
 
+    public void popUp(){
+        Popup p;
+
+        PopupFactory pf = new PopupFactory();
+
+        JPanel popUpContent = new JPanel();
+        JLabel msgLogin = new JLabel("Login realizado com sucesso!");
+        JLabel msgCep = new JLabel("Terminal não cadastrado, \nfavor, informar o cep");
+        JTextField textCep = new JTextField();
+        JButton btnCep = new JButton();
+
+        popUpContent.setBackground(Color.red);
+
+        popUpContent.add(msgLogin);
+        popUpContent.add(msgCep);
+        popUpContent.add(textCep);
+        popUpContent.add(btnCep);
+
+        this.rootPane.add(popUpContent);
+        p = pf.getPopup(this.getOwner(), popUpContent, this.getX()+10, this.getY()+30);
+
+
+        p.show();
+    }
+
+
+    public Integer loginEmployee(){
+        boolean hasLogged = false;
+        String empresa, login, senha;
+        Integer idEmpresa = null;
+
+        empresa = textFieldCompany.getText();
+        login = textFieldLogin.getText();
+        senha = passwordField.getText();
+
+        EmployeeLogin employeeLogin = new EmployeeLogin(login, senha, empresa);
+
+        EmployeeDAO employeeDAO = new EmployeeDAO();
+
+        idEmpresa = employeeDAO.loginFuncionario(employeeLogin);
+
+        if (idEmpresa != null) {
+            System.out.println("Login realizado com sucesso!");
+            hasLogged = true;
+            return idEmpresa;
+        } else {
+            System.out.println("Login falhou");
+        }
+        return null;
+    }
+
     private void textFieldCompanyActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_textFieldCompanyActionPerformed
         // TODO add your handling code here:
     }//GEN-LAST:event_textFieldCompanyActionPerformed
@@ -156,7 +213,8 @@ public class Login extends javax.swing.JFrame {
     }//GEN-LAST:event_textFieldCepActionPerformed
 
     private void btnEnterActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnEnterActionPerformed
-        
+        loginEmployee();
+        popUp();
     }//GEN-LAST:event_btnEnterActionPerformed
 
     /**
