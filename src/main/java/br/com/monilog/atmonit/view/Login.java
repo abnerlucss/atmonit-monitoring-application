@@ -6,27 +6,36 @@
 package br.com.monilog.atmonit.view;
 
 import br.com.monilog.atmonit.dao.EmployeeDAO;
+import br.com.monilog.atmonit.dao.TerminalAddressAddressDAO;
+import br.com.monilog.atmonit.dao.TerminalDAO;
 import br.com.monilog.atmonit.model.EmployeeLogin;
+import br.com.monilog.atmonit.model.Terminal;
+import br.com.monilog.atmonit.service.ComponentRegistrationService;
+import br.com.monilog.atmonit.service.TerminalService;
+import br.com.monilog.atmonit.util.ClientCep;
+import br.com.monilog.atmonit.util.HardwareInfo;
+import br.com.monilog.atmonit.view.systemtray.TrayClass;
+import com.github.britooo.looca.api.core.Looca;
 
 import javax.swing.*;
 import java.awt.*;
+import java.net.SocketException;
+import java.net.UnknownHostException;
 
 /**
- *
  * @author jonas
  */
 public class Login extends javax.swing.JFrame {
+    Image image = Toolkit.getDefaultToolkit().getImage("br/com/monilog/atmonit/view/systemtray/icon.png");
+    TrayClass trayClass = new TrayClass(image);
 
-    /**
-     * Creates new form Login
-     */
     public Login() {
         initComponents();
         getContentPane().setBackground(new java.awt.Color(255, 255, 255));
         this.setLocationRelativeTo(null);
         this.textFieldCep.setVisible(false);
         this.lblCep.setVisible(false);
-        setSize(this.getWidth(), this.getHeight()-50);
+        setSize(this.getWidth(), this.getHeight() - 50);
     }
 
     /**
@@ -37,7 +46,6 @@ public class Login extends javax.swing.JFrame {
     @SuppressWarnings("unchecked")
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
-
         imgAtmonit = new javax.swing.JLabel();
         textFieldCompany = new javax.swing.JTextField();
         lblCompany = new javax.swing.JLabel();
@@ -90,7 +98,13 @@ public class Login extends javax.swing.JFrame {
         btnEnter.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
         btnEnter.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                btnEnterActionPerformed(evt);
+                try {
+                    btnEnterActionPerformed(evt);
+                } catch (SocketException e) {
+                    e.printStackTrace();
+                } catch (UnknownHostException e) {
+                    e.printStackTrace();
+                }
             }
         });
 
@@ -99,104 +113,122 @@ public class Login extends javax.swing.JFrame {
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
-            layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(layout.createSequentialGroup()
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(layout.createSequentialGroup()
-                        .addGap(102, 102, 102)
-                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                            .addComponent(lblLogin, javax.swing.GroupLayout.PREFERRED_SIZE, 45, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(lblPassword)
-                            .addComponent(lblCep)
-                            .addComponent(lblCompany)
-                            .addComponent(imgAtmonit, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                            .addComponent(textFieldCompany)
-                            .addComponent(textFieldLogin)
-                            .addComponent(textFieldCep)
-                            .addComponent(passwordField)))
-                    .addGroup(layout.createSequentialGroup()
-                        .addGap(181, 181, 181)
-                        .addComponent(btnEnter, javax.swing.GroupLayout.PREFERRED_SIZE, 53, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                .addContainerGap(103, Short.MAX_VALUE))
+                layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                        .addGroup(layout.createSequentialGroup()
+                                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                        .addGroup(layout.createSequentialGroup()
+                                                .addGap(102, 102, 102)
+                                                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                                                        .addComponent(lblLogin, javax.swing.GroupLayout.PREFERRED_SIZE, 45, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                                        .addComponent(lblPassword)
+                                                        .addComponent(lblCep)
+                                                        .addComponent(lblCompany)
+                                                        .addComponent(imgAtmonit, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                                                        .addComponent(textFieldCompany)
+                                                        .addComponent(textFieldLogin)
+                                                        .addComponent(textFieldCep)
+                                                        .addComponent(passwordField)))
+                                        .addGroup(layout.createSequentialGroup()
+                                                .addGap(181, 181, 181)
+                                                .addComponent(btnEnter, javax.swing.GroupLayout.PREFERRED_SIZE, 53, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                                .addContainerGap(103, Short.MAX_VALUE))
         );
         layout.setVerticalGroup(
-            layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
-                .addGap(34, 34, 34)
-                .addComponent(imgAtmonit, javax.swing.GroupLayout.PREFERRED_SIZE, 100, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                .addComponent(lblCompany)
-                .addGap(3, 3, 3)
-                .addComponent(textFieldCompany, javax.swing.GroupLayout.PREFERRED_SIZE, 28, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(lblLogin)
-                .addGap(3, 3, 3)
-                .addComponent(textFieldLogin, javax.swing.GroupLayout.PREFERRED_SIZE, 28, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(lblPassword)
-                .addGap(3, 3, 3)
-                .addComponent(passwordField, javax.swing.GroupLayout.PREFERRED_SIZE, 28, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(lblCep)
-                .addGap(3, 3, 3)
-                .addComponent(textFieldCep, javax.swing.GroupLayout.PREFERRED_SIZE, 28, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                .addComponent(btnEnter, javax.swing.GroupLayout.PREFERRED_SIZE, 28, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(30, 30, 30))
+                layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                        .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
+                                .addGap(34, 34, 34)
+                                .addComponent(imgAtmonit, javax.swing.GroupLayout.PREFERRED_SIZE, 100, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                                .addComponent(lblCompany)
+                                .addGap(3, 3, 3)
+                                .addComponent(textFieldCompany, javax.swing.GroupLayout.PREFERRED_SIZE, 28, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                .addComponent(lblLogin)
+                                .addGap(3, 3, 3)
+                                .addComponent(textFieldLogin, javax.swing.GroupLayout.PREFERRED_SIZE, 28, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                .addComponent(lblPassword)
+                                .addGap(3, 3, 3)
+                                .addComponent(passwordField, javax.swing.GroupLayout.PREFERRED_SIZE, 28, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                .addComponent(lblCep)
+                                .addGap(3, 3, 3)
+                                .addComponent(textFieldCep, javax.swing.GroupLayout.PREFERRED_SIZE, 28, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                                .addComponent(btnEnter, javax.swing.GroupLayout.PREFERRED_SIZE, 28, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addGap(30, 30, 30))
         );
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
 
-    public void popUp(){
-        Popup p;
+    public void loginEmployee() throws SocketException, UnknownHostException {
+        TerminalAddressAddressDAO terminalAddressDAO = new TerminalAddressAddressDAO();
+        EmployeeDAO employeeDAO = new EmployeeDAO();
+        TerminalDAO terminalDAO = new TerminalDAO();
+        TerminalService terminalService = new TerminalService();
+        Looca looca = new Looca();
+        EmployeeLogin employeeLogin;
 
-        PopupFactory pf = new PopupFactory();
-
-        JPanel popUpContent = new JPanel();
-        JLabel msgLogin = new JLabel("Login realizado com sucesso!");
-        JLabel msgCep = new JLabel("Terminal não cadastrado, \nfavor, informar o cep");
-        JTextField textCep = new JTextField();
-        JButton btnCep = new JButton();
-
-        popUpContent.setBackground(Color.red);
-
-        popUpContent.add(msgLogin);
-        popUpContent.add(msgCep);
-        popUpContent.add(textCep);
-        popUpContent.add(btnCep);
-
-        this.rootPane.add(popUpContent);
-        p = pf.getPopup(this.getOwner(), popUpContent, this.getX()+10, this.getY()+30);
-
-
-        p.show();
-    }
-
-
-    public Integer loginEmployee(){
-        boolean hasLogged = false;
         String empresa, login, senha;
         Integer idEmpresa = null;
+        Integer idTerminal = null;
 
         empresa = textFieldCompany.getText();
         login = textFieldLogin.getText();
         senha = passwordField.getText();
 
-        EmployeeLogin employeeLogin = new EmployeeLogin(login, senha, empresa);
-
-        EmployeeDAO employeeDAO = new EmployeeDAO();
+        employeeLogin = new EmployeeLogin(login, senha, empresa);
 
         idEmpresa = employeeDAO.loginFuncionario(employeeLogin);
 
         if (idEmpresa != null) {
             System.out.println("Login realizado com sucesso!");
-            hasLogged = true;
-            return idEmpresa;
+            idTerminal = terminalService.checkTerminalRegister(idEmpresa);
+            if (idTerminal != null) {
+                JOptionPane.showMessageDialog(this, "Identificação do cadastro da máquina feito com sucesso, " +
+                        "Iniciando o monitoramento dos recursos... ");
+                new ComponentRegistrationService(idTerminal);
+
+            } else {
+                Integer idAddress = saveAddress(terminalAddressDAO);
+                System.out.println("Endereço salvo id: " + idAddress);
+
+                idTerminal = saveTerminal(terminalDAO, looca, idEmpresa, idAddress);
+
+                System.out.println("Terminal salvo id: " + idTerminal);
+
+                if (idTerminal != null) {
+                    JOptionPane.showMessageDialog(this, "Terminal cadastrado com sucesso, iniciando monitoramento de recursos!");
+                    new ComponentRegistrationService(idTerminal);
+                }
+            }
         } else {
-            System.out.println("Login falhou");
+            JOptionPane.showMessageDialog(this, "Login incorreto, tente novamente");
         }
-        return null;
+    }
+
+    private Integer saveAddress(TerminalAddressAddressDAO terminalAddressDAO) {
+        String cep = JOptionPane.showInputDialog(this, "Não foi possível identificarmos esse terminal\n" +
+                "Por favor, insira o cep onde o terminal está situado");
+
+        Integer idCep = terminalAddressDAO.save(ClientCep.getAddressByCep(cep));
+        return idCep;
+    }
+
+    private Integer saveTerminal(TerminalDAO terminalDAO, Looca looca, Integer idEmpresa, Integer idAddress) throws UnknownHostException, SocketException {
+        Terminal terminalToSave = new Terminal(
+                looca.getProcessador().getNome(),
+                looca.getMemoria().getTotal().toString(),
+                looca.getGrupoDeDiscos().getTamanhoTotal().toString(),
+                looca.getProcessador().getMicroarquitetura(),
+                HardwareInfo.getMacAddress(),
+                idAddress,
+                idEmpresa
+        );
+
+        return terminalDAO.save(terminalToSave);
+
     }
 
     private void textFieldCompanyActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_textFieldCompanyActionPerformed
@@ -212,9 +244,8 @@ public class Login extends javax.swing.JFrame {
         //textFieldCep
     }//GEN-LAST:event_textFieldCepActionPerformed
 
-    private void btnEnterActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnEnterActionPerformed
+    private void btnEnterActionPerformed(java.awt.event.ActionEvent evt) throws SocketException, UnknownHostException {//GEN-FIRST:event_btnEnterActionPerformed
         loginEmployee();
-        popUp();
     }//GEN-LAST:event_btnEnterActionPerformed
 
     /**
@@ -224,7 +255,7 @@ public class Login extends javax.swing.JFrame {
         /* Set the Nimbus look and feel */
         //<editor-fold defaultstate="collapsed" desc=" Look and feel setting code (optional) ">
         /* If Nimbus (introduced in Java SE 6) is not available, stay with the default look and feel.
-         * For details see http://download.oracle.com/javase/tutorial/uiswing/lookandfeel/plaf.html 
+         * For details see http://download.oracle.com/javase/tutorial/uiswing/lookandfeel/plaf.html
          */
         try {
             for (javax.swing.UIManager.LookAndFeelInfo info : javax.swing.UIManager.getInstalledLookAndFeels()) {
@@ -245,11 +276,7 @@ public class Login extends javax.swing.JFrame {
         //</editor-fold>
 
         /* Create and display the form */
-        java.awt.EventQueue.invokeLater(new Runnable() {
-            public void run() {
-                new Login().setVisible(true);
-            }
-        });
+
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables

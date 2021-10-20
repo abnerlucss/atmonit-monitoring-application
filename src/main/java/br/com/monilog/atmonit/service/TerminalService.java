@@ -23,24 +23,7 @@ public class TerminalService {
         if (idTerminal != null) {
             System.out.println("Máquina já possui cadastro");
             return idTerminal;
-        } else {
-            System.out.println("Máquina não possui cadastro");
-            System.out.println("Por favor digite o cep aonde a máquina será instalada:");
-            cep = userInput.nextLine();
-            TerminalAddressAddressDAO terminalAddressDAO = new TerminalAddressAddressDAO();
-            Integer idCep = terminalAddressDAO.save(ClientCep.getAddressByCep(cep));
-
-            Terminal terminalToSave = new Terminal(
-                    looca.getProcessador().getNome(),
-                    looca.getMemoria().getTotal().toString(),
-                    looca.getGrupoDeDiscos().getTamanhoTotal().toString(),
-                    looca.getProcessador().getMicroarquitetura(),
-                    HardwareInfo.getMacAddress(),
-                    idCep,
-                    idEmpresa
-            );
-
-            return terminalDAO.save(terminalToSave);
         }
+        return null;
     }
 }
