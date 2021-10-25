@@ -21,7 +21,7 @@ public class TerminalService {
         Integer idTerminal = terminalDAO.checkMachineRegister(HardwareInfo.getMacAddress(), idEmpresa);
 
         if (idTerminal != null) {
-            System.out.println("Máquina já possui cadastro");
+            System.out.println("Maquina ja possui cadastro");
             return idTerminal;
         }
         return null;
