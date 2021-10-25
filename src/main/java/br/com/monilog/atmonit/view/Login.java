@@ -8,6 +8,7 @@ package br.com.monilog.atmonit.view;
 import br.com.monilog.atmonit.dao.EmployeeDAO;
 import br.com.monilog.atmonit.dao.TerminalAddressAddressDAO;
 import br.com.monilog.atmonit.dao.TerminalDAO;
+import br.com.monilog.atmonit.database.JavaConnect2SQL;
 import br.com.monilog.atmonit.model.EmployeeLogin;
 import br.com.monilog.atmonit.model.Terminal;
 import br.com.monilog.atmonit.service.ComponentRegistrationService;
@@ -23,10 +24,12 @@ import java.net.SocketException;
 import java.net.UnknownHostException;
 
 /**
- * @author jonas
+ * @author Monilog
  */
 public class Login extends javax.swing.JFrame {
-    Image image = Toolkit.getDefaultToolkit().getImage("C:\\Users\\abner\\Documents\\atmonit\\src\\main\\java\\br\\com\\monilog\\atmonit\\view\\systemtray\\icon.png");
+    StringsJframe stringsJframe = new StringsJframe();
+
+    Image image = Toolkit.getDefaultToolkit().getImage(stringsJframe.image);
 
 
     public Login() {
@@ -183,38 +186,37 @@ public class Login extends javax.swing.JFrame {
         idEmpresa = employeeDAO.loginFuncionario(employeeLogin);
 
         if (idEmpresa != null) {
-            System.out.println("Login realizado com sucesso!");
+            StringsJframe stringsJframe = new StringsJframe();
+            System.out.println(stringsJframe.loginSucess);
             idTerminal = terminalService.checkTerminalRegister(idEmpresa);
             if (idTerminal != null) {
-                JOptionPane.showMessageDialog(this, "Identificação do cadastro da máquina feito com sucesso, " +
-                        "Iniciando o monitoramento dos recursos... ");
+                JOptionPane.showMessageDialog(this,stringsJframe.identifySucess );
                 new ComponentRegistrationService(idTerminal);
                 setVisible(false);
                 TrayClass trayClass = new TrayClass(image);
 
             } else {
                 Integer idAddress = saveAddress(terminalAddressDAO);
-                System.out.println("Endereço salvo id: " + idAddress);
+                System.out.println(stringsJframe.addressSave + idAddress);
 
                 idTerminal = saveTerminal(terminalDAO, looca, idEmpresa, idAddress);
 
-                System.out.println("Terminal salvo id: " + idTerminal);
+                System.out.println(stringsJframe.terminalSave + idTerminal);
 
                 if (idTerminal != null) {
-                    JOptionPane.showMessageDialog(this, "Terminal cadastrado com sucesso, iniciando monitoramento de recursos!");
+                    JOptionPane.showMessageDialog(this, stringsJframe.terminalRegistered);
                     new ComponentRegistrationService(idTerminal);
                     setVisible(false);
                     TrayClass trayClass = new TrayClass(image);
                 }
             }
         } else {
-            JOptionPane.showMessageDialog(this, "Login incorreto, tente novamente");
+            JOptionPane.showMessageDialog(this,stringsJframe.loginIncorrect);
         }
     }
 
     private Integer saveAddress(TerminalAddressAddressDAO terminalAddressDAO) {
-        String cep = JOptionPane.showInputDialog(this, "Não foi possível identificarmos esse terminal\n" +
-                "Por favor, insira o cep onde o terminal está situado");
+        String cep = JOptionPane.showInputDialog(this, stringsJframe.impossibleIdentify);
 
         Integer idCep = terminalAddressDAO.save(ClientCep.getAddressByCep(cep));
         return idCep;
