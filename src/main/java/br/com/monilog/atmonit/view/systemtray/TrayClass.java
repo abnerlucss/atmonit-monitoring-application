@@ -1,5 +1,7 @@
 package br.com.monilog.atmonit.view.systemtray;
 
+import br.com.monilog.atmonit.view.StringsJframe;
+
 import javax.swing.*;
 import java.awt.*;
 import java.awt.event.ActionEvent;
@@ -10,6 +12,7 @@ public class TrayClass {
     static TrayIcon trayIcon;
 
     public TrayClass(Image image) {
+
         TrayClass.show(image);
     }
 
