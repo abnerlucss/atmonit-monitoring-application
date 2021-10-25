@@ -18,5 +18,4 @@ public class ConnectionFactory {
     public BasicDataSource getDataSource() {
         return dataSource;
     }
-
 }
