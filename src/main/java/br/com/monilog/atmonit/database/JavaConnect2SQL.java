@@ -15,7 +15,7 @@ public class JavaConnect2SQL {
         try {
             Connection connection = DriverManager.getConnection(url, user, password);
             System.out.println("Conectado ao Microsoft Azure!");
-            String sql =  "insert into teste (nome, senha) values ('brurola','789');";
+            String sql =  "insert into teste (nome, senha) values ('abnim','789');";
             Statement statement = connection.createStatement();
             Integer rows = statement.executeUpdate(sql);
             connection.close();
