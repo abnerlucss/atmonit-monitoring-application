@@ -15,7 +15,9 @@ public class EmployeeDAO extends JavaConnect2SQL implements IFuncionarioDAO {
                 " where c.company_name = \'%s\' and e.login = \'%s\' and e.password = \'%s\'", employeeLogin.getCompany(),
                 employeeLogin.getLogin(), employeeLogin.getPassword());
 
+        System.out.println(sqlQuery);
         connectionAzure(sqlQuery);
+        System.out.println(idCompany);
         return idCompany;
 
     }
