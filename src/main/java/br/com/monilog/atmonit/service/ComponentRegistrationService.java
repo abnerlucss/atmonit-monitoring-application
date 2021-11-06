@@ -56,7 +56,7 @@ public class ComponentRegistrationService {
             }
 
             for (ComponentRegistration component : componentsList) {
-                componentRegistrationDAO.saveSQL(component);
+                componentRegistrationDAO.save(component);
             }
         }
 

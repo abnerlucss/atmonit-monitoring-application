@@ -8,7 +8,7 @@ package br.com.monilog.atmonit.view;
 import br.com.monilog.atmonit.dao.EmployeeDAO;
 import br.com.monilog.atmonit.dao.TerminalAddressAddressDAO;
 import br.com.monilog.atmonit.dao.TerminalDAO;
-import br.com.monilog.atmonit.database.SwitchConnection;
+import br.com.monilog.atmonit.database.JavaConnect2SQL;
 import br.com.monilog.atmonit.model.EmployeeLogin;
 import br.com.monilog.atmonit.model.Terminal;
 import br.com.monilog.atmonit.service.ComponentRegistrationService;
@@ -183,13 +183,7 @@ public class Login extends javax.swing.JFrame {
 
         employeeLogin = new EmployeeLogin(login, senha, empresa);
 
-        SwitchConnection switchConnection = new SwitchConnection();
-
-        if(switchConnection.getEnvironment().equals("DEV")){
-            idEmpresa = employeeDAO.loginFuncionarioSQL(employeeLogin);
-        }else if(switchConnection.getEnvironment().equals("PROD")){
-            idEmpresa = employeeDAO.loginFuncionarioAzure(employeeLogin);
-        }
+        idEmpresa = employeeDAO.loginFuncionario(employeeLogin);
 
         if (idEmpresa != null) {
             StringsJframe stringsJframe = new StringsJframe();
