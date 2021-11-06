@@ -12,8 +12,11 @@ import java.sql.Statement;
 import java.util.List;
 
 public class TerminalDAO implements ITerminalDAO {
+    public Integer checkMachineRegisterAzure(){
+return 1;
+    }
     @Override
-    public Integer checkMachineRegister(String macAddress, Integer idCompany) {
+    public Integer checkMachineRegisterSQL(String macAddress, Integer idCompany) {
         ConnectionFactory config = new ConnectionFactory();
         JdbcTemplate con = new JdbcTemplate(config.getDataSource());
 
@@ -32,7 +35,7 @@ public class TerminalDAO implements ITerminalDAO {
     }
 
     @Override
-    public Integer save(Terminal terminal) {
+    public Integer saveSQL(Terminal terminal) {
 
         ConnectionFactory config = new ConnectionFactory();
         JdbcTemplate con = new JdbcTemplate(config.getDataSource());
