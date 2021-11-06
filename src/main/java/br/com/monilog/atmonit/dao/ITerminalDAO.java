@@ -4,6 +4,6 @@ package br.com.monilog.atmonit.dao;
 import br.com.monilog.atmonit.model.Terminal;
 
 public interface ITerminalDAO {
-    Integer checkMachineRegister(String macAddress, Integer idCompany);
-    Integer save(Terminal terminal);
+    Integer checkMachineRegisterSQL(String macAddress, Integer idCompany);
+    Integer saveSQL(Terminal terminal);
 }
