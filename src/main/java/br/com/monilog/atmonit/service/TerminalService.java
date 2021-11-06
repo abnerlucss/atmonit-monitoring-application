@@ -1,9 +1,6 @@
 package br.com.monilog.atmonit.service;
 
-import br.com.monilog.atmonit.dao.TerminalAddressAddressDAO;
 import br.com.monilog.atmonit.dao.TerminalDAO;
-import br.com.monilog.atmonit.model.Terminal;
-import br.com.monilog.atmonit.util.ClientCep;
 import br.com.monilog.atmonit.util.HardwareInfo;
 import com.github.britooo.looca.api.core.Looca;
 
@@ -18,7 +15,7 @@ public class TerminalService {
         Scanner userInput = new Scanner(System.in);
         String cep;
         Looca looca = new Looca();
-        Integer idTerminal = terminalDAO.checkMachineRegister(HardwareInfo.getMacAddress(), idEmpresa);
+        Integer idTerminal = terminalDAO.checkMachineRegisterSQL(HardwareInfo.getMacAddress(), idEmpresa);
 
         if (idTerminal != null) {
             System.out.println("Maquina ja possui cadastro");
