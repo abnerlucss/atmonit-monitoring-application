@@ -4,7 +4,7 @@ import javax.swing.*;
 
 public class StringsJframe {
 
-    public String image = "C:\\Users\\Dell\\Downloads\\Repositories\\atmonit-monitoring-application\\src\\main\\java\\br\\com\\monilog\\atmonit\\view\\systemtray\\icon.png";
+    public String image = "C:\\Users\\abner\\Documents\\atmonit\\src\\main\\java\\br\\com\\monilog\\atmonit\\view\\systemtray\\icon.png";
     public String loginSucess = "Login realizado com sucesso!";
     public String identifySucess = "Identificacao do cadastro da maquina feito com sucesso, Iniciando o monitoramento dos recursos... ";
     public String addressSave = "Endereço salvo id: ";

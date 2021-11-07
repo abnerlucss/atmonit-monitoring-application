@@ -23,7 +23,7 @@ public class TerminalDAO extends JavaConnect2SQL implements ITerminalDAO {
 
             Statement statement = connection.createStatement();
             ResultSet rows = statement.executeQuery(String.format("select t.* from terminal as t join company as c on t.fk_company = c.id_company" +
-                    " where t.mac_address = '%s' and c.id_company = %d limit 1", macAddress, idCompany));
+                    " where t.mac_address = '%s' and c.id_company = %d ", macAddress, idCompany));
             terminal = (List<Terminal>) statement.executeQuery(String.valueOf(rows));
 
             if (terminal.isEmpty()) {
