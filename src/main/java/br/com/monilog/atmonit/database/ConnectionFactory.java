@@ -6,7 +6,6 @@ public class ConnectionFactory {
     private BasicDataSource dataSource;
 
 
-
     public ConnectionFactory() {
         dataSource = new BasicDataSource();
         dataSource.setDriverClassName("com.mysql.cj.jdbc.Driver");

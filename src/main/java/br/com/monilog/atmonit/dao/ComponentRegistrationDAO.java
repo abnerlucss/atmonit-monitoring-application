@@ -24,7 +24,7 @@ public class ComponentRegistrationDAO extends JavaConnect2SQL implements ICompon
 
             Statement statement = connection.createStatement();
             int rows = statement.executeUpdate(String.format("insert into component_registration (name_component, percentage_usage, frequency, fk_terminal)" +
-                    " values (%s, %.2f, %.2f, %d)",getNameComponent,getPercentageUsage,getFrequency,getIdTerminal));
+                    " values (%s, %.2f, %.2f, %d)", getNameComponent, getPercentageUsage, getFrequency, getIdTerminal));
             connection.close();
         } catch (SQLException throwables) {
             System.out.println("Opps, temos um erro:");
@@ -49,7 +49,7 @@ public class ComponentRegistrationDAO extends JavaConnect2SQL implements ICompon
             preparedStatement.setString(1, componentRegistration.getNameComponent());
             preparedStatement.setDouble(2, componentRegistration.getPercentageUsage() == null ? 0.0 : componentRegistration.getPercentageUsage());
             preparedStatement.setDouble(3, componentRegistration.getFrequency() == null ? 0.0 : componentRegistration.getFrequency());
-            preparedStatement.setInt(4,    componentRegistration.getIdTerminal());
+            preparedStatement.setInt(4, componentRegistration.getIdTerminal());
 
             return preparedStatement;
         }, keyHolder);

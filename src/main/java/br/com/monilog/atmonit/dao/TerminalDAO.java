@@ -77,7 +77,7 @@ public class TerminalDAO extends JavaConnect2SQL implements ITerminalDAO {
                     "mac_address, fk_terminal_address, fk_company) " +
                     "values (%s, %s, %s, %s, %s, %d, %d)", getProcessor, getRamMemory, getTerminalStorage, getCpuModel, getMacAddress, getIdTerminalAddress, getIdCompany));
 
-        }catch (SQLException throwables) {
+        } catch (SQLException throwables) {
             System.out.println("Opps, temos um erro:");
             throwables.printStackTrace();
         }
