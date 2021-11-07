@@ -24,7 +24,7 @@ public class EmployeeDAO extends JavaConnect2SQL implements IFuncionarioDAO {
             System.out.println("Opps, temos um erro:");
             throwables.printStackTrace();
         }
-        return 1;
+        return idCompany;
 
     }
 
