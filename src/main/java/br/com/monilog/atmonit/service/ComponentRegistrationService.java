@@ -1,6 +1,7 @@
 package br.com.monilog.atmonit.service;
 
 import br.com.monilog.atmonit.dao.ComponentRegistrationDAO;
+import br.com.monilog.atmonit.database.SwitchConnection;
 import br.com.monilog.atmonit.model.ComponentRegistration;
 import com.github.britooo.looca.api.core.Looca;
 import com.github.britooo.looca.api.group.discos.Volume;
@@ -54,9 +55,16 @@ public class ComponentRegistrationService {
                         "Hard Disk " + (i + 1)
                 ));
             }
+            SwitchConnection switchConnection = new SwitchConnection();
 
-            for (ComponentRegistration component : componentsList) {
-                componentRegistrationDAO.save(component);
+            if (switchConnection.getEnvironment().equals("DEV")) {
+                for (ComponentRegistration component : componentsList) {
+                    componentRegistrationDAO.saveSQL(component);
+                }
+            } else if (switchConnection.getEnvironment().equals("PROD")) {
+                for (ComponentRegistration component : componentsList) {
+                    componentRegistrationDAO.saveAzure(component);
+                }
             }
         }
 
