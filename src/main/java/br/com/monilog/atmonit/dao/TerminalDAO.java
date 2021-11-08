@@ -21,10 +21,11 @@ public class TerminalDAO extends JavaConnect2SQL implements ITerminalDAO {
         try {
             Connection connection = DriverManager.getConnection(getDataSource().getUrl(), getDataSource().getUsername(), getDataSource().getPassword());
 
-            Statement statement = connection.createStatement();
-            ResultSet rows = statement.executeQuery(String.format("select t.* from terminal as t join company as c on t.fk_company = c.id_company" +
-                    " where t.mac_address = '%s' and c.id_company = %d ", macAddress, idCompany));
-            terminal = (List<Terminal>) statement.executeQuery(String.valueOf(rows));
+            PreparedStatement statement = connection.prepareStatement("select t.* from terminal as t join company as c on t.fk_company = c.id_company" +
+                    " where t.mac_address = ? and c.id_company = ?");
+            statement.setString(1, macAddress);
+            statement.setInt(2, idCompany);
+            statement.execute();
 
             if (terminal.isEmpty()) {
                 return null;

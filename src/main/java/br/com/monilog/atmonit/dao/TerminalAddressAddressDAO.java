@@ -7,24 +7,25 @@ import org.springframework.jdbc.core.JdbcTemplate;
 import org.springframework.jdbc.support.GeneratedKeyHolder;
 import org.springframework.jdbc.support.KeyHolder;
 
-import java.sql.*;
-
 public class TerminalAddressAddressDAO extends JavaConnect2SQL implements ITerminalAddress {
     public Integer saveAzure(Cep cep) {
-        JavaConnect2SQL javaConnect2SQL = new JavaConnect2SQL();
+
+        JavaConnect2SQL config = new JavaConnect2SQL();
+        JdbcTemplate con = new JdbcTemplate(config.getDataSource());
+
         KeyHolder keyHolder = new GeneratedKeyHolder();
 
         try {
-            Connection connection = DriverManager.getConnection(getDataSource().getUrl(), getDataSource().getUsername(), getDataSource().getPassword());
+            String sqlQuery = String.format("Insert into terminal_address (street, city, state, district) " +
+                    "values ('%s', '%s', '%s', '%s')", cep.getLogradouro(), cep.getLocalidade(), cep.getUf(), cep.getBairro());
 
-            Statement statement = connection.createStatement();
-            ResultSet rows = statement.executeQuery(String.format("Insert into terminal_address (street, city, state, district) " +
-                    "values ('%s', '%s', '%s', '%s')", cep.getLogradouro(), cep.getLocalidade(), cep.getUf(), cep.getBairro()));
+            con.update(
+                    con1 -> con1.prepareStatement(sqlQuery, new String[]{"id_terminal_address"}), keyHolder);
 
-            connection.close();
-        } catch (SQLException throwables) {
+            return keyHolder.getKey().intValue();
+
+        } catch (Exception e) {
             System.out.println("Opps, temos um erro:");
-            throwables.printStackTrace();
         }
         return keyHolder.getKey().intValue();
     }
