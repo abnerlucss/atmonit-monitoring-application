@@ -13,24 +13,31 @@ public class ComponentRegistrationDAO extends JavaConnect2SQL implements ICompon
     public Integer saveAzure(ComponentRegistration componentRegistration) {
         JavaConnect2SQL javaConnect2SQL = new JavaConnect2SQL();
         KeyHolder keyHolder = new GeneratedKeyHolder();
-
-        String getNameComponent = componentRegistration.getNameComponent();
-        Double getPercentageUsage = componentRegistration.getPercentageUsage() == null ? 0.0 : componentRegistration.getPercentageUsage();
-        Double getFrequency = componentRegistration.getFrequency() == null ? 0.0 : componentRegistration.getFrequency();
-        Integer getIdTerminal = componentRegistration.getIdTerminal();
+        Integer generatedKey = null;
 
         try {
             Connection connection = DriverManager.getConnection(getDataSource().getUrl(), getDataSource().getUsername(), getDataSource().getPassword());
 
-            Statement statement = connection.createStatement();
-            int rows = statement.executeUpdate(String.format("insert into component_registration (name_component, percentage_usage, frequency, fk_terminal)" +
-                    " values (%s, %.2f, %.2f, %d)", getNameComponent, getPercentageUsage, getFrequency, getIdTerminal));
+            PreparedStatement statement = connection.prepareStatement("insert into component_registration (name_component, percentage_usage, frequency, fk_terminal)" +
+                    " values (?, ?, ?, ?)", Statement.RETURN_GENERATED_KEYS);
+            statement.setString(1, componentRegistration.getNameComponent());
+            statement.setDouble(2, componentRegistration.getPercentageUsage() == null ? 0.0 : componentRegistration.getPercentageUsage());
+            statement.setDouble(3, componentRegistration.getFrequency() == null ? 0.0 : componentRegistration.getFrequency());
+            statement.setInt(4, componentRegistration.getIdTerminal());
+            statement.execute();
+
+            ResultSet rs = statement.getGeneratedKeys();
+
+            while (rs.next()) {
+                generatedKey = rs.getInt(1);
+            }
+
             connection.close();
         } catch (SQLException throwables) {
             System.out.println("Opps, temos um erro:");
             throwables.printStackTrace();
         }
-        return keyHolder.getKey().intValue();
+        return generatedKey;
     }
 
     public Integer saveSQL(ComponentRegistration componentRegistration) {

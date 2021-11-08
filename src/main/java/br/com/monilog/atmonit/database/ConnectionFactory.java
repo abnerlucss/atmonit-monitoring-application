@@ -10,8 +10,12 @@ public class ConnectionFactory {
         dataSource = new BasicDataSource();
         dataSource.setDriverClassName("com.mysql.cj.jdbc.Driver");
         dataSource.setUrl("jdbc:mysql://localhost:3306/atmonit");
-        dataSource.setUsername("root");
-        dataSource.setPassword("Af1bf2cf3df4");
+        //PC ABNER
+        //dataSource.setUsername("root");
+        //dataSource.setPassword("Af1bf2cf3df4");
+        //PC RAFAEL
+        dataSource.setUsername("atmonit");
+        dataSource.setPassword("bandtec");
     }
 
     public BasicDataSource getDataSource() {

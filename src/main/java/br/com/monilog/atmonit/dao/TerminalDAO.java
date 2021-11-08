@@ -23,6 +23,7 @@ public class TerminalDAO extends JavaConnect2SQL implements ITerminalDAO {
 
             PreparedStatement statement = connection.prepareStatement("select t.* from terminal as t join company as c on t.fk_company = c.id_company" +
                     " where t.mac_address = ? and c.id_company = ?");
+
             statement.setString(1, macAddress);
             statement.setInt(2, idCompany);
             statement.execute();
@@ -81,8 +82,6 @@ public class TerminalDAO extends JavaConnect2SQL implements ITerminalDAO {
             while (rs.next()) {
                 generatedKey = rs.getInt(1);
             }
-
-            System.out.println(generatedKey);
 
         } catch (SQLException throwables) {
             System.out.println("Opps, temos um erro:");
