@@ -61,29 +61,35 @@ public class TerminalDAO extends JavaConnect2SQL implements ITerminalDAO {
     public Integer saveAzure(Terminal terminal) {
         JavaConnect2SQL javaConnect2SQL = new JavaConnect2SQL();
         KeyHolder keyHolder = new GeneratedKeyHolder();
+        Integer generatedKey = null;
         try {
             Connection connection = DriverManager.getConnection(getDataSource().getUrl(), getDataSource().getUsername(), getDataSource().getPassword());
 
-            String getProcessor = terminal.getProcessor();
-            String getRamMemory = terminal.getRamMemory();
-            String getTerminalStorage = terminal.getTerminalStorage();
-            String getCpuModel = terminal.getCpuModel();
-            String getMacAddress = terminal.getMacAddress();
-            Integer getIdTerminalAddress = terminal.getIdTerminalAddress();
-            Integer getIdCompany = terminal.getIdCompany();
+            PreparedStatement statement = connection.prepareStatement("Insert into terminal (processor, ram_memory, storage, cpu_model," +
+                    "mac_address, fk_terminal_address, fk_company) values (?, ?, ?, ?, ?, ?, ?)", Statement.RETURN_GENERATED_KEYS);
+            statement.setString(1, terminal.getProcessor());
+            statement.setString(2, terminal.getRamMemory());
+            statement.setString(3, terminal.getTerminalStorage());
+            statement.setString(4, terminal.getCpuModel());
+            statement.setString(5, terminal.getMacAddress());
+            statement.setInt(6, terminal.getIdTerminalAddress());
+            statement.setInt(7, terminal.getIdCompany());
+            statement.execute();
 
-            Statement statement = connection.createStatement();
+            ResultSet rs = statement.getGeneratedKeys();
 
-            int sqlQuery = statement.executeUpdate(String.format("Insert into terminal (processor, ram_memory, terminal_storage, cpu_model," +
-                    "mac_address, fk_terminal_address, fk_company) " +
-                    "values (%s, %s, %s, %s, %s, %d, %d)", getProcessor, getRamMemory, getTerminalStorage, getCpuModel, getMacAddress, getIdTerminalAddress, getIdCompany));
+            while (rs.next()) {
+                generatedKey = rs.getInt(1);
+            }
+
+            System.out.println(generatedKey);
 
         } catch (SQLException throwables) {
             System.out.println("Opps, temos um erro:");
             throwables.printStackTrace();
         }
 
-        return keyHolder.getKey().intValue();
+        return generatedKey;
     }
 
     @Override
