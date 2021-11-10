@@ -6,4 +6,6 @@ import java.sql.SQLException;
 
 public interface IFuncionarioDAO {
     Integer loginFuncionarioSQL(EmployeeLogin employeeLogin) throws SQLException;
+
+    Integer loginFuncionarioAzure(EmployeeLogin employeeLogin) throws SQLException;
 }

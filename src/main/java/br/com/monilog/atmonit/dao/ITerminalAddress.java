@@ -6,4 +6,6 @@ import java.sql.SQLException;
 
 public interface ITerminalAddress {
     Integer saveSQL(Cep cep) throws SQLException;
+
+    Integer saveAzure(Cep cep) throws SQLException;
 }
