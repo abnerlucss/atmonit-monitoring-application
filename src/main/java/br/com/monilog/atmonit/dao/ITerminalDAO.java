@@ -3,8 +3,10 @@ package br.com.monilog.atmonit.dao;
 
 import br.com.monilog.atmonit.model.Terminal;
 
-public interface ITerminalDAO {
-    Integer checkMachineRegisterSQL(String macAddress, Integer idCompany);
+import java.sql.SQLException;
 
-    Integer saveSQL(Terminal terminal);
+public interface ITerminalDAO {
+    Integer checkMachineRegisterSQL(String macAddress, Integer idCompany) throws SQLException;
+
+    Integer saveSQL(Terminal terminal) throws SQLException;
 }

@@ -6,8 +6,9 @@
 package br.com.monilog.atmonit.view;
 
 import br.com.monilog.atmonit.dao.EmployeeDAO;
-import br.com.monilog.atmonit.dao.TerminalAddressAddressDAO;
+import br.com.monilog.atmonit.dao.TerminalAddressDAO;
 import br.com.monilog.atmonit.dao.TerminalDAO;
+import br.com.monilog.atmonit.database.ConnectionFactory;
 import br.com.monilog.atmonit.database.SwitchConnection;
 import br.com.monilog.atmonit.model.EmployeeLogin;
 import br.com.monilog.atmonit.model.Terminal;
@@ -22,6 +23,8 @@ import javax.swing.*;
 import java.awt.*;
 import java.net.SocketException;
 import java.net.UnknownHostException;
+import java.sql.Connection;
+import java.sql.SQLException;
 
 /**
  * @author Monilog
@@ -107,6 +110,8 @@ public class Login extends javax.swing.JFrame {
                     e.printStackTrace();
                 } catch (UnknownHostException e) {
                     e.printStackTrace();
+                } catch (SQLException e) {
+                    e.printStackTrace();
                 }
             }
         });
@@ -165,8 +170,8 @@ public class Login extends javax.swing.JFrame {
         pack();
     }// </editor-fold>//GEN-END:initComponents
 
-    public void loginEmployee() throws SocketException, UnknownHostException {
-        TerminalAddressAddressDAO terminalAddressDAO = new TerminalAddressAddressDAO();
+    public void loginEmployee() throws SocketException, UnknownHostException, SQLException {
+        TerminalAddressDAO terminalAddressDAO = new TerminalAddressDAO();
         EmployeeDAO employeeDAO = new EmployeeDAO();
         TerminalDAO terminalDAO = new TerminalDAO();
         TerminalService terminalService = new TerminalService();
@@ -194,9 +199,9 @@ public class Login extends javax.swing.JFrame {
         if (idEmpresa != null) {
             StringsJframe stringsJframe = new StringsJframe();
             System.out.println(stringsJframe.loginSucess);
-            if(switchConnection.getEnvironment().equals("DEV")){
+            if (switchConnection.getEnvironment().equals("DEV")) {
                 idTerminal = terminalService.checkTerminalRegisterSQL(idEmpresa);
-            }else if (switchConnection.getEnvironment().equals("PROD")){
+            } else if (switchConnection.getEnvironment().equals("PROD")) {
                 idTerminal = terminalService.checkTerminalRegisterAzure(idEmpresa);
             }
             if (idTerminal != null) {
@@ -209,9 +214,9 @@ public class Login extends javax.swing.JFrame {
                 Integer idAddress = saveAddress(terminalAddressDAO);
                 System.out.println(stringsJframe.addressSave + idAddress);
 
-                if(switchConnection.getEnvironment().equals("DEV")) {
+                if (switchConnection.getEnvironment().equals("DEV")) {
                     idTerminal = saveTerminalSQL(terminalDAO, looca, idEmpresa, idAddress);
-                }else  if(switchConnection.getEnvironment().equals("PROD")){
+                } else if (switchConnection.getEnvironment().equals("PROD")) {
                     idTerminal = saveTerminalAzure(terminalDAO, looca, idEmpresa, idAddress);
                 }
 
@@ -229,7 +234,8 @@ public class Login extends javax.swing.JFrame {
         }
     }
 
-    private Integer saveAddress(TerminalAddressAddressDAO terminalAddressDAO) {
+
+    private Integer saveAddress(TerminalAddressDAO terminalAddressDAO) throws SQLException {
         String cep = JOptionPane.showInputDialog(this, stringsJframe.impossibleIdentify);
         SwitchConnection switchConnection = new SwitchConnection();
         Integer idCep = 0;
@@ -242,7 +248,7 @@ public class Login extends javax.swing.JFrame {
         return idCep;
     }
 
-    private Integer saveTerminalSQL(TerminalDAO terminalDAO, Looca looca, Integer idEmpresa, Integer idAddress) throws UnknownHostException, SocketException {
+    private Integer saveTerminalSQL(TerminalDAO terminalDAO, Looca looca, Integer idEmpresa, Integer idAddress) throws UnknownHostException, SocketException, SQLException {
         Terminal terminalToSave = new Terminal(
                 looca.getProcessador().getNome(),
                 looca.getMemoria().getTotal().toString(),
@@ -283,7 +289,7 @@ public class Login extends javax.swing.JFrame {
         //textFieldCep
     }//GEN-LAST:event_textFieldCepActionPerformed
 
-    private void btnEnterActionPerformed(java.awt.event.ActionEvent evt) throws SocketException, UnknownHostException {//GEN-FIRST:event_btnEnterActionPerformed
+    private void btnEnterActionPerformed(java.awt.event.ActionEvent evt) throws SocketException, UnknownHostException, SQLException {//GEN-FIRST:event_btnEnterActionPerformed
         loginEmployee();
     }//GEN-LAST:event_btnEnterActionPerformed
 

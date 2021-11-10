@@ -40,27 +40,30 @@ public class ComponentRegistrationDAO extends JavaConnect2SQL implements ICompon
         return generatedKey;
     }
 
-    public Integer saveSQL(ComponentRegistration componentRegistration) {
+    public Integer saveSQL(ComponentRegistration componentRegistration) throws SQLException {
+        ConnectionFactory connectionFactory = new ConnectionFactory();
+        Connection connection = connectionFactory.recoverConnection();
 
-        ConnectionFactory config = new ConnectionFactory();
-        JdbcTemplate con = new JdbcTemplate(config.getDataSource());
-        KeyHolder keyHolder = new GeneratedKeyHolder();
+        Integer component_registration = null;
 
+        String sql = "insert into component_registration (name_component, percentage_usage, frequency, fk_terminal)" +
+                " values (?, ?, ?, ?)";
 
-        String sqlQuery =
-                "insert into component_registration (name_component, percentage_usage, frequency, fk_terminal)" +
-                        " values (?, ?, ?, ?)";
+        try (PreparedStatement statement = connection.prepareStatement(
+                sql, Statement.RETURN_GENERATED_KEYS)) {
+            statement.setString(1, componentRegistration.getNameComponent());
+            statement.setDouble(2, componentRegistration.getPercentageUsage() == null ? 0.0 : componentRegistration.getPercentageUsage());
+            statement.setDouble(3, componentRegistration.getFrequency() == null ? 0.0 : componentRegistration.getFrequency());
+            statement.setInt(4, componentRegistration.getIdTerminal());
+            statement.execute();
 
-        con.update(connection -> {
-            PreparedStatement preparedStatement = connection.prepareStatement(sqlQuery, Statement.RETURN_GENERATED_KEYS);
-            preparedStatement.setString(1, componentRegistration.getNameComponent());
-            preparedStatement.setDouble(2, componentRegistration.getPercentageUsage() == null ? 0.0 : componentRegistration.getPercentageUsage());
-            preparedStatement.setDouble(3, componentRegistration.getFrequency() == null ? 0.0 : componentRegistration.getFrequency());
-            preparedStatement.setInt(4, componentRegistration.getIdTerminal());
+            ResultSet rs = statement.getGeneratedKeys();
 
-            return preparedStatement;
-        }, keyHolder);
-
-        return keyHolder.getKey().intValue();
+            while (rs.next()) {
+                component_registration = rs.getInt(1);
+            }
+            connection.close();
+        }
+        return component_registration;
     }
 }

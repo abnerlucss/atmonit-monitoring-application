@@ -7,11 +7,12 @@ import com.github.britooo.looca.api.core.Looca;
 
 import java.net.SocketException;
 import java.net.UnknownHostException;
+import java.sql.SQLException;
 import java.util.Scanner;
 
 public class TerminalService {
 
-    public Integer checkTerminalRegisterSQL(Integer idEmpresa) throws SocketException, UnknownHostException {
+    public Integer checkTerminalRegisterSQL(Integer idEmpresa) throws SocketException, UnknownHostException, SQLException {
         TerminalDAO terminalDAO = new TerminalDAO();
         Scanner userInput = new Scanner(System.in);
         String cep;

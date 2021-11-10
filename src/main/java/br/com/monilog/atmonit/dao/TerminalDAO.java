@@ -41,22 +41,32 @@ public class TerminalDAO extends JavaConnect2SQL implements ITerminalDAO {
     }
 
     @Override
-    public Integer checkMachineRegisterSQL(String macAddress, Integer idCompany) {
-        ConnectionFactory config = new ConnectionFactory();
-        JdbcTemplate con = new JdbcTemplate(config.getDataSource());
+    public Integer checkMachineRegisterSQL(String macAddress, Integer idCompany) throws SQLException {
+        ConnectionFactory connectionFactory = new ConnectionFactory();
+        Connection connection = connectionFactory.recoverConnection();
 
-        String querySql = String.format("select t.* from terminal as t join company as c on t.fk_company = c.id_company" +
-                " where t.mac_address = '%s' and c.id_company = %d limit 1", macAddress, idCompany);
+        Integer terminalRtn = null;
+        String sql = "select t.* from terminal as t join company as c on t.fk_company = c.id_company" +
+                " where t.mac_address = ? and c.id_company = ? limit 1";
+        try (PreparedStatement statement = connection.prepareStatement(
+                sql, Statement.RETURN_GENERATED_KEYS)) {
+            statement.setString(1, macAddress);
+            statement.setInt(2, idCompany);
+            statement.execute();
 
-        List<Terminal> terminal = con.query(
-                querySql,
-                new BeanPropertyRowMapper(Terminal.class)
-        );
+            ResultSet rs = statement.getResultSet();
 
-        if (terminal.isEmpty()) {
-            return null;
+            while (rs.next()) {
+                terminalRtn = rs.getInt("id_terminal");
+            }
+
+            if (terminalRtn == null) {
+                terminalRtn = null;
+            }
+            connection.close();
         }
-        return terminal.get(0).getIdTerminal();
+
+        return terminalRtn;
     }
 
     public Integer saveAzure(Terminal terminal) {
@@ -92,30 +102,33 @@ public class TerminalDAO extends JavaConnect2SQL implements ITerminalDAO {
     }
 
     @Override
-    public Integer saveSQL(Terminal terminal) {
+    public Integer saveSQL(Terminal terminal) throws SQLException {
+        ConnectionFactory connectionFactory = new ConnectionFactory();
+        Connection connection = connectionFactory.recoverConnection();
 
-        ConnectionFactory config = new ConnectionFactory();
-        JdbcTemplate con = new JdbcTemplate(config.getDataSource());
-        KeyHolder keyHolder = new GeneratedKeyHolder();
+        Integer id_terminal = null;
 
-        String sqlQuery = "Insert into terminal (processor, ram_memory, terminal_storage, cpu_model," +
+        String sql = "Insert into terminal (processor, ram_memory, terminal_storage, cpu_model," +
                 "mac_address, fk_terminal_address, fk_company) " +
                 "values (?, ?, ?, ?, ?, ?, ?)";
+        try (PreparedStatement statement = connection.prepareStatement(sql, Statement.RETURN_GENERATED_KEYS)) {
+            statement.setString(1, terminal.getProcessor());
+            statement.setString(2, terminal.getRamMemory());
+            statement.setString(3, terminal.getTerminalStorage());
+            statement.setString(4, terminal.getCpuModel());
+            statement.setString(5, terminal.getMacAddress());
+            statement.setInt(6, terminal.getIdTerminalAddress());
+            statement.setInt(7, terminal.getIdCompany());
+            statement.execute();
 
-        con.update(connection -> {
+            ResultSet rs = statement.getGeneratedKeys();
 
-            PreparedStatement preparedStatement = connection.prepareStatement(sqlQuery, Statement.RETURN_GENERATED_KEYS);
-            preparedStatement.setString(1, terminal.getProcessor());
-            preparedStatement.setString(2, terminal.getRamMemory());
-            preparedStatement.setString(3, terminal.getTerminalStorage());
-            preparedStatement.setString(4, terminal.getCpuModel());
-            preparedStatement.setString(5, terminal.getMacAddress());
-            preparedStatement.setInt(6, terminal.getIdTerminalAddress());
-            preparedStatement.setInt(7, terminal.getIdCompany());
+            while (rs.next()) {
+                id_terminal = rs.getInt("id_terminal");
+            }
+            connection.close();
+        }
 
-            return preparedStatement;
-        }, keyHolder);
-
-        return keyHolder.getKey().intValue();
+        return id_terminal;
     }
 }
