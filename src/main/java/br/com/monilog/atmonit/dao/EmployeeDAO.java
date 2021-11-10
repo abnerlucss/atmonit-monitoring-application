@@ -25,7 +25,7 @@ public class EmployeeDAO implements IFuncionarioDAO {
             ResultSet rs = statement.getResultSet();
 
             while(rs.next()){
-                idCompany = rs.getInt("id_company");
+                idCompany = rs.getInt(1);
             }
             connection.close();
         }
@@ -51,7 +51,7 @@ public class EmployeeDAO implements IFuncionarioDAO {
             ResultSet rs = statement.getResultSet();
 
             while (rs.next()) {
-                idCompany = rs.getInt("id_company");
+                idCompany = rs.getInt(1);
             }
             connection.close();
         }
