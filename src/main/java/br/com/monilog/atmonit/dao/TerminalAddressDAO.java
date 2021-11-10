@@ -6,7 +6,7 @@ import br.com.monilog.atmonit.model.Cep;
 
 import java.sql.*;
 
-public class TerminalAddressDAO extends JavaConnect2SQL implements ITerminalAddress {
+public class TerminalAddressDAO implements ITerminalAddress {
     public Integer saveAzure(Cep cep) throws SQLException {
         JavaConnect2SQL javaConnect2SQL = new JavaConnect2SQL();
         Connection connection = javaConnect2SQL.recoverConnectionAzure();

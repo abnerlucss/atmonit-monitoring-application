@@ -10,7 +10,7 @@ import java.sql.*;
 import java.util.ArrayList;
 import java.util.List;
 
-public class TerminalDAO extends JavaConnect2SQL implements ITerminalDAO {
+public class TerminalDAO implements ITerminalDAO {
 
     public Integer checkMachineRegisterAzure(String macAddress, Integer idCompany) throws SQLException {
         JavaConnect2SQL javaConnect2SQL = new JavaConnect2SQL();

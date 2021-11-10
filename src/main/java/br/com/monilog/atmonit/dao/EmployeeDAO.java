@@ -6,7 +6,7 @@ import br.com.monilog.atmonit.model.EmployeeLogin;
 
 import java.sql.*;
 
-public class EmployeeDAO extends JavaConnect2SQL implements IFuncionarioDAO {
+public class EmployeeDAO implements IFuncionarioDAO {
     public Integer loginFuncionarioAzure(EmployeeLogin employeeLogin) throws SQLException {
         JavaConnect2SQL javaConnect2SQL = new JavaConnect2SQL();
         Connection connection = javaConnect2SQL.recoverConnectionAzure();
