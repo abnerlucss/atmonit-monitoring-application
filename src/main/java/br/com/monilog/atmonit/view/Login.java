@@ -6,9 +6,10 @@
 package br.com.monilog.atmonit.view;
 
 import br.com.monilog.atmonit.dao.EmployeeDAO;
-import br.com.monilog.atmonit.dao.TerminalAddressAddressDAO;
+import br.com.monilog.atmonit.dao.TerminalAddressDAO;
 import br.com.monilog.atmonit.dao.TerminalDAO;
-import br.com.monilog.atmonit.database.JavaConnect2SQL;
+import br.com.monilog.atmonit.database.ConnectionFactory;
+import br.com.monilog.atmonit.database.SwitchConnection;
 import br.com.monilog.atmonit.model.EmployeeLogin;
 import br.com.monilog.atmonit.model.Terminal;
 import br.com.monilog.atmonit.service.ComponentRegistrationService;
@@ -22,6 +23,8 @@ import javax.swing.*;
 import java.awt.*;
 import java.net.SocketException;
 import java.net.UnknownHostException;
+import java.sql.Connection;
+import java.sql.SQLException;
 
 /**
  * @author Monilog
@@ -107,6 +110,8 @@ public class Login extends javax.swing.JFrame {
                     e.printStackTrace();
                 } catch (UnknownHostException e) {
                     e.printStackTrace();
+                } catch (SQLException e) {
+                    e.printStackTrace();
                 }
             }
         });
@@ -165,8 +170,8 @@ public class Login extends javax.swing.JFrame {
         pack();
     }// </editor-fold>//GEN-END:initComponents
 
-    public void loginEmployee() throws SocketException, UnknownHostException {
-        TerminalAddressAddressDAO terminalAddressDAO = new TerminalAddressAddressDAO();
+    public void loginEmployee() throws SocketException, UnknownHostException, SQLException {
+        TerminalAddressDAO terminalAddressDAO = new TerminalAddressDAO();
         EmployeeDAO employeeDAO = new EmployeeDAO();
         TerminalDAO terminalDAO = new TerminalDAO();
         TerminalService terminalService = new TerminalService();
@@ -183,14 +188,24 @@ public class Login extends javax.swing.JFrame {
 
         employeeLogin = new EmployeeLogin(login, senha, empresa);
 
-        idEmpresa = employeeDAO.loginFuncionario(employeeLogin);
+        SwitchConnection switchConnection = new SwitchConnection();
+
+        if (switchConnection.getEnvironment().equals("DEV")) {
+            idEmpresa = employeeDAO.loginFuncionarioSQL(employeeLogin);
+        } else if (switchConnection.getEnvironment().equals("PROD")) {
+            idEmpresa = employeeDAO.loginFuncionarioAzure(employeeLogin);
+        }
 
         if (idEmpresa != null) {
             StringsJframe stringsJframe = new StringsJframe();
             System.out.println(stringsJframe.loginSucess);
-            idTerminal = terminalService.checkTerminalRegister(idEmpresa);
+            if (switchConnection.getEnvironment().equals("DEV")) {
+                idTerminal = terminalService.checkTerminalRegisterSQL(idEmpresa);
+            } else if (switchConnection.getEnvironment().equals("PROD")) {
+                idTerminal = terminalService.checkTerminalRegisterAzure(idEmpresa);
+            }
             if (idTerminal != null) {
-                JOptionPane.showMessageDialog(this,stringsJframe.identifySucess );
+                JOptionPane.showMessageDialog(this, stringsJframe.identifySucess);
                 new ComponentRegistrationService(idTerminal);
                 setVisible(false);
                 TrayClass trayClass = new TrayClass(image);
@@ -199,7 +214,11 @@ public class Login extends javax.swing.JFrame {
                 Integer idAddress = saveAddress(terminalAddressDAO);
                 System.out.println(stringsJframe.addressSave + idAddress);
 
-                idTerminal = saveTerminal(terminalDAO, looca, idEmpresa, idAddress);
+                if (switchConnection.getEnvironment().equals("DEV")) {
+                    idTerminal = saveTerminalSQL(terminalDAO, looca, idEmpresa, idAddress);
+                } else if (switchConnection.getEnvironment().equals("PROD")) {
+                    idTerminal = saveTerminalAzure(terminalDAO, looca, idEmpresa, idAddress);
+                }
 
                 System.out.println(stringsJframe.terminalSave + idTerminal);
 
@@ -211,18 +230,25 @@ public class Login extends javax.swing.JFrame {
                 }
             }
         } else {
-            JOptionPane.showMessageDialog(this,stringsJframe.loginIncorrect);
+            JOptionPane.showMessageDialog(this, stringsJframe.loginIncorrect);
         }
     }
 
-    private Integer saveAddress(TerminalAddressAddressDAO terminalAddressDAO) {
-        String cep = JOptionPane.showInputDialog(this, stringsJframe.impossibleIdentify);
 
-        Integer idCep = terminalAddressDAO.save(ClientCep.getAddressByCep(cep));
+    private Integer saveAddress(TerminalAddressDAO terminalAddressDAO) throws SQLException {
+        String cep = JOptionPane.showInputDialog(this, stringsJframe.impossibleIdentify);
+        SwitchConnection switchConnection = new SwitchConnection();
+        Integer idCep = 0;
+
+        if (switchConnection.getEnvironment().equals("DEV")) {
+            idCep = terminalAddressDAO.saveSQL(ClientCep.getAddressByCep(cep));
+        } else if (switchConnection.getEnvironment().equals("PROD")) {
+            idCep = terminalAddressDAO.saveAzure(ClientCep.getAddressByCep(cep));
+        }
         return idCep;
     }
 
-    private Integer saveTerminal(TerminalDAO terminalDAO, Looca looca, Integer idEmpresa, Integer idAddress) throws UnknownHostException, SocketException {
+    private Integer saveTerminalSQL(TerminalDAO terminalDAO, Looca looca, Integer idEmpresa, Integer idAddress) throws UnknownHostException, SocketException, SQLException {
         Terminal terminalToSave = new Terminal(
                 looca.getProcessador().getNome(),
                 looca.getMemoria().getTotal().toString(),
@@ -233,8 +259,21 @@ public class Login extends javax.swing.JFrame {
                 idEmpresa
         );
 
-        return terminalDAO.save(terminalToSave);
+        return terminalDAO.saveSQL(terminalToSave);
+    }
 
+    private Integer saveTerminalAzure(TerminalDAO terminalDAO, Looca looca, Integer idEmpresa, Integer idAddress) throws UnknownHostException, SocketException, SQLException {
+        Terminal terminalToSave = new Terminal(
+                looca.getProcessador().getNome(),
+                looca.getMemoria().getTotal().toString(),
+                looca.getGrupoDeDiscos().getTamanhoTotal().toString(),
+                looca.getProcessador().getMicroarquitetura(),
+                HardwareInfo.getMacAddress(),
+                idAddress,
+                idEmpresa
+        );
+
+        return terminalDAO.saveAzure(terminalToSave);
     }
 
     private void textFieldCompanyActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_textFieldCompanyActionPerformed
@@ -250,7 +289,7 @@ public class Login extends javax.swing.JFrame {
         //textFieldCep
     }//GEN-LAST:event_textFieldCepActionPerformed
 
-    private void btnEnterActionPerformed(java.awt.event.ActionEvent evt) throws SocketException, UnknownHostException {//GEN-FIRST:event_btnEnterActionPerformed
+    private void btnEnterActionPerformed(java.awt.event.ActionEvent evt) throws SocketException, UnknownHostException, SQLException {//GEN-FIRST:event_btnEnterActionPerformed
         loginEmployee();
     }//GEN-LAST:event_btnEnterActionPerformed
 

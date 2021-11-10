@@ -1,37 +1,65 @@
 package br.com.monilog.atmonit.dao;
 
 import br.com.monilog.atmonit.database.ConnectionFactory;
+import br.com.monilog.atmonit.database.JavaConnect2SQL;
 import br.com.monilog.atmonit.model.ComponentRegistration;
-import org.springframework.jdbc.core.JdbcTemplate;
-import org.springframework.jdbc.support.GeneratedKeyHolder;
-import org.springframework.jdbc.support.KeyHolder;
+import br.com.monilog.atmonit.util.FormatDateTime;
 
-import java.sql.PreparedStatement;
-import java.sql.Statement;
+import java.sql.*;
 
 public class ComponentRegistrationDAO implements IComponentRegistrationDAO {
-    @Override
-    public Integer save(ComponentRegistration componentRegistration) {
+    public Integer saveAzure(ComponentRegistration componentRegistration) throws SQLException {
+        JavaConnect2SQL javaConnect2SQL = new JavaConnect2SQL();
+        FormatDateTime formatDateTime = new FormatDateTime();
+        Connection connection = javaConnect2SQL.recoverConnectionAzure();
 
-        ConnectionFactory config = new ConnectionFactory();
-        JdbcTemplate con = new JdbcTemplate(config.getDataSource());
-        KeyHolder keyHolder = new GeneratedKeyHolder();
+        Integer generatedKey = null;
 
+        String sql = "insert into component_registration (name_component, percentage_usage, date_time, frequency, fk_terminal)" +
+                " values (?, ?, ?, ?, ?)";
 
-        String sqlQuery =
-                "insert into component_registration (name_component, percentage_usage, frequency, fk_terminal)" +
-                        " values (?, ?, ?, ?)";
+        try (PreparedStatement statement = connection.prepareStatement(sql, Statement.RETURN_GENERATED_KEYS)) {
+            statement.setString(1, componentRegistration.getNameComponent());
+            statement.setDouble(2, componentRegistration.getPercentageUsage() == null ? 0.0 : componentRegistration.getPercentageUsage());
+            statement.setString(3, formatDateTime.formatDateTimeSQL());
+            statement.setDouble(4, componentRegistration.getFrequency() == null ? 0.0 : componentRegistration.getFrequency());
+            statement.setInt(5, componentRegistration.getIdTerminal());
+            statement.execute();
 
-        con.update(connection -> {
-            PreparedStatement preparedStatement = connection.prepareStatement(sqlQuery, Statement.RETURN_GENERATED_KEYS);
-            preparedStatement.setString(1, componentRegistration.getNameComponent());
-            preparedStatement.setDouble(2, componentRegistration.getPercentageUsage() == null ? 0.0: componentRegistration.getPercentageUsage());
-            preparedStatement.setDouble(3, componentRegistration.getFrequency() == null ? 0.0 : componentRegistration.getFrequency());
-            preparedStatement.setInt(4, componentRegistration.getIdTerminal());
+            ResultSet rs = statement.getGeneratedKeys();
 
-            return preparedStatement;
-        }, keyHolder);
+            while (rs.next()) {
+                generatedKey = rs.getInt(1);
+            }
+            connection.close();
+        }
+        return generatedKey;
+    }
 
-        return keyHolder.getKey().intValue();
+    public Integer saveSQL(ComponentRegistration componentRegistration) throws SQLException {
+        ConnectionFactory connectionFactory = new ConnectionFactory();
+        Connection connection = connectionFactory.recoverConnectionSQL();
+
+        Integer component_registration = null;
+
+        String sql = "insert into component_registration (name_component, percentage_usage, frequency, fk_terminal)" +
+                " values (?, ?, ?, ?)";
+
+        try (PreparedStatement statement = connection.prepareStatement(
+                sql, Statement.RETURN_GENERATED_KEYS)) {
+            statement.setString(1, componentRegistration.getNameComponent());
+            statement.setDouble(2, componentRegistration.getPercentageUsage() == null ? 0.0 : componentRegistration.getPercentageUsage());
+            statement.setDouble(3, componentRegistration.getFrequency() == null ? 0.0 : componentRegistration.getFrequency());
+            statement.setInt(4, componentRegistration.getIdTerminal());
+            statement.execute();
+
+            ResultSet rs = statement.getGeneratedKeys();
+
+            while (rs.next()) {
+                component_registration = rs.getInt(1);
+            }
+            connection.close();
+        }
+        return component_registration;
     }
 }

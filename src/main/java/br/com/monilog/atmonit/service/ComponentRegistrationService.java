@@ -1,10 +1,12 @@
 package br.com.monilog.atmonit.service;
 
 import br.com.monilog.atmonit.dao.ComponentRegistrationDAO;
+import br.com.monilog.atmonit.database.SwitchConnection;
 import br.com.monilog.atmonit.model.ComponentRegistration;
 import com.github.britooo.looca.api.core.Looca;
 import com.github.britooo.looca.api.group.discos.Volume;
 
+import java.sql.SQLException;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Timer;
@@ -25,39 +27,57 @@ public class ComponentRegistrationService {
         List<Volume> diskList = looca.getGrupoDeDiscos().getVolumes();
 
         public void run() {
-            ComponentRegistrationDAO componentRegistrationDAO = new ComponentRegistrationDAO();
 
-            List<ComponentRegistration> componentsList = new ArrayList();
+                ComponentRegistrationDAO componentRegistrationDAO = new ComponentRegistrationDAO();
 
-            componentsList.add(new ComponentRegistration(
-                    looca.getProcessador().getUso(),
-                    getFrequency(),
-                    null,
-                    idTerminal,
-                    "Processor"
-            ));
+                List<ComponentRegistration> componentsList = new ArrayList();
 
-            componentsList.add(new ComponentRegistration(
-                    looca.getMemoria().getEmUso().doubleValue(),
-                    null,
-                    null,
-                    idTerminal,
-                    "Ram memory"
-            ));
-
-            for (Integer i = 0; i < diskList.size(); i++) {
                 componentsList.add(new ComponentRegistration(
-                        getPercentageUsageDisk(i),
+                        looca.getProcessador().getUso(),
+                        getFrequency(),
+                        null,
+                        idTerminal,
+                        "Processor"
+                ));
+
+                componentsList.add(new ComponentRegistration(
+                        looca.getMemoria().getEmUso().doubleValue(),
                         null,
                         null,
                         idTerminal,
-                        "Hard Disk " + (i + 1)
+                        "Ram memory"
                 ));
-            }
 
-            for (ComponentRegistration component : componentsList) {
-                componentRegistrationDAO.save(component);
-            }
+                for (Integer i = 0; i < diskList.size(); i++) {
+                    componentsList.add(new ComponentRegistration(
+                            getPercentageUsageDisk(i),
+                            null,
+                            null,
+                            idTerminal,
+                            "Hard Disk " + (i + 1)
+                    ));
+                }
+
+                SwitchConnection switchConnection = new SwitchConnection();
+
+                if (switchConnection.getEnvironment().equals("DEV")) {
+                    for (ComponentRegistration component : componentsList) {
+                        try {
+                            componentRegistrationDAO.saveSQL(component);
+                        } catch (SQLException e) {
+                            e.printStackTrace();
+                        }
+                    }
+                } else if (switchConnection.getEnvironment().equals("PROD")) {
+                    for (ComponentRegistration component : componentsList) {
+                        try {
+                            componentRegistrationDAO.saveAzure(component);
+                        } catch (SQLException e) {
+                            e.printStackTrace();
+                        }
+                    }
+                }
+
         }
 
         private double getPercentageUsageDisk(Integer i) {

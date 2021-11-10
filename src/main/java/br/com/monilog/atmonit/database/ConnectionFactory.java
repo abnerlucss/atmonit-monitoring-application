@@ -1,21 +1,16 @@
 package br.com.monilog.atmonit.database;
 
-import org.apache.commons.dbcp2.BasicDataSource;
+
+import java.sql.Connection;
+import java.sql.DriverManager;
+import java.sql.SQLException;
 
 public class ConnectionFactory {
-    private BasicDataSource dataSource;
 
-
-
-    public ConnectionFactory() {
-        dataSource = new BasicDataSource();
-        dataSource.setDriverClassName("com.mysql.cj.jdbc.Driver");
-        dataSource.setUrl("jdbc:mysql://localhost:3306/atmonit");
-        dataSource.setUsername("atmonit");
-        dataSource.setPassword("bandtec");
-    }
-
-    public BasicDataSource getDataSource() {
-        return dataSource;
+    public Connection recoverConnectionSQL() throws SQLException {
+        return DriverManager.getConnection(
+                "jdbc:mysql://localhost:3306/atmonit?useTimezone=true&serverTimezone=UTC",
+                "atmonit",
+                "bandtec");
     }
 }
