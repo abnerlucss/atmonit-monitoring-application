@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="dataSourceStorageLocal" created-in="IU-212.5457.46">
+    <data-source name="atmonit@localhost" uuid="2a453519-1259-48db-a525-ff38e89bfd23">
+      <database-info product="MySQL" version="8.0.24" jdbc-version="4.2" driver-name="MySQL Connector/J" driver-version="mysql-connector-java-8.0.25 (Revision: 08be9e9b4cba6aa115f9b27b215887af40b159e0)" dbms="MYSQL" exact-version="8.0.24">
+        <extra-name-characters>#@</extra-name-characters>
+        <identifier-quote-string>`</identifier-quote-string>
+      </database-info>
+      <case-sensitivity plain-identifiers="lower" quoted-identifiers="lower" />
+      <secret-storage>master_key</secret-storage>
+      <user-name>atmonit</user-name>
+      <schema-mapping />
+    </data-source>
+    <data-source name="Azure SQL Database - bdProjeto2sem@srvalunoatmonit.database.windows.net" uuid="ba7545ad-4add-4d32-9fb6-a15f3cad89bd">
+      <database-info product="Microsoft SQL Server" version="12.00.2255" jdbc-version="4.2" driver-name="Microsoft JDBC Driver 9.4 for SQL Server" driver-version="9.4.0.0" dbms="AZURE" exact-version="12.0.2255" exact-driver-version="9.4">
+        <extra-name-characters>$#@</extra-name-characters>
+        <identifier-quote-string>&quot;</identifier-quote-string>
+      </database-info>
+      <case-sensitivity plain-identifiers="mixed" quoted-identifiers="mixed" />
+      <secret-storage>master_key</secret-storage>
+      <user-name>atmonit</user-name>
+      <schema-mapping />
+    </data-source>
+  </component>
+</project>

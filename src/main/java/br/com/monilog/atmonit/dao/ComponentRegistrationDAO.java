@@ -6,8 +6,6 @@ import br.com.monilog.atmonit.model.ComponentRegistration;
 import br.com.monilog.atmonit.util.FormatDateTime;
 
 import java.sql.*;
-import java.time.LocalDateTime;
-import java.time.format.DateTimeFormatter;
 
 public class ComponentRegistrationDAO extends JavaConnect2SQL implements IComponentRegistrationDAO {
     public Integer saveAzure(ComponentRegistration componentRegistration) throws SQLException {
