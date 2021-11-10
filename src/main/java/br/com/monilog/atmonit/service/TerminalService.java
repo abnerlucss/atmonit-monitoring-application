@@ -26,7 +26,7 @@ public class TerminalService {
         return null;
     }
 
-    public Integer checkTerminalRegisterAzure(Integer idEmpresa) throws SocketException, UnknownHostException {
+    public Integer checkTerminalRegisterAzure(Integer idEmpresa) throws SocketException, UnknownHostException, SQLException {
         TerminalDAO terminalDAO = new TerminalDAO();
         Scanner userInput = new Scanner(System.in);
         String cep;

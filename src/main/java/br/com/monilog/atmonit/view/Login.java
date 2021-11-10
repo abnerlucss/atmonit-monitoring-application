@@ -262,7 +262,7 @@ public class Login extends javax.swing.JFrame {
         return terminalDAO.saveSQL(terminalToSave);
     }
 
-    private Integer saveTerminalAzure(TerminalDAO terminalDAO, Looca looca, Integer idEmpresa, Integer idAddress) throws UnknownHostException, SocketException {
+    private Integer saveTerminalAzure(TerminalDAO terminalDAO, Looca looca, Integer idEmpresa, Integer idAddress) throws UnknownHostException, SocketException, SQLException {
         Terminal terminalToSave = new Terminal(
                 looca.getProcessador().getNome(),
                 looca.getMemoria().getTotal().toString(),

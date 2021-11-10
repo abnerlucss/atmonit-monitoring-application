@@ -70,7 +70,11 @@ public class ComponentRegistrationService {
                     }
                 } else if (switchConnection.getEnvironment().equals("PROD")) {
                     for (ComponentRegistration component : componentsList) {
-                        componentRegistrationDAO.saveAzure(component);
+                        try {
+                            componentRegistrationDAO.saveAzure(component);
+                        } catch (SQLException e) {
+                            e.printStackTrace();
+                        }
                     }
                 }
 
