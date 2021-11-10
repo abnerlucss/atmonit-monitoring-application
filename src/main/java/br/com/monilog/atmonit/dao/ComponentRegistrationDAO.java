@@ -3,26 +3,29 @@ package br.com.monilog.atmonit.dao;
 import br.com.monilog.atmonit.database.ConnectionFactory;
 import br.com.monilog.atmonit.database.JavaConnect2SQL;
 import br.com.monilog.atmonit.model.ComponentRegistration;
-import org.springframework.jdbc.support.GeneratedKeyHolder;
-import org.springframework.jdbc.support.KeyHolder;
+import br.com.monilog.atmonit.util.FormatDateTime;
 
 import java.sql.*;
+import java.time.LocalDateTime;
+import java.time.format.DateTimeFormatter;
 
 public class ComponentRegistrationDAO extends JavaConnect2SQL implements IComponentRegistrationDAO {
     public Integer saveAzure(ComponentRegistration componentRegistration) throws SQLException {
-   JavaConnect2SQL javaConnect2SQL = new JavaConnect2SQL();
-   Connection connection = javaConnect2SQL.recoverConnectionAzure();
+        JavaConnect2SQL javaConnect2SQL = new JavaConnect2SQL();
+        FormatDateTime formatDateTime = new FormatDateTime();
+        Connection connection = javaConnect2SQL.recoverConnectionAzure();
 
-   Integer generatedKey = null;
+        Integer generatedKey = null;
 
-   String sql = "insert into component_registration (name_component, percentage_usage, frequency, fk_terminal)" +
-           " values (?, ?, ?, ?)";
+        String sql = "insert into component_registration (name_component, percentage_usage, date_time, frequency, fk_terminal)" +
+                " values (?, ?, ?, ?, ?)";
 
-        try (PreparedStatement statement = connection.prepareStatement(sql, Statement.RETURN_GENERATED_KEYS)){
+        try (PreparedStatement statement = connection.prepareStatement(sql, Statement.RETURN_GENERATED_KEYS)) {
             statement.setString(1, componentRegistration.getNameComponent());
             statement.setDouble(2, componentRegistration.getPercentageUsage() == null ? 0.0 : componentRegistration.getPercentageUsage());
-            statement.setDouble(3, componentRegistration.getFrequency() == null ? 0.0 : componentRegistration.getFrequency());
-            statement.setInt(4, componentRegistration.getIdTerminal());
+            statement.setString(3, formatDateTime.formatDateTimeSQL());
+            statement.setDouble(4, componentRegistration.getFrequency() == null ? 0.0 : componentRegistration.getFrequency());
+            statement.setInt(5, componentRegistration.getIdTerminal());
             statement.execute();
 
             ResultSet rs = statement.getGeneratedKeys();
