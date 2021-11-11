@@ -28,56 +28,43 @@ public class ComponentRegistrationService {
 
         public void run() {
 
-                ComponentRegistrationDAO componentRegistrationDAO = new ComponentRegistrationDAO();
+            ComponentRegistrationDAO componentRegistrationDAO = new ComponentRegistrationDAO();
 
-                List<ComponentRegistration> componentsList = new ArrayList();
+            List<ComponentRegistration> componentsList = new ArrayList();
 
+            componentsList.add(new ComponentRegistration(
+                    looca.getProcessador().getUso(),
+                    getFrequency(),
+                    null,
+                    idTerminal,
+                    "Processor"
+            ));
+
+            componentsList.add(new ComponentRegistration(
+                    looca.getMemoria().getEmUso().doubleValue(),
+                    null,
+                    null,
+                    idTerminal,
+                    "Ram memory"
+            ));
+
+            for (Integer i = 0; i < diskList.size(); i++) {
                 componentsList.add(new ComponentRegistration(
-                        looca.getProcessador().getUso(),
-                        getFrequency(),
+                        getPercentageUsageDisk(i),
+                        null,
                         null,
                         idTerminal,
-                        "Processor"
+                        "Hard Disk " + (i + 1)
                 ));
+            }
 
-                componentsList.add(new ComponentRegistration(
-                        looca.getMemoria().getEmUso().doubleValue(),
-                        null,
-                        null,
-                        idTerminal,
-                        "Ram memory"
-                ));
-
-                for (Integer i = 0; i < diskList.size(); i++) {
-                    componentsList.add(new ComponentRegistration(
-                            getPercentageUsageDisk(i),
-                            null,
-                            null,
-                            idTerminal,
-                            "Hard Disk " + (i + 1)
-                    ));
+            for (ComponentRegistration component : componentsList) {
+                try {
+                    componentRegistrationDAO.save(component);
+                } catch (SQLException e) {
+                    e.printStackTrace();
                 }
-
-                SwitchConnection switchConnection = new SwitchConnection();
-
-                if (switchConnection.getEnvironment().equals("DEV")) {
-                    for (ComponentRegistration component : componentsList) {
-                        try {
-                            componentRegistrationDAO.saveSQL(component);
-                        } catch (SQLException e) {
-                            e.printStackTrace();
-                        }
-                    }
-                } else if (switchConnection.getEnvironment().equals("PROD")) {
-                    for (ComponentRegistration component : componentsList) {
-                        try {
-                            componentRegistrationDAO.saveAzure(component);
-                        } catch (SQLException e) {
-                            e.printStackTrace();
-                        }
-                    }
-                }
-
+            }
         }
 
         private double getPercentageUsageDisk(Integer i) {

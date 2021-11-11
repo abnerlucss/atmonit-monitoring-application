@@ -5,10 +5,8 @@ public class SwitchConnection {
 //    private String environment = "DEV";
     private String environment = "PROD";
 
-
     public String getEnvironment() {
         return environment;
     }
-
 
 }
