@@ -1,12 +1,16 @@
 package br.com.monilog.atmonit.view.systemtray;
 
+import br.com.monilog.atmonit.view.Log;
 import br.com.monilog.atmonit.view.StringsJframe;
 
 import javax.swing.*;
 import java.awt.*;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
+import java.io.IOException;
 import java.net.URL;
+import java.util.logging.Level;
+import java.util.logging.Logger;
 
 public class TrayClass {
     static TrayIcon trayIcon;
@@ -36,6 +40,11 @@ public class TrayClass {
             @Override
             public void actionPerformed(ActionEvent e) {
                 System.exit(0);
+                try {
+                    Log.logClose();
+                } catch (IOException ex) {
+                    Logger.getLogger(TrayClass.class.getName()).log(Level.SEVERE, null, ex);
+                }
             }
         });
 
