@@ -24,7 +24,7 @@
                     </descriptorRefs>
                     <archive>
                         <manifest>
-                            <mainClass>br.com.monilog.atmonit.Application</mainClass>
+                            <mainClass>br.com.monilog.atmonit.ApplicationCLI</mainClass>
                         </manifest>
                     </archive>
                 </configuration>
