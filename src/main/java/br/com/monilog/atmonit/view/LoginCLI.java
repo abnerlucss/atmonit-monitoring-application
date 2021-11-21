@@ -30,7 +30,7 @@ import java.util.Scanner;
 /**
  * @author Monilog
  */
-public class LoginCLI extends javax.swing.JFrame {
+public class LoginCLI {
 
 
     public LoginCLI() {
