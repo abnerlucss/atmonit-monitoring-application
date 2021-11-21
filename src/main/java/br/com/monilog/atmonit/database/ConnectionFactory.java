@@ -9,7 +9,7 @@ public class ConnectionFactory {
 
     public Connection recoverConnectionSQL() throws SQLException {
         return DriverManager.getConnection(
-                "jdbc:mysql://localhost:3306/atmonit?useTimezone=true&serverTimezone=UTC",
+                "jdbc:mysql://3.95.157.176:3306/atmonit?useTimezone=true&serverTimezone=UTC",
                 "atmonit",
                 "bandtec");
     }
