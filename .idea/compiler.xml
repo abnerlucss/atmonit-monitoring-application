@@ -7,8 +7,10 @@
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <module name="atmonit" />
-        <module name="atmonit-monitoring-application" />
       </profile>
     </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="atmonit-monitoring-application" target="11" />
+    </bytecodeTargetLevel>
   </component>
 </project>
