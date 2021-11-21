@@ -4,8 +4,8 @@ WORKDIR /atmonit-monitoring-application
 
 RUN cd /atmonit-monitoring-application
 
-COPY /target/atmonit-1.0-SNAPSHOT-jar-with-dependencies.jar /atmonit-monitoring-application/
+COPY /out/artifacts/atmonit_monitoring_application_jar /atmonit-monitoring-application/
 
 RUN cd /atmonit-monitoring-application/
 
-CMD java -jar /atmonit-monitoring-application/atmonit-1.0-SNAPSHOT-jar-with-dependencies.jar
+CMD java -jar /atmonit-monitoring-application/atmonit_monitoring_application_jar/atmonit-monitoring-application.jar
