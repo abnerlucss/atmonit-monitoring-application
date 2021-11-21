@@ -1,0 +1,17 @@
+version: '3'
+
+services:
+  db:
+    image: mysql:latest
+    restart: always
+    environment:
+      MYSQL_ROOT_PASSWORD: bandtec
+      MYSQL_DATABASE: atmonit
+      MYSQL_USER: atmonit
+      MYSQL_PASSWORD: bandtec
+    ports:
+      - "3306:3306"
+    security_opt:
+      - seccomp:unconfined
+    volumes:
+      - ./docker/db:/var/lib/mysql
