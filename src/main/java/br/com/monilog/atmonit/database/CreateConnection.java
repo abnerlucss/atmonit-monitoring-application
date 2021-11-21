@@ -1,20 +1,18 @@
 package br.com.monilog.atmonit.database;
 
-import br.com.monilog.atmonit.view.Log;
-import java.io.IOException;
+import br.com.monilog.atmonit.util.Log;
+
 import java.sql.Connection;
 import java.sql.SQLException;
+import java.util.logging.Level;
 
 public class CreateConnection {
 
     public Connection createConnection() throws SQLException {
-        
-        Connection connection = null;
-        
-        try{
-             SwitchConnection switchConnection = new SwitchConnection();
+        Log.logr.info("asdasdasdasdasdasdasdasdasdasd");
 
-            connection = null;
+        Connection connection = null;
+        SwitchConnection switchConnection = new SwitchConnection();
 
         if (switchConnection.getEnvironment().equals("DEV")) {
             ConnectionFactory connectionFactory = new ConnectionFactory();
@@ -23,10 +21,7 @@ public class CreateConnection {
             JavaConnect2SQL javaConnect2SQL = new JavaConnect2SQL();
             connection = javaConnect2SQL.recoverConnectionAzure();
         }
-        Log.logWriter("> Conexão realizada <");
-        }catch(Exception ex){
-        //Configurar classe de excessão;
-    }
+
         return connection;
     }
 }
