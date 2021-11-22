@@ -1,14 +1,20 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
 package br.com.monilog.atmonit.dao;
 
-/**
- *
- * @author jonas
- */
-public class ActivityLogDAO {
+import br.com.monilog.atmonit.database.CreateConnection;
+import br.com.monilog.atmonit.model.ActivityLog;
+import java.sql.SQLException;
+import java.sql.*;
+
+public class ActivityLogDAO implements IActivityLogDAO {
+
+    @Override
+    public Integer save(ActivityLog activityLog) throws SQLException {
+        Connection connection = new CreateConnection().createConnection();
+        
+        Integer generatedKey = null;
+
+        String sql = "insert into component_registration (name_component, percentage_usage, date_time, frequency, fk_terminal)" +
+                " values (?, ?, ?, ?, ?)";
+    }
     
 }
