@@ -5,7 +5,7 @@ public class ActivityLog {
     private Boolean activeSession;
     private Integer idTerminal;
     
-    public ActivityLog(Boolean actBoolean, Integer idTInteger) {
+    public ActivityLog(Boolean activeSession, Integer idTerminal) {
         this.activeSession = activeSession;
         this.idTerminal = idTerminal;
     }
@@ -22,15 +22,7 @@ public class ActivityLog {
         return activeSession;
     }
 
-    public void setActiveSession(Boolean activeSession) {
-        this.activeSession = activeSession;
-    }
-
     public Integer getIdTerminal() {
         return idTerminal;
-    }
-
-    public void setIdTerminal(Integer idTerminal) {
-        this.idTerminal = idTerminal;
     }
 }
