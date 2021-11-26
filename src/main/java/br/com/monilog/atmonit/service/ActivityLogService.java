@@ -5,13 +5,22 @@
  */
 package br.com.monilog.atmonit.service;
 
+import br.com.monilog.atmonit.dao.ActivityLogDAO;
+import br.com.monilog.atmonit.model.ActivityLog;
 import com.github.britooo.looca.api.core.Looca;
+
+import java.sql.SQLException;
 
 /**
  *
  * @author jonas
  */
-public class QueueEstimateService {
+public class ActivityLogService {
+    private Integer idTerminal;
+
+    public ActivityLogService(Integer idTerminal) {
+        this.idTerminal = idTerminal;
+    }
 
     public void startLoop() {
         Boolean terminalEmUso = false; //Dado mocado
@@ -39,8 +48,14 @@ public class QueueEstimateService {
 
             @Override
             public void run() {
-                
+                ActivityLogDAO activityLogDAO = new ActivityLogDAO();
+                ActivityLog activityLog = new ActivityLog(activeSession,19);
 
+                try {
+                    activityLogDAO.save(activityLog);
+                } catch (SQLException e) {
+                    e.printStackTrace();
+                }
             }
         }.start();
     }
