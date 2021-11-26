@@ -13,8 +13,7 @@ public class ActivityLogDAO implements IActivityLogDAO {
         
         Integer generatedKey = null;
 
-        String sql = "insert into component_registration (name_component, percentage_usage, date_time, frequency, fk_terminal)" +
-                " values (?, ?, ?, ?, ?)";
+        String sql = "INSERT INTO activity_log (active_terminal,fk_terminal) VALUES (?,?);)";
     }
     
 }
