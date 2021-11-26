@@ -34,7 +34,7 @@ public class ComponentRegistrationService {
 
             componentsList.add(new ComponentRegistration(
                     looca.getProcessador().getUso(),
-                    getFrequency(),
+                    getPercentageUsageFrequency(),
                     null,
                     idTerminal,
                     "Processor"
@@ -71,8 +71,8 @@ public class ComponentRegistrationService {
             return (double) (diskList.get(i).getTotal() * ((diskList.get(i).getTotal() - diskList.get(i).getDisponivel()) / 100));
         }
 
-        private double getFrequency() {
-            return looca.getProcessador().getFrequencia() * (looca.getProcessador().getFrequencia() - looca.getProcessador().getUso() / 100);
+        private double getPercentageUsageFrequency() {
+            return 100 - (looca.getProcessador().getFrequencia() * (looca.getProcessador().getFrequencia() - looca.getProcessador().getUso() / 100));
         }
     }
 }
