@@ -1,5 +1,7 @@
 package br.com.monilog.atmonit.util;
 
+import Log.Log;
+
 import java.net.InetAddress;
 import java.net.NetworkInterface;
 import java.net.SocketException;
@@ -7,6 +9,10 @@ import java.net.UnknownHostException;
 
 public class HardwareInfo {
     public static String getMacAddress() throws UnknownHostException, SocketException {
+        Log log = new Log();
+
+        log.saveLog("INFO: Coletando endereço mac");
+
         InetAddress localHost = InetAddress.getLocalHost();
         NetworkInterface ni = NetworkInterface.getByInetAddress(localHost);
         byte[] hardwareAddress = ni.getHardwareAddress();

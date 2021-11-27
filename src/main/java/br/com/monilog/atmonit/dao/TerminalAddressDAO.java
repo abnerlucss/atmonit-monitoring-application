@@ -1,13 +1,18 @@
 package br.com.monilog.atmonit.dao;
 
+import Log.Log;
 import br.com.monilog.atmonit.database.CreateConnection;
 import br.com.monilog.atmonit.model.Cep;
 
 import java.sql.*;
 
 public class TerminalAddressDAO implements ITerminalAddress {
+
     public Integer save(Cep cep) throws SQLException {
+        Log log = new Log();
+
         Connection connection = new CreateConnection().createConnection();
+        log.saveLog("INFO: Registrando endereço do terminal");
 
         Integer generatedKey = null;
 

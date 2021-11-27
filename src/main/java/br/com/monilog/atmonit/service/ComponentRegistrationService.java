@@ -1,9 +1,11 @@
 package br.com.monilog.atmonit.service;
 
+import Log.Log;
 import br.com.monilog.atmonit.dao.ComponentRegistrationDAO;
 import br.com.monilog.atmonit.model.ComponentRegistration;
 import com.github.britooo.looca.api.core.Looca;
 import com.github.britooo.looca.api.group.discos.Volume;
+
 import java.sql.SQLException;
 import java.util.ArrayList;
 import java.util.List;
@@ -27,7 +29,11 @@ public class ComponentRegistrationService {
         List<Volume> diskList = looca.getGrupoDeDiscos().getVolumes();
 
         public void run() {
+            Log log = new Log();
 
+            log.saveLog("INFO: capturando dados do processador");
+            log.saveLog("INFO: capturando dados da memória ram");
+            log.saveLog("INFO: capturando dados do disco");
             ComponentRegistrationDAO componentRegistrationDAO = new ComponentRegistrationDAO();
 
             List<ComponentRegistration> componentsList = new ArrayList();

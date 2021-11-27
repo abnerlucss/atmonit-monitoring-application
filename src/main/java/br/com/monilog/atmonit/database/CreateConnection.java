@@ -16,14 +16,14 @@ public class CreateConnection {
             if (switchConnection.getEnvironment().equals("DEV")) {
                 ConnectionFactory connectionFactory = new ConnectionFactory();
                 connection = connectionFactory.recoverConnectionSQL();
-                logs.saveLog("Conexao com o banco local realizada!");
+                logs.saveLog("INFO: Conexao com o banco local realizada!");
             } else if (switchConnection.getEnvironment().equals("PROD")) {
                 JavaConnect2SQL javaConnect2SQL = new JavaConnect2SQL();
                 connection = javaConnect2SQL.recoverConnectionAzure();
-                logs.saveLog("Conexao com a nuvem realizada!");
+                logs.saveLog("INFO: Conexao com a nuvem realizada!");
             }
         }catch(SQLException ex){
-            logs.saveLog("Falha ao criar conexao");
+            logs.saveLog("ERROR: Falha ao criar conexao");
         }
         return connection;
     }

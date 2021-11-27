@@ -30,7 +30,7 @@ import java.sql.SQLException;
  */
 public class Login extends javax.swing.JFrame {
     StringsJframe stringsJframe = new StringsJframe();
-     Log logs = new Log();
+    Log logs = new Log();
     Image image = Toolkit.getDefaultToolkit().getImage(stringsJframe.image);
 
     public Login() {
@@ -198,9 +198,6 @@ public class Login extends javax.swing.JFrame {
             StringsJframe stringsJframe = new StringsJframe();
             System.out.println(stringsJframe.loginSucess);
             logs.saveLog("Login realizado com sucesso");
-
-            //tirar
-            logs.saveLog("Iniciando aplicação");
 
             idTerminal = terminalService.checkTerminalRegister(idEmpresa);
 

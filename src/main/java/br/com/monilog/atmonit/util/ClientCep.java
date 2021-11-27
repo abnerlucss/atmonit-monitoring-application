@@ -1,5 +1,6 @@
 package br.com.monilog.atmonit.util;
 
+import Log.Log;
 import br.com.monilog.atmonit.model.Cep;
 import com.google.gson.Gson;
 
@@ -12,7 +13,9 @@ import java.net.URLConnection;
 public class ClientCep {
 
     public static Cep getAddressByCep(String cep) {
+        Log log = new Log();
 
+        log.saveLog("INFO: Buscando dados viacep");
         Gson gson = new Gson();
 
         String json;

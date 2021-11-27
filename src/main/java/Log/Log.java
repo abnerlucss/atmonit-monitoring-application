@@ -16,30 +16,31 @@ import java.util.List;
 
 public class Log {
 
-    public static List <String> listLog = new ArrayList<>();
+    List<String> listLog = new ArrayList<>();
     DateTimeFormatter dateLog = DateTimeFormatter.ofPattern("dd/MM/yyyy HH:mm");
 
-    public static void createFile(String path)throws IOException{
+    public static void createFile(String path) throws IOException {
         File file = new File("Logs");
         file.getParentFile().mkdirs();
         file.createNewFile();
     }
 
-    public void saveLog(String log){
-        listLog.add(String.format(log + " ---->    " + dateLog.format(LocalDateTime.now())));
-        try{
+    public void saveLog(String log) {
+        listLog.add(String.format(dateLog.format(LocalDateTime.now()) + " ---->    " + log));
+        try {
             writeLog();
-        }catch(IOException ex){
+        } catch (IOException ex) {
             ex.printStackTrace();
         }
     }
 
-    public void writeLog()throws IOException{
+    public void writeLog() throws IOException {
         File file = new File("Logs/log.txt");
 //        file.createNewFile();
-        FileWriter log = new FileWriter(file);
+        FileWriter log = new FileWriter(file, true);
+
         PrintWriter saveLog = new PrintWriter(log);
-        for(String a : listLog){
+        for (String a : listLog) {
             saveLog.println(a);
         }
         log.close();

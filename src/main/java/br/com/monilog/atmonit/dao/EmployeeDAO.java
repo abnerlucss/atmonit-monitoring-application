@@ -1,8 +1,6 @@
 package br.com.monilog.atmonit.dao;
 
-import br.com.monilog.atmonit.database.ConnectionFactory;
 import br.com.monilog.atmonit.database.CreateConnection;
-import br.com.monilog.atmonit.database.JavaConnect2SQL;
 import br.com.monilog.atmonit.model.EmployeeLogin;
 
 import java.sql.*;

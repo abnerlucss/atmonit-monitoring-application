@@ -1,10 +1,8 @@
 package br.com.monilog.atmonit.view;
 
-import javax.swing.*;
-
 public class StringsJframe {
     //PC RAFAEL
-    public String image = "C:\\Users\\Dell\\Downloads\\Repositories\\atmonit-monitoring-application\\src\\main\\java\\br\\com\\monilog\\atmonit\\view\\systemtray\\icon.png";
+    public String image = "src\\main\\java\\br\\com\\monilog\\atmonit\\view\\systemtray\\icon.png";
     //PC ABNER
     //public String image = "C:\\Users\\abner\\Documents\\atmonit\\src\\main\\java\\br\\com\\monilog\\atmonit\\view\\systemtray\\icon.png";
     public String loginSucess = "Login realizado com sucesso!";
