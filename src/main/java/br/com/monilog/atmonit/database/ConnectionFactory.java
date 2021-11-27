@@ -12,7 +12,5 @@ public class ConnectionFactory {
                 "jdbc:mysql://localhost:3306/atmonit?useTimezone=true&serverTimezone=UTC",
                 "atmonit",
                 "bandtec");
-    }
-
-    
+    } 
 }

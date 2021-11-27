@@ -15,15 +15,14 @@ public class ComponentRegistrationDAO implements IComponentRegistrationDAO {
 
         Integer generatedKey = null;
 
-        String sql = "insert into component_registration (name_component, percentage_usage, date_time, frequency, fk_terminal)" +
-                " values (?, ?, ?, ?, ?)";
+        String sql = "insert into component_registration (name_component, percentage_usage, date_time, fk_terminal)" +
+                " values (?, ?, ?, ?)";
 
         try (PreparedStatement statement = connection.prepareStatement(sql, Statement.RETURN_GENERATED_KEYS)) {
             statement.setString(1, componentRegistration.getNameComponent());
             statement.setDouble(2, componentRegistration.getPercentageUsage() == null ? 0.0 : componentRegistration.getPercentageUsage());
             statement.setString(3, formatDateTime.formatDateTimeSQL());
-            statement.setDouble(4, componentRegistration.getFrequency() == null ? 0.0 : componentRegistration.getFrequency());
-            statement.setInt(5, componentRegistration.getIdTerminal());
+            statement.setInt(4, componentRegistration.getIdTerminal());
             statement.execute();
 
             ResultSet rs = statement.getGeneratedKeys();
