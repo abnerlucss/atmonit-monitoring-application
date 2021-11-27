@@ -31,9 +31,9 @@ public class ComponentRegistrationService {
         public void run() {
             Log log = new Log();
 
-            log.saveLog("INFO: capturando dados do processador");
-            log.saveLog("INFO: capturando dados da memória ram");
-            log.saveLog("INFO: capturando dados do disco");
+            log.saveLog("INFO: Capturando dados do processador.");
+            log.saveLog("INFO: Capturando dados da memoria ram.");
+            log.saveLog("INFO: Capturando dados do disco.");
             ComponentRegistrationDAO componentRegistrationDAO = new ComponentRegistrationDAO();
 
             List<ComponentRegistration> componentsList = new ArrayList();

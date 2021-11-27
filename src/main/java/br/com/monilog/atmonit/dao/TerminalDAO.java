@@ -12,7 +12,7 @@ public class TerminalDAO implements ITerminalDAO {
         Log log = new Log();
 
         Connection connection = new CreateConnection().createConnection();
-        log.saveLog("INFO: Checkando registro da máquina");
+        log.saveLog("INFO: Checando registro da maquina.");
         Integer terminalRtn = null;
         String sql = "select t.* from terminal as t join company as c on t.fk_company = c.id_company" +
                 " where t.mac_address = ? and c.id_company = ?";
@@ -45,7 +45,7 @@ public class TerminalDAO implements ITerminalDAO {
         Connection connection = new CreateConnection().createConnection();
 
         Integer generatedKey = null;
-        log.saveLog("INFO: Salvando dados da máquina");
+        log.saveLog("INFO: Salvando dados da máquina.");
 
         String sql = "Insert into terminal (processor, ram_memory, terminal_storage, cpu_model," +
                 "mac_address, fk_terminal_address, fk_company) values (?, ?, ?, ?, ?, ?, ?)";

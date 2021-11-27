@@ -15,7 +15,7 @@ public class ClientCep {
     public static Cep getAddressByCep(String cep) {
         Log log = new Log();
 
-        log.saveLog("INFO: Buscando dados viacep");
+        log.saveLog("INFO: Buscando dados viacep.");
         Gson gson = new Gson();
 
         String json;

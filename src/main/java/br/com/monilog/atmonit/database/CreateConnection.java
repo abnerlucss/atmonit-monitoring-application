@@ -23,7 +23,7 @@ public class CreateConnection {
                 logs.saveLog("INFO: Conexao com a nuvem realizada!");
             }
         }catch(SQLException ex){
-            logs.saveLog("ERROR: Falha ao criar conexao");
+            logs.saveLog("ERROR: Falha ao criar conexao.");
         }
         return connection;
     }

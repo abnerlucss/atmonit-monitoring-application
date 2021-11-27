@@ -11,7 +11,8 @@ public class AplicationCLI {
     public static void main(String[] args) throws SocketException, UnknownHostException, SQLException {
         Log log = new Log();
 
-        log.saveLog("INFO: Iniciando a aplicação via CLI");
+        log.saveLog("INFO: Iniciando a aplicacao via CLI.");
+
         LoginCLI loginCLI = new LoginCLI();
         loginCLI.loginEmployee();
 

@@ -11,7 +11,7 @@ public class HardwareInfo {
     public static String getMacAddress() throws UnknownHostException, SocketException {
         Log log = new Log();
 
-        log.saveLog("INFO: Coletando endereço mac");
+        log.saveLog("INFO: Coletando endereco MAC.");
 
         InetAddress localHost = InetAddress.getLocalHost();
         NetworkInterface ni = NetworkInterface.getByInetAddress(localHost);

@@ -12,7 +12,7 @@ public class TerminalAddressDAO implements ITerminalAddress {
         Log log = new Log();
 
         Connection connection = new CreateConnection().createConnection();
-        log.saveLog("INFO: Registrando endereço do terminal");
+        log.saveLog("INFO: Registrando endereco do terminal.");
 
         Integer generatedKey = null;
 

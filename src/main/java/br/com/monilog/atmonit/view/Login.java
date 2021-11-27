@@ -104,16 +104,16 @@ public class Login extends javax.swing.JFrame {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 try {
                     btnEnterActionPerformed(evt);
-                    logs.saveLog("INFO: Operacao em andamento");
+                    logs.saveLog("INFO: Operacao em andamento.");
                 } catch (SocketException e) {
                     e.printStackTrace();
-                    logs.saveLog("ERROR: Falha na rede");
+                    logs.saveLog("ERROR: Falha na rede.");
                 } catch (UnknownHostException e) {
                     e.printStackTrace();
-                    logs.saveLog("ERROR: Host Desconhecido");
+                    logs.saveLog("ERROR: Host Desconhecido.");
                 } catch (SQLException e) {
                     e.printStackTrace();
-                    logs.saveLog("ERROR: Falha ao buscar no banco");
+                    logs.saveLog("ERROR: Falha ao buscar no banco.");
                 }
             }
         });
@@ -195,7 +195,7 @@ public class Login extends javax.swing.JFrame {
         idEmpresa = employeeDAO.loginFuncionario(employeeLogin);
 
         if (idEmpresa != null) {
-            logs.saveLog("INFO: Login realizado com sucesso");
+            logs.saveLog("INFO: Login realizado com sucesso.");
             StringsJframe stringsJframe = new StringsJframe();
             System.out.println(stringsJframe.loginSucess);
 
