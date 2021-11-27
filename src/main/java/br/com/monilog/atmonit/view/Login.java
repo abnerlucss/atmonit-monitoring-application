@@ -104,16 +104,16 @@ public class Login extends javax.swing.JFrame {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 try {
                     btnEnterActionPerformed(evt);
-                    logs.saveLog("Operação em andamento");
+                    logs.saveLog("INFO: Operacao em andamento");
                 } catch (SocketException e) {
                     e.printStackTrace();
-                    logs.saveLog("Falha na rede");
+                    logs.saveLog("ERROR: Falha na rede");
                 } catch (UnknownHostException e) {
                     e.printStackTrace();
-                    logs.saveLog("Host Desconhecido");
+                    logs.saveLog("ERROR: Host Desconhecido");
                 } catch (SQLException e) {
                     e.printStackTrace();
-                    logs.saveLog("Falha ao buscar no banco");
+                    logs.saveLog("ERROR: Falha ao buscar no banco");
                 }
             }
         });
@@ -195,9 +195,9 @@ public class Login extends javax.swing.JFrame {
         idEmpresa = employeeDAO.loginFuncionario(employeeLogin);
 
         if (idEmpresa != null) {
+            logs.saveLog("INFO: Login realizado com sucesso");
             StringsJframe stringsJframe = new StringsJframe();
             System.out.println(stringsJframe.loginSucess);
-            logs.saveLog("Login realizado com sucesso");
 
             idTerminal = terminalService.checkTerminalRegister(idEmpresa);
 
@@ -223,7 +223,7 @@ public class Login extends javax.swing.JFrame {
                 }
             }
         } else {
-            logs.saveLog("Falha ao relizar login");
+            logs.saveLog("ERROR: Falha ao relizar login");
             JOptionPane.showMessageDialog(this, stringsJframe.loginIncorrect);
         }
     }

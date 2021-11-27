@@ -17,7 +17,7 @@ import java.util.List;
 public class Log {
 
     List<String> listLog = new ArrayList<>();
-    DateTimeFormatter dateLog = DateTimeFormatter.ofPattern("dd/MM/yyyy HH:mm");
+    DateTimeFormatter dateLog = DateTimeFormatter.ofPattern("dd/MM/yyyy HH:mm:ss.SSS");
 
     public static void createFile(String path) throws IOException {
         File file = new File("Logs");
