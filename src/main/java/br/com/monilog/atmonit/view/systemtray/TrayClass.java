@@ -1,7 +1,5 @@
 package br.com.monilog.atmonit.view.systemtray;
 
-import br.com.monilog.atmonit.view.StringsJframe;
-
 import javax.swing.*;
 import java.awt.*;
 import java.awt.event.ActionEvent;
@@ -36,6 +34,11 @@ public class TrayClass {
             @Override
             public void actionPerformed(ActionEvent e) {
                 System.exit(0);
+//                try {
+//                    Log.logClose();
+//                } catch (IOException ex) {
+//                    Logger.getLogger(TrayClass.class.getName()).log(Level.SEVERE, null, ex);
+//                }
             }
         });
 

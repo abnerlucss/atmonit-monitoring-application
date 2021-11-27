@@ -2,3 +2,5 @@
 /target/
 
 #/src/main/java/br/com/monilog/atmonit/database/ConnectionFactory.java
+/myLogger.txt
+/myLogger.txt.lck
