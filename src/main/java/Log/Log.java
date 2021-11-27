@@ -16,7 +16,7 @@ import java.util.List;
 
 public class Log {
 
-    List <String> listLog = new ArrayList<>();
+    public static List <String> listLog = new ArrayList<>();
     DateTimeFormatter dateLog = DateTimeFormatter.ofPattern("dd/MM/yyyy HH:mm");
 
     public static void createFile(String path)throws IOException{
@@ -35,8 +35,8 @@ public class Log {
     }
 
     public void writeLog()throws IOException{
-        File file = new File("Logs/log" +dateLog.format(LocalDateTime.now()).replaceAll("/", "-").replaceAll(":", "-") +".txt");
-        file.createNewFile();
+        File file = new File("Logs/log.txt");
+//        file.createNewFile();
         FileWriter log = new FileWriter(file);
         PrintWriter saveLog = new PrintWriter(log);
         for(String a : listLog){
