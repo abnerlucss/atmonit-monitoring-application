@@ -16,7 +16,6 @@ import java.util.List;
 
 public class Log {
 
-    //Criando lista de logs e formatando data
     List <String> listLog = new ArrayList<>();
     DateTimeFormatter dateLog = DateTimeFormatter.ofPattern("dd/MM/yyyy HH:mm");
 
@@ -27,10 +26,8 @@ public class Log {
     }
 
     public void saveLog(String log){
-        //Inserindo data no log
-        listLog.add(String.format(log + "----> " + dateLog.format(LocalDateTime.now())));
+        listLog.add(String.format(log + " ---->    " + dateLog.format(LocalDateTime.now())));
         try{
-            //Escrevendo no log
             writeLog();
         }catch(IOException ex){
             ex.printStackTrace();

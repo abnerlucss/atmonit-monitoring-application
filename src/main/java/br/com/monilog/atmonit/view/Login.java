@@ -197,6 +197,7 @@ public class Login extends javax.swing.JFrame {
         if (idEmpresa != null) {
             StringsJframe stringsJframe = new StringsJframe();
             System.out.println(stringsJframe.loginSucess);
+            logs.saveLog("Login realizado com sucesso");
 
             //tirar
             logs.saveLog("Iniciando aplicação");
@@ -225,6 +226,7 @@ public class Login extends javax.swing.JFrame {
                 }
             }
         } else {
+            logs.saveLog("Falha ao relizar login");
             JOptionPane.showMessageDialog(this, stringsJframe.loginIncorrect);
         }
     }
