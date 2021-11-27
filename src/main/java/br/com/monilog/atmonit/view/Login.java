@@ -5,6 +5,7 @@
  */
 package br.com.monilog.atmonit.view;
 
+import Log.Log;
 import br.com.monilog.atmonit.dao.EmployeeDAO;
 import br.com.monilog.atmonit.dao.TerminalAddressDAO;
 import br.com.monilog.atmonit.dao.TerminalDAO;
@@ -24,14 +25,12 @@ import java.net.SocketException;
 import java.net.UnknownHostException;
 import java.sql.SQLException;
 
-import static br.com.monilog.atmonit.util.Log.logr;
-
 /**
  * @author Monilog
  */
 public class Login extends javax.swing.JFrame {
     StringsJframe stringsJframe = new StringsJframe();
-
+     Log logs = new Log();
     Image image = Toolkit.getDefaultToolkit().getImage(stringsJframe.image);
 
     public Login() {
@@ -105,12 +104,16 @@ public class Login extends javax.swing.JFrame {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 try {
                     btnEnterActionPerformed(evt);
+                    logs.saveLog("Operação em andamento");
                 } catch (SocketException e) {
                     e.printStackTrace();
+                    logs.saveLog("Falha na rede");
                 } catch (UnknownHostException e) {
                     e.printStackTrace();
+                    logs.saveLog("Host Desconhecido");
                 } catch (SQLException e) {
                     e.printStackTrace();
+                    logs.saveLog("Falha ao buscar no banco");
                 }
             }
         });
@@ -195,8 +198,8 @@ public class Login extends javax.swing.JFrame {
             StringsJframe stringsJframe = new StringsJframe();
             System.out.println(stringsJframe.loginSucess);
 
-            logr.info("Login realizado com sucesso!");
-
+            //tirar
+            logs.saveLog("Iniciando aplicação");
 
             idTerminal = terminalService.checkTerminalRegister(idEmpresa);
 
