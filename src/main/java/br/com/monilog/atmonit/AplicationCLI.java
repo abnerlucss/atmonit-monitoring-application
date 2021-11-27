@@ -15,6 +15,5 @@ public class AplicationCLI {
 
         LoginCLI loginCLI = new LoginCLI();
         loginCLI.loginEmployee();
-
     }
 }
