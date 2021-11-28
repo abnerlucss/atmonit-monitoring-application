@@ -1,9 +1,10 @@
 Manifest-Version: 1.0
 Main-Class: br.com.monilog.atmonit.Application
-Class-Path: spring-beans-5.3.10.jar spring-jdbc-5.3.10.jar commons-loggi
- ng-1.2.jar spring-core-5.3.10.jar spring-jcl-5.3.10.jar slf4j-api-1.7.3
- 0.jar looca-api-1.0.1.jar slf4j-simple-1.7.30.jar commons-dbcp2-2.9.0.j
- ar mssql-jdbc-7.4.1.jre8.jar jna-5.6.0.jar commons-pool2-2.10.0.jar gso
- n-2.8.8.jar mysql-connector-java-8.0.26.jar protobuf-java-3.11.4.jar os
- hi-core-5.3.6.jar spring-tx-5.3.10.jar jna-platform-5.6.0.jar
+Class-Path: spring-jdbc-5.3.10.jar commons-logging-1.2.jar jna-platform-
+ 5.6.0.jar json-20201115.jar spring-jcl-5.3.10.jar protobuf-java-3.11.4.
+ jar mssql-jdbc-7.4.1.jre8.jar looca-api-1.0.1.jar commons-dbcp2-2.9.0.j
+ ar gson-2.8.8.jar spring-tx-5.3.10.jar mysql-connector-java-8.0.26.jar 
+ slf4j-simple-1.7.30.jar commons-pool2-2.10.0.jar spring-beans-5.3.10.ja
+ r slf4j-api-1.7.30.jar spring-core-5.3.10.jar oshi-core-5.3.6.jar jna-5
+ .6.0.jar
 

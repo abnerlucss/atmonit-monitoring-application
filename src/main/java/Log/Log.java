@@ -35,7 +35,7 @@ public class Log {
     }
 
     public void writeLog() throws IOException {
-        File file = new File("Logs/log.txt");
+        File file = new File("log.txt");
 //        file.createNewFile();
         FileWriter log = new FileWriter(file, true);
 

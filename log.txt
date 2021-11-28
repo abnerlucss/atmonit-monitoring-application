@@ -1,0 +1,51 @@
+28/11/2021 19:39:41.806 ---->    INFO: Iniciando a aplicacao via CLI.
+28/11/2021 19:39:57.555 ---->    INFO: Enviroment: PROD
+28/11/2021 19:39:57.556 ---->    INFO: Enviroment: PROD
+28/11/2021 19:39:59.499 ---->    INFO: Conexao com a nuvem realizada!
+28/11/2021 19:39:59.750 ---->    INFO: Coletando endereco MAC.
+28/11/2021 19:40:00.011 ---->    INFO: Enviroment: PROD
+28/11/2021 19:40:00.012 ---->    INFO: Enviroment: PROD
+28/11/2021 19:40:00.734 ---->    INFO: Conexao com a nuvem realizada!
+28/11/2021 19:40:00.735 ---->    INFO: Checando registro da maquina.
+28/11/2021 19:40:00.958 ---->    INFO: Capturando dados do processador.
+28/11/2021 19:40:00.958 ---->    INFO: Capturando dados do processador.
+28/11/2021 19:40:00.959 ---->    INFO: Capturando dados da memoria ram.
+28/11/2021 19:40:00.958 ---->    INFO: Capturando dados do processador.
+28/11/2021 19:40:00.959 ---->    INFO: Capturando dados da memoria ram.
+28/11/2021 19:40:00.965 ---->    INFO: Capturando dados do disco.
+28/11/2021 19:40:01.519 ---->    INFO: Enviando mensagem de inicio de monitoramento ao slack.
+28/11/2021 19:40:05.529 ---->    INFO: Enviroment: PROD
+28/11/2021 19:40:05.530 ---->    INFO: Enviroment: PROD
+28/11/2021 19:46:38.982 ---->    INFO: Iniciando a aplicacao via CLI.
+28/11/2021 19:46:47.963 ---->    INFO: Enviroment: PROD
+28/11/2021 19:46:47.964 ---->    INFO: Enviroment: PROD
+28/11/2021 19:46:49.325 ---->    INFO: Conexao com a nuvem realizada!
+28/11/2021 19:46:49.562 ---->    INFO: Coletando endereco MAC.
+28/11/2021 19:46:49.808 ---->    INFO: Enviroment: PROD
+28/11/2021 19:46:49.808 ---->    INFO: Enviroment: PROD
+28/11/2021 19:46:50.508 ---->    INFO: Conexao com a nuvem realizada!
+28/11/2021 19:46:50.509 ---->    INFO: Checando registro da maquina.
+28/11/2021 19:46:50.710 ---->    INFO: Capturando dados do processador.
+28/11/2021 19:46:50.710 ---->    INFO: Capturando dados do processador.
+28/11/2021 19:46:50.711 ---->    INFO: Capturando dados da memoria ram.
+28/11/2021 19:46:50.710 ---->    INFO: Capturando dados do processador.
+28/11/2021 19:46:50.711 ---->    INFO: Capturando dados da memoria ram.
+28/11/2021 19:46:50.711 ---->    INFO: Capturando dados do disco.
+28/11/2021 19:46:51.243 ---->    INFO: Enviando mensagem de inicio de monitoramento ao slack.
+28/11/2021 19:48:12.897 ---->    INFO: Iniciando a aplicacao via CLI.
+28/11/2021 19:48:24.902 ---->    INFO: Enviroment: PROD
+28/11/2021 19:48:24.903 ---->    INFO: Enviroment: PROD
+28/11/2021 19:48:26.334 ---->    INFO: Conexao com a nuvem realizada!
+28/11/2021 19:48:26.560 ---->    INFO: Coletando endereco MAC.
+28/11/2021 19:48:26.798 ---->    INFO: Enviroment: PROD
+28/11/2021 19:48:26.798 ---->    INFO: Enviroment: PROD
+28/11/2021 19:48:27.478 ---->    INFO: Conexao com a nuvem realizada!
+28/11/2021 19:48:27.479 ---->    INFO: Checando registro da maquina.
+28/11/2021 19:48:27.681 ---->    INFO: Capturando dados do processador.
+28/11/2021 19:48:27.681 ---->    INFO: Capturando dados do processador.
+28/11/2021 19:48:27.682 ---->    INFO: Capturando dados da memoria ram.
+28/11/2021 19:48:27.681 ---->    INFO: Capturando dados do processador.
+28/11/2021 19:48:27.682 ---->    INFO: Capturando dados da memoria ram.
+28/11/2021 19:48:27.682 ---->    INFO: Capturando dados do disco.
+28/11/2021 19:49:44.946 ---->    INFO: Iniciando a aplicacao via CLI.
+28/11/2021 19:49:51.794 ---->    INFO: Iniciando a aplicacao via CLI.

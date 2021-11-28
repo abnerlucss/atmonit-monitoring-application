@@ -34,7 +34,7 @@ import java.util.Scanner;
 /**
  * @author Monilog
  */
-public class LoginCLI extends javax.swing.JFrame {
+public class LoginCLI {
 
 
     public LoginCLI() {
@@ -82,6 +82,13 @@ public class LoginCLI extends javax.swing.JFrame {
             idTerminal = terminalService.checkTerminalRegister(idEmpresa);
 
             if (idTerminal != null) {
+                JSONObject json = new JSONObject();
+                String msgSlack = String.format("*Maquina id:* %d Iniciou o monitoramento de recursos com sucesso.\n\n" +
+                        "*Acompanhe em tempo real:*\n\n" +
+                        "https://monilog-atmonit-web.azurewebsites.net/", idTerminal);
+                json.put("text", msgSlack);
+                Slack.sendMessage(json);
+                logs.saveLog("INFO: Enviando mensagem de inicio de monitoramento ao slack.");
 
                 System.out.println(stringsJframe.identifySucess);
                 new ComponentRegistrationService(idTerminal);
@@ -99,8 +106,6 @@ public class LoginCLI extends javax.swing.JFrame {
                 json.put("text", msgSlack);
                 Slack.sendMessage(json);
                 logs.saveLog("INFO: Enviando mensagem de cadastro ao slack.");
-
-
                 System.out.println(stringsJframe.terminalSave + idTerminal);
 
                 if (idTerminal != null) {
