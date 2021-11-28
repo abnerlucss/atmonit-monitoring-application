@@ -2166,3 +2166,1417 @@
 28/11/2021 14:53:44.168 ---->    INFO: Capturando dados do processador.
 28/11/2021 14:53:44.169 ---->    INFO: Capturando dados da memoria ram.
 28/11/2021 14:53:44.170 ---->    INFO: Capturando dados do disco.
+28/11/2021 17:06:26.044 ---->    INFO: Iniciando a aplicacao via interface grafica.
+28/11/2021 17:06:34.030 ---->    INFO: Enviroment: PROD
+28/11/2021 17:06:34.030 ---->    INFO: Enviroment: PROD
+28/11/2021 17:06:35.599 ---->    INFO: Conexao com a nuvem realizada!
+28/11/2021 17:06:35.837 ---->    INFO: Login realizado com sucesso.
+28/11/2021 17:06:35.866 ---->    INFO: Coletando endereco MAC.
+28/11/2021 17:06:36.163 ---->    INFO: Enviroment: PROD
+28/11/2021 17:06:36.165 ---->    INFO: Enviroment: PROD
+28/11/2021 17:06:37.017 ---->    INFO: Conexao com a nuvem realizada!
+28/11/2021 17:06:37.018 ---->    INFO: Checando registro da maquina.
+28/11/2021 17:06:35.837 ---->    INFO: Login realizado com sucesso.
+28/11/2021 17:06:37.652 ---->    INFO: Enviando mensagem de inicio de monitoramento ao slack.
+28/11/2021 17:06:41.906 ---->    INFO: Capturando dados do processador.
+28/11/2021 17:06:41.906 ---->    INFO: Capturando dados do processador.
+28/11/2021 17:06:41.906 ---->    INFO: Capturando dados da memoria ram.
+28/11/2021 17:06:41.906 ---->    INFO: Capturando dados do processador.
+28/11/2021 17:06:41.906 ---->    INFO: Capturando dados da memoria ram.
+28/11/2021 17:06:41.907 ---->    INFO: Capturando dados do disco.
+28/11/2021 17:06:35.837 ---->    INFO: Login realizado com sucesso.
+28/11/2021 17:06:37.652 ---->    INFO: Enviando mensagem de inicio de monitoramento ao slack.
+28/11/2021 17:06:41.996 ---->    INFO: Operacao em andamento.
+28/11/2021 17:06:46.381 ---->    INFO: Enviroment: PROD
+28/11/2021 17:06:46.381 ---->    INFO: Enviroment: PROD
+28/11/2021 17:06:47.112 ---->    INFO: Conexao com a nuvem realizada!
+28/11/2021 17:06:47.261 ---->    INFO: Enviroment: PROD
+28/11/2021 17:06:47.262 ---->    INFO: Enviroment: PROD
+28/11/2021 17:06:47.938 ---->    INFO: Conexao com a nuvem realizada!
+28/11/2021 17:06:48.070 ---->    INFO: Enviroment: PROD
+28/11/2021 17:06:48.071 ---->    INFO: Enviroment: PROD
+28/11/2021 17:06:48.753 ---->    INFO: Conexao com a nuvem realizada!
+28/11/2021 17:06:48.886 ---->    INFO: Capturando dados do processador.
+28/11/2021 17:06:48.886 ---->    INFO: Capturando dados do processador.
+28/11/2021 17:06:48.887 ---->    INFO: Capturando dados da memoria ram.
+28/11/2021 17:06:48.886 ---->    INFO: Capturando dados do processador.
+28/11/2021 17:06:48.887 ---->    INFO: Capturando dados da memoria ram.
+28/11/2021 17:06:48.887 ---->    INFO: Capturando dados do disco.
+28/11/2021 17:06:52.943 ---->    INFO: Enviroment: PROD
+28/11/2021 17:06:52.944 ---->    INFO: Enviroment: PROD
+28/11/2021 17:06:53.769 ---->    INFO: Conexao com a nuvem realizada!
+28/11/2021 17:06:53.900 ---->    INFO: Enviroment: PROD
+28/11/2021 17:06:53.902 ---->    INFO: Enviroment: PROD
+28/11/2021 17:06:54.635 ---->    INFO: Conexao com a nuvem realizada!
+28/11/2021 17:06:54.767 ---->    INFO: Enviroment: PROD
+28/11/2021 17:06:54.768 ---->    INFO: Enviroment: PROD
+28/11/2021 17:06:55.594 ---->    INFO: Conexao com a nuvem realizada!
+28/11/2021 17:06:55.726 ---->    INFO: Capturando dados do processador.
+28/11/2021 17:06:55.726 ---->    INFO: Capturando dados do processador.
+28/11/2021 17:06:55.726 ---->    INFO: Capturando dados da memoria ram.
+28/11/2021 17:06:55.726 ---->    INFO: Capturando dados do processador.
+28/11/2021 17:06:55.726 ---->    INFO: Capturando dados da memoria ram.
+28/11/2021 17:06:55.727 ---->    INFO: Capturando dados do disco.
+28/11/2021 17:06:59.786 ---->    INFO: Enviroment: PROD
+28/11/2021 17:06:59.787 ---->    INFO: Enviroment: PROD
+28/11/2021 17:07:00.462 ---->    INFO: Conexao com a nuvem realizada!
+28/11/2021 17:07:00.596 ---->    INFO: Enviroment: PROD
+28/11/2021 17:07:00.597 ---->    INFO: Enviroment: PROD
+28/11/2021 17:07:01.288 ---->    INFO: Conexao com a nuvem realizada!
+28/11/2021 17:07:01.420 ---->    INFO: Enviroment: PROD
+28/11/2021 17:07:01.420 ---->    INFO: Enviroment: PROD
+28/11/2021 17:07:02.135 ---->    INFO: Conexao com a nuvem realizada!
+28/11/2021 17:07:02.268 ---->    INFO: Capturando dados do processador.
+28/11/2021 17:07:02.268 ---->    INFO: Capturando dados do processador.
+28/11/2021 17:07:02.270 ---->    INFO: Capturando dados da memoria ram.
+28/11/2021 17:07:02.268 ---->    INFO: Capturando dados do processador.
+28/11/2021 17:07:02.270 ---->    INFO: Capturando dados da memoria ram.
+28/11/2021 17:07:02.271 ---->    INFO: Capturando dados do disco.
+28/11/2021 17:07:06.309 ---->    INFO: Enviroment: PROD
+28/11/2021 17:07:06.310 ---->    INFO: Enviroment: PROD
+28/11/2021 17:07:07.276 ---->    INFO: Conexao com a nuvem realizada!
+28/11/2021 17:07:07.408 ---->    INFO: Enviroment: PROD
+28/11/2021 17:07:07.408 ---->    INFO: Enviroment: PROD
+28/11/2021 17:07:08.112 ---->    INFO: Conexao com a nuvem realizada!
+28/11/2021 17:07:08.242 ---->    INFO: Enviroment: PROD
+28/11/2021 17:07:08.244 ---->    INFO: Enviroment: PROD
+28/11/2021 17:07:08.924 ---->    INFO: Conexao com a nuvem realizada!
+28/11/2021 17:07:09.056 ---->    INFO: Capturando dados do processador.
+28/11/2021 17:07:09.056 ---->    INFO: Capturando dados do processador.
+28/11/2021 17:07:09.058 ---->    INFO: Capturando dados da memoria ram.
+28/11/2021 17:07:09.056 ---->    INFO: Capturando dados do processador.
+28/11/2021 17:07:09.058 ---->    INFO: Capturando dados da memoria ram.
+28/11/2021 17:07:09.059 ---->    INFO: Capturando dados do disco.
+28/11/2021 17:07:13.104 ---->    INFO: Enviroment: PROD
+28/11/2021 17:07:13.105 ---->    INFO: Enviroment: PROD
+28/11/2021 17:07:13.796 ---->    INFO: Conexao com a nuvem realizada!
+28/11/2021 17:07:13.929 ---->    INFO: Enviroment: PROD
+28/11/2021 17:07:13.930 ---->    INFO: Enviroment: PROD
+28/11/2021 17:07:14.653 ---->    INFO: Conexao com a nuvem realizada!
+28/11/2021 17:07:14.787 ---->    INFO: Enviroment: PROD
+28/11/2021 17:07:14.789 ---->    INFO: Enviroment: PROD
+28/11/2021 17:07:15.499 ---->    INFO: Conexao com a nuvem realizada!
+28/11/2021 17:07:15.629 ---->    INFO: Capturando dados do processador.
+28/11/2021 17:07:15.629 ---->    INFO: Capturando dados do processador.
+28/11/2021 17:07:15.630 ---->    INFO: Capturando dados da memoria ram.
+28/11/2021 17:07:15.629 ---->    INFO: Capturando dados do processador.
+28/11/2021 17:07:15.630 ---->    INFO: Capturando dados da memoria ram.
+28/11/2021 17:07:15.631 ---->    INFO: Capturando dados do disco.
+28/11/2021 17:07:19.678 ---->    INFO: Enviroment: PROD
+28/11/2021 17:07:19.679 ---->    INFO: Enviroment: PROD
+28/11/2021 17:07:20.361 ---->    INFO: Conexao com a nuvem realizada!
+28/11/2021 17:07:20.492 ---->    INFO: Enviroment: PROD
+28/11/2021 17:07:20.492 ---->    INFO: Enviroment: PROD
+28/11/2021 17:07:21.915 ---->    INFO: Conexao com a nuvem realizada!
+28/11/2021 17:07:22.046 ---->    INFO: Enviroment: PROD
+28/11/2021 17:07:22.047 ---->    INFO: Enviroment: PROD
+28/11/2021 17:07:23.209 ---->    INFO: Conexao com a nuvem realizada!
+28/11/2021 17:07:23.340 ---->    INFO: Capturando dados do processador.
+28/11/2021 17:07:23.340 ---->    INFO: Capturando dados do processador.
+28/11/2021 17:07:23.341 ---->    INFO: Capturando dados da memoria ram.
+28/11/2021 17:07:23.340 ---->    INFO: Capturando dados do processador.
+28/11/2021 17:07:23.341 ---->    INFO: Capturando dados da memoria ram.
+28/11/2021 17:07:23.342 ---->    INFO: Capturando dados do disco.
+28/11/2021 17:07:27.382 ---->    INFO: Enviroment: PROD
+28/11/2021 17:07:27.382 ---->    INFO: Enviroment: PROD
+28/11/2021 17:07:28.089 ---->    INFO: Conexao com a nuvem realizada!
+28/11/2021 17:07:28.221 ---->    INFO: Enviroment: PROD
+28/11/2021 17:07:28.222 ---->    INFO: Enviroment: PROD
+28/11/2021 17:07:28.911 ---->    INFO: Conexao com a nuvem realizada!
+28/11/2021 17:07:29.042 ---->    INFO: Enviroment: PROD
+28/11/2021 17:07:29.043 ---->    INFO: Enviroment: PROD
+28/11/2021 17:07:29.710 ---->    INFO: Conexao com a nuvem realizada!
+28/11/2021 17:07:29.844 ---->    INFO: Capturando dados do processador.
+28/11/2021 17:07:29.844 ---->    INFO: Capturando dados do processador.
+28/11/2021 17:07:29.845 ---->    INFO: Capturando dados da memoria ram.
+28/11/2021 17:07:29.844 ---->    INFO: Capturando dados do processador.
+28/11/2021 17:07:29.845 ---->    INFO: Capturando dados da memoria ram.
+28/11/2021 17:07:29.846 ---->    INFO: Capturando dados do disco.
+28/11/2021 17:07:33.890 ---->    INFO: Enviroment: PROD
+28/11/2021 17:07:33.891 ---->    INFO: Enviroment: PROD
+28/11/2021 17:07:34.582 ---->    INFO: Conexao com a nuvem realizada!
+28/11/2021 17:07:34.715 ---->    INFO: Enviroment: PROD
+28/11/2021 17:07:34.716 ---->    INFO: Enviroment: PROD
+28/11/2021 17:07:35.399 ---->    INFO: Conexao com a nuvem realizada!
+28/11/2021 17:07:35.529 ---->    INFO: Enviroment: PROD
+28/11/2021 17:07:35.530 ---->    INFO: Enviroment: PROD
+28/11/2021 17:07:36.243 ---->    INFO: Conexao com a nuvem realizada!
+28/11/2021 17:07:36.381 ---->    INFO: Capturando dados do processador.
+28/11/2021 17:07:36.381 ---->    INFO: Capturando dados do processador.
+28/11/2021 17:07:36.382 ---->    INFO: Capturando dados da memoria ram.
+28/11/2021 17:07:36.381 ---->    INFO: Capturando dados do processador.
+28/11/2021 17:07:36.382 ---->    INFO: Capturando dados da memoria ram.
+28/11/2021 17:07:36.383 ---->    INFO: Capturando dados do disco.
+28/11/2021 17:07:40.427 ---->    INFO: Enviroment: PROD
+28/11/2021 17:07:40.428 ---->    INFO: Enviroment: PROD
+28/11/2021 17:07:45.076 ---->    INFO: Iniciando a aplicacao via interface grafica.
+28/11/2021 17:07:55.754 ---->    INFO: Enviroment: PROD
+28/11/2021 17:07:55.754 ---->    INFO: Enviroment: PROD
+28/11/2021 17:07:57.175 ---->    INFO: Conexao com a nuvem realizada!
+28/11/2021 17:07:57.417 ---->    INFO: Login realizado com sucesso.
+28/11/2021 17:07:57.445 ---->    INFO: Coletando endereco MAC.
+28/11/2021 17:07:57.706 ---->    INFO: Enviroment: PROD
+28/11/2021 17:07:57.706 ---->    INFO: Enviroment: PROD
+28/11/2021 17:07:58.398 ---->    INFO: Conexao com a nuvem realizada!
+28/11/2021 17:07:58.398 ---->    INFO: Checando registro da maquina.
+28/11/2021 17:07:57.417 ---->    INFO: Login realizado com sucesso.
+28/11/2021 17:07:59.023 ---->    INFO: Enviando mensagem de inicio de monitoramento ao slack.
+28/11/2021 17:08:00.692 ---->    INFO: Capturando dados do processador.
+28/11/2021 17:08:00.692 ---->    INFO: Capturando dados do processador.
+28/11/2021 17:08:00.692 ---->    INFO: Capturando dados da memoria ram.
+28/11/2021 17:08:00.692 ---->    INFO: Capturando dados do processador.
+28/11/2021 17:08:00.692 ---->    INFO: Capturando dados da memoria ram.
+28/11/2021 17:08:00.693 ---->    INFO: Capturando dados do disco.
+28/11/2021 17:07:57.417 ---->    INFO: Login realizado com sucesso.
+28/11/2021 17:07:59.023 ---->    INFO: Enviando mensagem de inicio de monitoramento ao slack.
+28/11/2021 17:08:00.780 ---->    INFO: Operacao em andamento.
+28/11/2021 17:08:05.170 ---->    INFO: Enviroment: PROD
+28/11/2021 17:08:05.171 ---->    INFO: Enviroment: PROD
+28/11/2021 17:08:05.866 ---->    INFO: Conexao com a nuvem realizada!
+28/11/2021 17:08:06.002 ---->    INFO: Enviroment: PROD
+28/11/2021 17:08:06.003 ---->    INFO: Enviroment: PROD
+28/11/2021 17:08:06.695 ---->    INFO: Conexao com a nuvem realizada!
+28/11/2021 17:08:06.828 ---->    INFO: Enviroment: PROD
+28/11/2021 17:08:06.829 ---->    INFO: Enviroment: PROD
+28/11/2021 17:08:07.507 ---->    INFO: Conexao com a nuvem realizada!
+28/11/2021 17:08:07.638 ---->    INFO: Capturando dados do processador.
+28/11/2021 17:08:07.638 ---->    INFO: Capturando dados do processador.
+28/11/2021 17:08:07.639 ---->    INFO: Capturando dados da memoria ram.
+28/11/2021 17:08:07.638 ---->    INFO: Capturando dados do processador.
+28/11/2021 17:08:07.639 ---->    INFO: Capturando dados da memoria ram.
+28/11/2021 17:08:07.640 ---->    INFO: Capturando dados do disco.
+28/11/2021 17:08:11.691 ---->    INFO: Enviroment: PROD
+28/11/2021 17:08:11.692 ---->    INFO: Enviroment: PROD
+28/11/2021 17:08:12.379 ---->    INFO: Conexao com a nuvem realizada!
+28/11/2021 17:08:12.511 ---->    INFO: Enviroment: PROD
+28/11/2021 17:08:12.512 ---->    INFO: Enviroment: PROD
+28/11/2021 17:08:13.191 ---->    INFO: Conexao com a nuvem realizada!
+28/11/2021 17:08:13.322 ---->    INFO: Enviroment: PROD
+28/11/2021 17:08:13.323 ---->    INFO: Enviroment: PROD
+28/11/2021 17:08:14.001 ---->    INFO: Conexao com a nuvem realizada!
+28/11/2021 17:08:14.132 ---->    INFO: Capturando dados do processador.
+28/11/2021 17:08:14.132 ---->    INFO: Capturando dados do processador.
+28/11/2021 17:08:14.133 ---->    INFO: Capturando dados da memoria ram.
+28/11/2021 17:08:14.132 ---->    INFO: Capturando dados do processador.
+28/11/2021 17:08:14.133 ---->    INFO: Capturando dados da memoria ram.
+28/11/2021 17:08:14.134 ---->    INFO: Capturando dados do disco.
+28/11/2021 17:08:18.192 ---->    INFO: Enviroment: PROD
+28/11/2021 17:08:18.193 ---->    INFO: Enviroment: PROD
+28/11/2021 17:08:18.879 ---->    INFO: Conexao com a nuvem realizada!
+28/11/2021 17:08:19.010 ---->    INFO: Enviroment: PROD
+28/11/2021 17:08:19.011 ---->    INFO: Enviroment: PROD
+28/11/2021 17:08:19.700 ---->    INFO: Conexao com a nuvem realizada!
+28/11/2021 17:08:19.832 ---->    INFO: Enviroment: PROD
+28/11/2021 17:08:19.834 ---->    INFO: Enviroment: PROD
+28/11/2021 17:08:20.647 ---->    INFO: Conexao com a nuvem realizada!
+28/11/2021 17:08:20.778 ---->    INFO: Capturando dados do processador.
+28/11/2021 17:08:20.778 ---->    INFO: Capturando dados do processador.
+28/11/2021 17:08:20.779 ---->    INFO: Capturando dados da memoria ram.
+28/11/2021 17:08:20.778 ---->    INFO: Capturando dados do processador.
+28/11/2021 17:08:20.779 ---->    INFO: Capturando dados da memoria ram.
+28/11/2021 17:08:20.779 ---->    INFO: Capturando dados do disco.
+28/11/2021 17:08:24.825 ---->    INFO: Enviroment: PROD
+28/11/2021 17:08:24.825 ---->    INFO: Enviroment: PROD
+28/11/2021 17:08:25.995 ---->    INFO: Conexao com a nuvem realizada!
+28/11/2021 17:08:26.128 ---->    INFO: Enviroment: PROD
+28/11/2021 17:08:26.130 ---->    INFO: Enviroment: PROD
+28/11/2021 17:08:26.840 ---->    INFO: Conexao com a nuvem realizada!
+28/11/2021 17:08:26.971 ---->    INFO: Enviroment: PROD
+28/11/2021 17:08:26.972 ---->    INFO: Enviroment: PROD
+28/11/2021 17:08:27.907 ---->    INFO: Conexao com a nuvem realizada!
+28/11/2021 17:08:28.039 ---->    INFO: Capturando dados do processador.
+28/11/2021 17:08:28.039 ---->    INFO: Capturando dados do processador.
+28/11/2021 17:08:28.040 ---->    INFO: Capturando dados da memoria ram.
+28/11/2021 17:08:28.039 ---->    INFO: Capturando dados do processador.
+28/11/2021 17:08:28.040 ---->    INFO: Capturando dados da memoria ram.
+28/11/2021 17:08:28.040 ---->    INFO: Capturando dados do disco.
+28/11/2021 17:08:32.083 ---->    INFO: Enviroment: PROD
+28/11/2021 17:08:32.084 ---->    INFO: Enviroment: PROD
+28/11/2021 17:08:32.786 ---->    INFO: Conexao com a nuvem realizada!
+28/11/2021 17:08:32.918 ---->    INFO: Enviroment: PROD
+28/11/2021 17:08:32.919 ---->    INFO: Enviroment: PROD
+28/11/2021 17:08:33.602 ---->    INFO: Conexao com a nuvem realizada!
+28/11/2021 17:08:33.736 ---->    INFO: Enviroment: PROD
+28/11/2021 17:08:33.737 ---->    INFO: Enviroment: PROD
+28/11/2021 17:08:34.432 ---->    INFO: Conexao com a nuvem realizada!
+28/11/2021 17:08:34.563 ---->    INFO: Capturando dados do processador.
+28/11/2021 17:08:34.563 ---->    INFO: Capturando dados do processador.
+28/11/2021 17:08:34.564 ---->    INFO: Capturando dados da memoria ram.
+28/11/2021 17:08:34.563 ---->    INFO: Capturando dados do processador.
+28/11/2021 17:08:34.564 ---->    INFO: Capturando dados da memoria ram.
+28/11/2021 17:08:34.564 ---->    INFO: Capturando dados do disco.
+28/11/2021 17:08:38.599 ---->    INFO: Enviroment: PROD
+28/11/2021 17:08:38.600 ---->    INFO: Enviroment: PROD
+28/11/2021 17:08:39.727 ---->    INFO: Conexao com a nuvem realizada!
+28/11/2021 17:08:39.859 ---->    INFO: Enviroment: PROD
+28/11/2021 17:08:39.859 ---->    INFO: Enviroment: PROD
+28/11/2021 17:08:40.535 ---->    INFO: Conexao com a nuvem realizada!
+28/11/2021 17:08:40.667 ---->    INFO: Enviroment: PROD
+28/11/2021 17:08:40.669 ---->    INFO: Enviroment: PROD
+28/11/2021 17:08:41.337 ---->    INFO: Conexao com a nuvem realizada!
+28/11/2021 17:08:41.469 ---->    INFO: Capturando dados do processador.
+28/11/2021 17:08:41.469 ---->    INFO: Capturando dados do processador.
+28/11/2021 17:08:41.470 ---->    INFO: Capturando dados da memoria ram.
+28/11/2021 17:08:41.469 ---->    INFO: Capturando dados do processador.
+28/11/2021 17:08:41.470 ---->    INFO: Capturando dados da memoria ram.
+28/11/2021 17:08:41.470 ---->    INFO: Capturando dados do disco.
+28/11/2021 17:08:45.529 ---->    INFO: Enviroment: PROD
+28/11/2021 17:08:45.532 ---->    INFO: Enviroment: PROD
+28/11/2021 17:08:46.235 ---->    INFO: Conexao com a nuvem realizada!
+28/11/2021 17:08:46.382 ---->    INFO: Enviroment: PROD
+28/11/2021 17:08:46.382 ---->    INFO: Enviroment: PROD
+28/11/2021 17:08:47.093 ---->    INFO: Conexao com a nuvem realizada!
+28/11/2021 17:08:47.225 ---->    INFO: Enviroment: PROD
+28/11/2021 17:08:47.225 ---->    INFO: Enviroment: PROD
+28/11/2021 17:08:47.912 ---->    INFO: Conexao com a nuvem realizada!
+28/11/2021 17:08:48.043 ---->    INFO: Capturando dados do processador.
+28/11/2021 17:08:48.043 ---->    INFO: Capturando dados do processador.
+28/11/2021 17:08:48.043 ---->    INFO: Capturando dados da memoria ram.
+28/11/2021 17:08:48.043 ---->    INFO: Capturando dados do processador.
+28/11/2021 17:08:48.043 ---->    INFO: Capturando dados da memoria ram.
+28/11/2021 17:08:48.044 ---->    INFO: Capturando dados do disco.
+28/11/2021 17:08:52.092 ---->    INFO: Enviroment: PROD
+28/11/2021 17:08:52.093 ---->    INFO: Enviroment: PROD
+28/11/2021 17:08:52.889 ---->    INFO: Conexao com a nuvem realizada!
+28/11/2021 17:08:53.023 ---->    INFO: Enviroment: PROD
+28/11/2021 17:08:53.024 ---->    INFO: Enviroment: PROD
+28/11/2021 17:09:03.177 ---->    INFO: Conexao com a nuvem realizada!
+28/11/2021 17:09:03.311 ---->    INFO: Enviroment: PROD
+28/11/2021 17:09:03.312 ---->    INFO: Enviroment: PROD
+28/11/2021 17:09:03.983 ---->    INFO: Conexao com a nuvem realizada!
+28/11/2021 17:09:04.114 ---->    INFO: Capturando dados do processador.
+28/11/2021 17:09:04.114 ---->    INFO: Capturando dados do processador.
+28/11/2021 17:09:04.115 ---->    INFO: Capturando dados da memoria ram.
+28/11/2021 17:09:04.114 ---->    INFO: Capturando dados do processador.
+28/11/2021 17:09:04.115 ---->    INFO: Capturando dados da memoria ram.
+28/11/2021 17:09:04.115 ---->    INFO: Capturando dados do disco.
+28/11/2021 17:09:08.165 ---->    INFO: Enviroment: PROD
+28/11/2021 17:09:08.165 ---->    INFO: Enviroment: PROD
+28/11/2021 17:09:08.835 ---->    INFO: Conexao com a nuvem realizada!
+28/11/2021 17:09:08.969 ---->    INFO: Enviroment: PROD
+28/11/2021 17:09:08.970 ---->    INFO: Enviroment: PROD
+28/11/2021 17:09:09.646 ---->    INFO: Conexao com a nuvem realizada!
+28/11/2021 17:09:09.776 ---->    INFO: Enviroment: PROD
+28/11/2021 17:09:09.777 ---->    INFO: Enviroment: PROD
+28/11/2021 17:09:10.453 ---->    INFO: Conexao com a nuvem realizada!
+28/11/2021 17:09:10.586 ---->    INFO: Capturando dados do processador.
+28/11/2021 17:09:10.586 ---->    INFO: Capturando dados do processador.
+28/11/2021 17:09:10.587 ---->    INFO: Capturando dados da memoria ram.
+28/11/2021 17:09:10.586 ---->    INFO: Capturando dados do processador.
+28/11/2021 17:09:10.587 ---->    INFO: Capturando dados da memoria ram.
+28/11/2021 17:09:10.587 ---->    INFO: Capturando dados do disco.
+28/11/2021 17:09:14.619 ---->    INFO: Enviroment: PROD
+28/11/2021 17:09:14.620 ---->    INFO: Enviroment: PROD
+28/11/2021 17:09:15.305 ---->    INFO: Conexao com a nuvem realizada!
+28/11/2021 17:09:15.435 ---->    INFO: Enviroment: PROD
+28/11/2021 17:09:15.435 ---->    INFO: Enviroment: PROD
+28/11/2021 17:09:16.116 ---->    INFO: Conexao com a nuvem realizada!
+28/11/2021 17:09:16.260 ---->    INFO: Enviroment: PROD
+28/11/2021 17:09:16.260 ---->    INFO: Enviroment: PROD
+28/11/2021 17:09:16.977 ---->    INFO: Conexao com a nuvem realizada!
+28/11/2021 17:09:17.109 ---->    INFO: Capturando dados do processador.
+28/11/2021 17:09:17.109 ---->    INFO: Capturando dados do processador.
+28/11/2021 17:09:17.109 ---->    INFO: Capturando dados da memoria ram.
+28/11/2021 17:09:17.109 ---->    INFO: Capturando dados do processador.
+28/11/2021 17:09:17.109 ---->    INFO: Capturando dados da memoria ram.
+28/11/2021 17:09:17.110 ---->    INFO: Capturando dados do disco.
+28/11/2021 17:09:21.144 ---->    INFO: Enviroment: PROD
+28/11/2021 17:09:21.145 ---->    INFO: Enviroment: PROD
+28/11/2021 17:09:21.825 ---->    INFO: Conexao com a nuvem realizada!
+28/11/2021 17:09:21.957 ---->    INFO: Enviroment: PROD
+28/11/2021 17:09:21.958 ---->    INFO: Enviroment: PROD
+28/11/2021 17:09:22.629 ---->    INFO: Conexao com a nuvem realizada!
+28/11/2021 17:09:22.760 ---->    INFO: Enviroment: PROD
+28/11/2021 17:09:22.761 ---->    INFO: Enviroment: PROD
+28/11/2021 17:09:23.438 ---->    INFO: Conexao com a nuvem realizada!
+28/11/2021 17:09:23.571 ---->    INFO: Capturando dados do processador.
+28/11/2021 17:09:23.571 ---->    INFO: Capturando dados do processador.
+28/11/2021 17:09:23.572 ---->    INFO: Capturando dados da memoria ram.
+28/11/2021 17:09:23.571 ---->    INFO: Capturando dados do processador.
+28/11/2021 17:09:23.572 ---->    INFO: Capturando dados da memoria ram.
+28/11/2021 17:09:23.573 ---->    INFO: Capturando dados do disco.
+28/11/2021 17:09:27.618 ---->    INFO: Enviroment: PROD
+28/11/2021 17:09:27.618 ---->    INFO: Enviroment: PROD
+28/11/2021 17:09:28.621 ---->    INFO: Conexao com a nuvem realizada!
+28/11/2021 17:09:28.755 ---->    INFO: Enviroment: PROD
+28/11/2021 17:09:28.755 ---->    INFO: Enviroment: PROD
+28/11/2021 17:09:29.430 ---->    INFO: Conexao com a nuvem realizada!
+28/11/2021 17:09:29.562 ---->    INFO: Enviroment: PROD
+28/11/2021 17:09:29.563 ---->    INFO: Enviroment: PROD
+28/11/2021 17:09:30.228 ---->    INFO: Conexao com a nuvem realizada!
+28/11/2021 17:09:30.359 ---->    INFO: Capturando dados do processador.
+28/11/2021 17:09:30.359 ---->    INFO: Capturando dados do processador.
+28/11/2021 17:09:30.360 ---->    INFO: Capturando dados da memoria ram.
+28/11/2021 17:09:30.359 ---->    INFO: Capturando dados do processador.
+28/11/2021 17:09:30.360 ---->    INFO: Capturando dados da memoria ram.
+28/11/2021 17:09:30.360 ---->    INFO: Capturando dados do disco.
+28/11/2021 17:09:34.393 ---->    INFO: Enviroment: PROD
+28/11/2021 17:09:34.393 ---->    INFO: Enviroment: PROD
+28/11/2021 17:09:35.752 ---->    INFO: Conexao com a nuvem realizada!
+28/11/2021 17:09:35.882 ---->    INFO: Enviroment: PROD
+28/11/2021 17:09:35.883 ---->    INFO: Enviroment: PROD
+28/11/2021 17:09:36.580 ---->    INFO: Conexao com a nuvem realizada!
+28/11/2021 17:09:36.712 ---->    INFO: Enviroment: PROD
+28/11/2021 17:09:36.712 ---->    INFO: Enviroment: PROD
+28/11/2021 17:09:37.418 ---->    INFO: Conexao com a nuvem realizada!
+28/11/2021 17:09:37.550 ---->    INFO: Capturando dados do processador.
+28/11/2021 17:09:37.550 ---->    INFO: Capturando dados do processador.
+28/11/2021 17:09:37.550 ---->    INFO: Capturando dados da memoria ram.
+28/11/2021 17:09:37.550 ---->    INFO: Capturando dados do processador.
+28/11/2021 17:09:37.550 ---->    INFO: Capturando dados da memoria ram.
+28/11/2021 17:09:37.550 ---->    INFO: Capturando dados do disco.
+28/11/2021 17:09:41.602 ---->    INFO: Enviroment: PROD
+28/11/2021 17:09:41.602 ---->    INFO: Enviroment: PROD
+28/11/2021 17:09:42.290 ---->    INFO: Conexao com a nuvem realizada!
+28/11/2021 17:09:42.419 ---->    INFO: Enviroment: PROD
+28/11/2021 17:09:42.419 ---->    INFO: Enviroment: PROD
+28/11/2021 17:09:43.391 ---->    INFO: Conexao com a nuvem realizada!
+28/11/2021 17:09:43.523 ---->    INFO: Enviroment: PROD
+28/11/2021 17:09:43.523 ---->    INFO: Enviroment: PROD
+28/11/2021 17:09:44.196 ---->    INFO: Conexao com a nuvem realizada!
+28/11/2021 17:09:44.326 ---->    INFO: Capturando dados do processador.
+28/11/2021 17:09:44.326 ---->    INFO: Capturando dados do processador.
+28/11/2021 17:09:44.326 ---->    INFO: Capturando dados da memoria ram.
+28/11/2021 17:09:44.326 ---->    INFO: Capturando dados do processador.
+28/11/2021 17:09:44.326 ---->    INFO: Capturando dados da memoria ram.
+28/11/2021 17:09:44.327 ---->    INFO: Capturando dados do disco.
+28/11/2021 17:09:48.355 ---->    INFO: Enviroment: PROD
+28/11/2021 17:09:48.355 ---->    INFO: Enviroment: PROD
+28/11/2021 17:09:49.025 ---->    INFO: Conexao com a nuvem realizada!
+28/11/2021 17:09:49.156 ---->    INFO: Enviroment: PROD
+28/11/2021 17:09:49.157 ---->    INFO: Enviroment: PROD
+28/11/2021 17:09:49.956 ---->    INFO: Conexao com a nuvem realizada!
+28/11/2021 17:09:50.088 ---->    INFO: Enviroment: PROD
+28/11/2021 17:09:50.088 ---->    INFO: Enviroment: PROD
+28/11/2021 17:09:50.786 ---->    INFO: Conexao com a nuvem realizada!
+28/11/2021 17:09:51.229 ---->    INFO: Capturando dados do processador.
+28/11/2021 17:09:51.229 ---->    INFO: Capturando dados do processador.
+28/11/2021 17:09:51.230 ---->    INFO: Capturando dados da memoria ram.
+28/11/2021 17:09:51.229 ---->    INFO: Capturando dados do processador.
+28/11/2021 17:09:51.230 ---->    INFO: Capturando dados da memoria ram.
+28/11/2021 17:09:51.231 ---->    INFO: Capturando dados do disco.
+28/11/2021 17:09:55.269 ---->    INFO: Enviroment: PROD
+28/11/2021 17:09:55.270 ---->    INFO: Enviroment: PROD
+28/11/2021 17:09:55.955 ---->    INFO: Conexao com a nuvem realizada!
+28/11/2021 17:09:56.088 ---->    INFO: Enviroment: PROD
+28/11/2021 17:09:56.089 ---->    INFO: Enviroment: PROD
+28/11/2021 17:09:56.770 ---->    INFO: Conexao com a nuvem realizada!
+28/11/2021 17:09:56.903 ---->    INFO: Enviroment: PROD
+28/11/2021 17:09:56.903 ---->    INFO: Enviroment: PROD
+28/11/2021 17:09:57.589 ---->    INFO: Conexao com a nuvem realizada!
+28/11/2021 17:09:57.722 ---->    INFO: Capturando dados do processador.
+28/11/2021 17:09:57.722 ---->    INFO: Capturando dados do processador.
+28/11/2021 17:09:57.723 ---->    INFO: Capturando dados da memoria ram.
+28/11/2021 17:09:57.722 ---->    INFO: Capturando dados do processador.
+28/11/2021 17:09:57.723 ---->    INFO: Capturando dados da memoria ram.
+28/11/2021 17:09:57.724 ---->    INFO: Capturando dados do disco.
+28/11/2021 17:10:01.767 ---->    INFO: Enviroment: PROD
+28/11/2021 17:10:01.768 ---->    INFO: Enviroment: PROD
+28/11/2021 17:10:02.437 ---->    INFO: Conexao com a nuvem realizada!
+28/11/2021 17:10:02.569 ---->    INFO: Enviroment: PROD
+28/11/2021 17:10:02.570 ---->    INFO: Enviroment: PROD
+28/11/2021 17:10:03.241 ---->    INFO: Conexao com a nuvem realizada!
+28/11/2021 17:10:03.370 ---->    INFO: Enviroment: PROD
+28/11/2021 17:10:03.370 ---->    INFO: Enviroment: PROD
+28/11/2021 17:10:04.172 ---->    INFO: Conexao com a nuvem realizada!
+28/11/2021 17:10:04.304 ---->    INFO: Capturando dados do processador.
+28/11/2021 17:10:04.304 ---->    INFO: Capturando dados do processador.
+28/11/2021 17:10:04.305 ---->    INFO: Capturando dados da memoria ram.
+28/11/2021 17:10:04.304 ---->    INFO: Capturando dados do processador.
+28/11/2021 17:10:04.305 ---->    INFO: Capturando dados da memoria ram.
+28/11/2021 17:10:04.305 ---->    INFO: Capturando dados do disco.
+28/11/2021 17:10:08.347 ---->    INFO: Enviroment: PROD
+28/11/2021 17:10:08.348 ---->    INFO: Enviroment: PROD
+28/11/2021 17:10:09.420 ---->    INFO: Conexao com a nuvem realizada!
+28/11/2021 17:10:09.850 ---->    INFO: Enviroment: PROD
+28/11/2021 17:10:09.850 ---->    INFO: Enviroment: PROD
+28/11/2021 17:10:10.526 ---->    INFO: Conexao com a nuvem realizada!
+28/11/2021 17:10:10.654 ---->    INFO: Enviroment: PROD
+28/11/2021 17:10:10.655 ---->    INFO: Enviroment: PROD
+28/11/2021 17:10:11.334 ---->    INFO: Conexao com a nuvem realizada!
+28/11/2021 17:10:11.463 ---->    INFO: Capturando dados do processador.
+28/11/2021 17:10:11.463 ---->    INFO: Capturando dados do processador.
+28/11/2021 17:10:11.464 ---->    INFO: Capturando dados da memoria ram.
+28/11/2021 17:10:11.463 ---->    INFO: Capturando dados do processador.
+28/11/2021 17:10:11.464 ---->    INFO: Capturando dados da memoria ram.
+28/11/2021 17:10:11.464 ---->    INFO: Capturando dados do disco.
+28/11/2021 17:10:15.517 ---->    INFO: Enviroment: PROD
+28/11/2021 17:10:15.518 ---->    INFO: Enviroment: PROD
+28/11/2021 17:10:16.199 ---->    INFO: Conexao com a nuvem realizada!
+28/11/2021 17:10:16.335 ---->    INFO: Enviroment: PROD
+28/11/2021 17:10:16.336 ---->    INFO: Enviroment: PROD
+28/11/2021 17:10:17.033 ---->    INFO: Conexao com a nuvem realizada!
+28/11/2021 17:10:17.163 ---->    INFO: Enviroment: PROD
+28/11/2021 17:10:17.165 ---->    INFO: Enviroment: PROD
+28/11/2021 17:10:17.858 ---->    INFO: Conexao com a nuvem realizada!
+28/11/2021 17:10:17.989 ---->    INFO: Capturando dados do processador.
+28/11/2021 17:10:17.989 ---->    INFO: Capturando dados do processador.
+28/11/2021 17:10:17.990 ---->    INFO: Capturando dados da memoria ram.
+28/11/2021 17:10:17.989 ---->    INFO: Capturando dados do processador.
+28/11/2021 17:10:17.990 ---->    INFO: Capturando dados da memoria ram.
+28/11/2021 17:10:17.991 ---->    INFO: Capturando dados do disco.
+28/11/2021 17:10:22.043 ---->    INFO: Enviroment: PROD
+28/11/2021 17:10:22.043 ---->    INFO: Enviroment: PROD
+28/11/2021 17:10:22.734 ---->    INFO: Conexao com a nuvem realizada!
+28/11/2021 17:10:22.867 ---->    INFO: Enviroment: PROD
+28/11/2021 17:10:22.868 ---->    INFO: Enviroment: PROD
+28/11/2021 17:10:23.537 ---->    INFO: Conexao com a nuvem realizada!
+28/11/2021 17:10:23.668 ---->    INFO: Enviroment: PROD
+28/11/2021 17:10:23.669 ---->    INFO: Enviroment: PROD
+28/11/2021 17:10:24.353 ---->    INFO: Conexao com a nuvem realizada!
+28/11/2021 17:10:24.481 ---->    INFO: Capturando dados do processador.
+28/11/2021 17:10:24.481 ---->    INFO: Capturando dados do processador.
+28/11/2021 17:10:24.482 ---->    INFO: Capturando dados da memoria ram.
+28/11/2021 17:10:24.481 ---->    INFO: Capturando dados do processador.
+28/11/2021 17:10:24.482 ---->    INFO: Capturando dados da memoria ram.
+28/11/2021 17:10:24.482 ---->    INFO: Capturando dados do disco.
+28/11/2021 17:10:28.516 ---->    INFO: Enviroment: PROD
+28/11/2021 17:10:28.516 ---->    INFO: Enviroment: PROD
+28/11/2021 17:10:29.193 ---->    INFO: Conexao com a nuvem realizada!
+28/11/2021 17:10:29.324 ---->    INFO: Enviroment: PROD
+28/11/2021 17:10:29.324 ---->    INFO: Enviroment: PROD
+28/11/2021 17:10:30.015 ---->    INFO: Conexao com a nuvem realizada!
+28/11/2021 17:10:30.145 ---->    INFO: Enviroment: PROD
+28/11/2021 17:10:30.146 ---->    INFO: Enviroment: PROD
+28/11/2021 17:10:30.834 ---->    INFO: Conexao com a nuvem realizada!
+28/11/2021 17:10:30.965 ---->    INFO: Capturando dados do processador.
+28/11/2021 17:10:30.965 ---->    INFO: Capturando dados do processador.
+28/11/2021 17:10:30.966 ---->    INFO: Capturando dados da memoria ram.
+28/11/2021 17:10:30.965 ---->    INFO: Capturando dados do processador.
+28/11/2021 17:10:30.966 ---->    INFO: Capturando dados da memoria ram.
+28/11/2021 17:10:30.967 ---->    INFO: Capturando dados do disco.
+28/11/2021 17:10:35.016 ---->    INFO: Enviroment: PROD
+28/11/2021 17:10:35.016 ---->    INFO: Enviroment: PROD
+28/11/2021 17:10:35.685 ---->    INFO: Conexao com a nuvem realizada!
+28/11/2021 17:10:35.815 ---->    INFO: Enviroment: PROD
+28/11/2021 17:10:35.816 ---->    INFO: Enviroment: PROD
+28/11/2021 17:10:36.508 ---->    INFO: Conexao com a nuvem realizada!
+28/11/2021 17:10:36.639 ---->    INFO: Enviroment: PROD
+28/11/2021 17:10:36.640 ---->    INFO: Enviroment: PROD
+28/11/2021 17:10:37.352 ---->    INFO: Conexao com a nuvem realizada!
+28/11/2021 17:10:37.482 ---->    INFO: Capturando dados do processador.
+28/11/2021 17:10:37.482 ---->    INFO: Capturando dados do processador.
+28/11/2021 17:10:37.482 ---->    INFO: Capturando dados da memoria ram.
+28/11/2021 17:10:37.482 ---->    INFO: Capturando dados do processador.
+28/11/2021 17:10:37.482 ---->    INFO: Capturando dados da memoria ram.
+28/11/2021 17:10:37.483 ---->    INFO: Capturando dados do disco.
+28/11/2021 17:10:41.531 ---->    INFO: Enviroment: PROD
+28/11/2021 17:10:41.531 ---->    INFO: Enviroment: PROD
+28/11/2021 17:10:42.468 ---->    INFO: Conexao com a nuvem realizada!
+28/11/2021 17:10:42.602 ---->    INFO: Enviroment: PROD
+28/11/2021 17:10:42.603 ---->    INFO: Enviroment: PROD
+28/11/2021 17:10:43.278 ---->    INFO: Conexao com a nuvem realizada!
+28/11/2021 17:10:43.407 ---->    INFO: Enviroment: PROD
+28/11/2021 17:10:43.408 ---->    INFO: Enviroment: PROD
+28/11/2021 17:10:44.077 ---->    INFO: Conexao com a nuvem realizada!
+28/11/2021 17:10:44.211 ---->    INFO: Capturando dados do processador.
+28/11/2021 17:10:44.211 ---->    INFO: Capturando dados do processador.
+28/11/2021 17:10:44.212 ---->    INFO: Capturando dados da memoria ram.
+28/11/2021 17:10:44.211 ---->    INFO: Capturando dados do processador.
+28/11/2021 17:10:44.212 ---->    INFO: Capturando dados da memoria ram.
+28/11/2021 17:10:44.213 ---->    INFO: Capturando dados do disco.
+28/11/2021 17:10:48.255 ---->    INFO: Enviroment: PROD
+28/11/2021 17:10:48.255 ---->    INFO: Enviroment: PROD
+28/11/2021 17:10:48.939 ---->    INFO: Conexao com a nuvem realizada!
+28/11/2021 17:10:49.071 ---->    INFO: Enviroment: PROD
+28/11/2021 17:10:49.072 ---->    INFO: Enviroment: PROD
+28/11/2021 17:10:49.753 ---->    INFO: Conexao com a nuvem realizada!
+28/11/2021 17:10:49.889 ---->    INFO: Enviroment: PROD
+28/11/2021 17:10:49.890 ---->    INFO: Enviroment: PROD
+28/11/2021 17:10:50.569 ---->    INFO: Conexao com a nuvem realizada!
+28/11/2021 17:10:50.701 ---->    INFO: Capturando dados do processador.
+28/11/2021 17:10:50.701 ---->    INFO: Capturando dados do processador.
+28/11/2021 17:10:50.702 ---->    INFO: Capturando dados da memoria ram.
+28/11/2021 17:10:50.701 ---->    INFO: Capturando dados do processador.
+28/11/2021 17:10:50.702 ---->    INFO: Capturando dados da memoria ram.
+28/11/2021 17:10:50.703 ---->    INFO: Capturando dados do disco.
+28/11/2021 17:10:54.742 ---->    INFO: Enviroment: PROD
+28/11/2021 17:10:54.742 ---->    INFO: Enviroment: PROD
+28/11/2021 17:10:55.411 ---->    INFO: Conexao com a nuvem realizada!
+28/11/2021 17:10:55.543 ---->    INFO: Enviroment: PROD
+28/11/2021 17:10:55.544 ---->    INFO: Enviroment: PROD
+28/11/2021 17:10:56.348 ---->    INFO: Conexao com a nuvem realizada!
+28/11/2021 17:10:56.481 ---->    INFO: Enviroment: PROD
+28/11/2021 17:10:56.482 ---->    INFO: Enviroment: PROD
+28/11/2021 17:10:57.153 ---->    INFO: Conexao com a nuvem realizada!
+28/11/2021 17:10:57.284 ---->    INFO: Capturando dados do processador.
+28/11/2021 17:10:57.284 ---->    INFO: Capturando dados do processador.
+28/11/2021 17:10:57.285 ---->    INFO: Capturando dados da memoria ram.
+28/11/2021 17:10:57.284 ---->    INFO: Capturando dados do processador.
+28/11/2021 17:10:57.285 ---->    INFO: Capturando dados da memoria ram.
+28/11/2021 17:10:57.286 ---->    INFO: Capturando dados do disco.
+28/11/2021 17:11:01.331 ---->    INFO: Enviroment: PROD
+28/11/2021 17:11:01.331 ---->    INFO: Enviroment: PROD
+28/11/2021 17:11:02.022 ---->    INFO: Conexao com a nuvem realizada!
+28/11/2021 17:11:02.155 ---->    INFO: Enviroment: PROD
+28/11/2021 17:11:02.155 ---->    INFO: Enviroment: PROD
+28/11/2021 17:11:02.826 ---->    INFO: Conexao com a nuvem realizada!
+28/11/2021 17:11:02.958 ---->    INFO: Enviroment: PROD
+28/11/2021 17:11:02.959 ---->    INFO: Enviroment: PROD
+28/11/2021 17:11:03.770 ---->    INFO: Conexao com a nuvem realizada!
+28/11/2021 17:11:03.899 ---->    INFO: Capturando dados do processador.
+28/11/2021 17:11:03.899 ---->    INFO: Capturando dados do processador.
+28/11/2021 17:11:03.900 ---->    INFO: Capturando dados da memoria ram.
+28/11/2021 17:11:03.899 ---->    INFO: Capturando dados do processador.
+28/11/2021 17:11:03.900 ---->    INFO: Capturando dados da memoria ram.
+28/11/2021 17:11:03.900 ---->    INFO: Capturando dados do disco.
+28/11/2021 17:11:07.928 ---->    INFO: Enviroment: PROD
+28/11/2021 17:11:07.928 ---->    INFO: Enviroment: PROD
+28/11/2021 17:11:08.615 ---->    INFO: Conexao com a nuvem realizada!
+28/11/2021 17:11:08.750 ---->    INFO: Enviroment: PROD
+28/11/2021 17:11:08.751 ---->    INFO: Enviroment: PROD
+28/11/2021 17:11:09.431 ---->    INFO: Conexao com a nuvem realizada!
+28/11/2021 17:11:09.562 ---->    INFO: Enviroment: PROD
+28/11/2021 17:11:09.563 ---->    INFO: Enviroment: PROD
+28/11/2021 17:11:10.242 ---->    INFO: Conexao com a nuvem realizada!
+28/11/2021 17:11:10.374 ---->    INFO: Capturando dados do processador.
+28/11/2021 17:11:10.374 ---->    INFO: Capturando dados do processador.
+28/11/2021 17:11:10.374 ---->    INFO: Capturando dados da memoria ram.
+28/11/2021 17:11:10.374 ---->    INFO: Capturando dados do processador.
+28/11/2021 17:11:10.374 ---->    INFO: Capturando dados da memoria ram.
+28/11/2021 17:11:10.374 ---->    INFO: Capturando dados do disco.
+28/11/2021 17:11:14.419 ---->    INFO: Enviroment: PROD
+28/11/2021 17:11:14.419 ---->    INFO: Enviroment: PROD
+28/11/2021 17:11:15.356 ---->    INFO: Conexao com a nuvem realizada!
+28/11/2021 17:11:15.486 ---->    INFO: Enviroment: PROD
+28/11/2021 17:11:15.487 ---->    INFO: Enviroment: PROD
+28/11/2021 17:11:16.160 ---->    INFO: Conexao com a nuvem realizada!
+28/11/2021 17:11:16.293 ---->    INFO: Enviroment: PROD
+28/11/2021 17:11:16.293 ---->    INFO: Enviroment: PROD
+28/11/2021 17:11:16.997 ---->    INFO: Conexao com a nuvem realizada!
+28/11/2021 17:11:17.127 ---->    INFO: Capturando dados do processador.
+28/11/2021 17:11:17.127 ---->    INFO: Capturando dados do processador.
+28/11/2021 17:11:17.128 ---->    INFO: Capturando dados da memoria ram.
+28/11/2021 17:11:17.127 ---->    INFO: Capturando dados do processador.
+28/11/2021 17:11:17.128 ---->    INFO: Capturando dados da memoria ram.
+28/11/2021 17:11:17.128 ---->    INFO: Capturando dados do disco.
+28/11/2021 17:11:21.171 ---->    INFO: Enviroment: PROD
+28/11/2021 17:11:21.171 ---->    INFO: Enviroment: PROD
+28/11/2021 17:11:21.856 ---->    INFO: Conexao com a nuvem realizada!
+28/11/2021 17:11:21.988 ---->    INFO: Enviroment: PROD
+28/11/2021 17:11:21.989 ---->    INFO: Enviroment: PROD
+28/11/2021 17:11:22.663 ---->    INFO: Conexao com a nuvem realizada!
+28/11/2021 17:11:22.797 ---->    INFO: Enviroment: PROD
+28/11/2021 17:11:22.798 ---->    INFO: Enviroment: PROD
+28/11/2021 17:11:23.471 ---->    INFO: Conexao com a nuvem realizada!
+28/11/2021 17:11:23.911 ---->    INFO: Capturando dados do processador.
+28/11/2021 17:11:23.911 ---->    INFO: Capturando dados do processador.
+28/11/2021 17:11:23.911 ---->    INFO: Capturando dados da memoria ram.
+28/11/2021 17:11:23.911 ---->    INFO: Capturando dados do processador.
+28/11/2021 17:11:23.911 ---->    INFO: Capturando dados da memoria ram.
+28/11/2021 17:11:23.912 ---->    INFO: Capturando dados do disco.
+28/11/2021 17:11:27.948 ---->    INFO: Enviroment: PROD
+28/11/2021 17:11:27.949 ---->    INFO: Enviroment: PROD
+28/11/2021 17:11:28.626 ---->    INFO: Conexao com a nuvem realizada!
+28/11/2021 17:11:28.757 ---->    INFO: Enviroment: PROD
+28/11/2021 17:11:28.757 ---->    INFO: Enviroment: PROD
+28/11/2021 17:11:29.418 ---->    INFO: Conexao com a nuvem realizada!
+28/11/2021 17:11:29.548 ---->    INFO: Enviroment: PROD
+28/11/2021 17:11:29.548 ---->    INFO: Enviroment: PROD
+28/11/2021 17:11:30.217 ---->    INFO: Conexao com a nuvem realizada!
+28/11/2021 17:11:30.347 ---->    INFO: Capturando dados do processador.
+28/11/2021 17:11:30.347 ---->    INFO: Capturando dados do processador.
+28/11/2021 17:11:30.347 ---->    INFO: Capturando dados da memoria ram.
+28/11/2021 17:11:30.347 ---->    INFO: Capturando dados do processador.
+28/11/2021 17:11:30.347 ---->    INFO: Capturando dados da memoria ram.
+28/11/2021 17:11:30.347 ---->    INFO: Capturando dados do disco.
+28/11/2021 17:11:34.375 ---->    INFO: Enviroment: PROD
+28/11/2021 17:11:34.376 ---->    INFO: Enviroment: PROD
+28/11/2021 17:11:35.057 ---->    INFO: Conexao com a nuvem realizada!
+28/11/2021 17:11:35.188 ---->    INFO: Enviroment: PROD
+28/11/2021 17:11:35.188 ---->    INFO: Enviroment: PROD
+28/11/2021 17:11:35.876 ---->    INFO: Conexao com a nuvem realizada!
+28/11/2021 17:11:36.006 ---->    INFO: Enviroment: PROD
+28/11/2021 17:11:36.007 ---->    INFO: Enviroment: PROD
+28/11/2021 17:11:36.976 ---->    INFO: Conexao com a nuvem realizada!
+28/11/2021 17:11:37.111 ---->    INFO: Capturando dados do processador.
+28/11/2021 17:11:37.111 ---->    INFO: Capturando dados do processador.
+28/11/2021 17:11:37.112 ---->    INFO: Capturando dados da memoria ram.
+28/11/2021 17:11:37.111 ---->    INFO: Capturando dados do processador.
+28/11/2021 17:11:37.112 ---->    INFO: Capturando dados da memoria ram.
+28/11/2021 17:11:37.113 ---->    INFO: Capturando dados do disco.
+28/11/2021 17:11:41.153 ---->    INFO: Enviroment: PROD
+28/11/2021 17:11:41.154 ---->    INFO: Enviroment: PROD
+28/11/2021 17:11:41.841 ---->    INFO: Conexao com a nuvem realizada!
+28/11/2021 17:11:41.969 ---->    INFO: Enviroment: PROD
+28/11/2021 17:11:41.970 ---->    INFO: Enviroment: PROD
+28/11/2021 17:11:42.631 ---->    INFO: Conexao com a nuvem realizada!
+28/11/2021 17:11:42.760 ---->    INFO: Enviroment: PROD
+28/11/2021 17:11:42.761 ---->    INFO: Enviroment: PROD
+28/11/2021 17:11:43.424 ---->    INFO: Conexao com a nuvem realizada!
+28/11/2021 17:11:43.554 ---->    INFO: Capturando dados do processador.
+28/11/2021 17:11:43.554 ---->    INFO: Capturando dados do processador.
+28/11/2021 17:11:43.554 ---->    INFO: Capturando dados da memoria ram.
+28/11/2021 17:11:43.554 ---->    INFO: Capturando dados do processador.
+28/11/2021 17:11:43.554 ---->    INFO: Capturando dados da memoria ram.
+28/11/2021 17:11:43.554 ---->    INFO: Capturando dados do disco.
+28/11/2021 17:11:47.590 ---->    INFO: Enviroment: PROD
+28/11/2021 17:11:47.593 ---->    INFO: Enviroment: PROD
+28/11/2021 17:11:48.521 ---->    INFO: Conexao com a nuvem realizada!
+28/11/2021 17:11:48.651 ---->    INFO: Enviroment: PROD
+28/11/2021 17:11:48.652 ---->    INFO: Enviroment: PROD
+28/11/2021 17:11:49.335 ---->    INFO: Conexao com a nuvem realizada!
+28/11/2021 17:11:49.467 ---->    INFO: Enviroment: PROD
+28/11/2021 17:11:49.468 ---->    INFO: Enviroment: PROD
+28/11/2021 17:11:50.138 ---->    INFO: Conexao com a nuvem realizada!
+28/11/2021 17:11:50.282 ---->    INFO: Capturando dados do processador.
+28/11/2021 17:11:50.282 ---->    INFO: Capturando dados do processador.
+28/11/2021 17:11:50.282 ---->    INFO: Capturando dados da memoria ram.
+28/11/2021 17:11:50.282 ---->    INFO: Capturando dados do processador.
+28/11/2021 17:11:50.282 ---->    INFO: Capturando dados da memoria ram.
+28/11/2021 17:11:50.282 ---->    INFO: Capturando dados do disco.
+28/11/2021 17:11:54.312 ---->    INFO: Enviroment: PROD
+28/11/2021 17:11:54.312 ---->    INFO: Enviroment: PROD
+28/11/2021 17:11:55.278 ---->    INFO: Conexao com a nuvem realizada!
+28/11/2021 17:11:55.411 ---->    INFO: Enviroment: PROD
+28/11/2021 17:11:55.412 ---->    INFO: Enviroment: PROD
+28/11/2021 17:11:56.506 ---->    INFO: Conexao com a nuvem realizada!
+28/11/2021 17:11:56.710 ---->    INFO: Enviroment: PROD
+28/11/2021 17:11:56.711 ---->    INFO: Enviroment: PROD
+28/11/2021 17:11:57.501 ---->    INFO: Conexao com a nuvem realizada!
+28/11/2021 17:11:57.631 ---->    INFO: Capturando dados do processador.
+28/11/2021 17:11:57.631 ---->    INFO: Capturando dados do processador.
+28/11/2021 17:11:57.631 ---->    INFO: Capturando dados da memoria ram.
+28/11/2021 17:11:57.631 ---->    INFO: Capturando dados do processador.
+28/11/2021 17:11:57.631 ---->    INFO: Capturando dados da memoria ram.
+28/11/2021 17:11:57.632 ---->    INFO: Capturando dados do disco.
+28/11/2021 17:12:01.675 ---->    INFO: Enviroment: PROD
+28/11/2021 17:12:01.676 ---->    INFO: Enviroment: PROD
+28/11/2021 17:12:02.354 ---->    INFO: Conexao com a nuvem realizada!
+28/11/2021 17:12:02.485 ---->    INFO: Enviroment: PROD
+28/11/2021 17:12:02.486 ---->    INFO: Enviroment: PROD
+28/11/2021 17:12:03.187 ---->    INFO: Conexao com a nuvem realizada!
+28/11/2021 17:12:03.318 ---->    INFO: Enviroment: PROD
+28/11/2021 17:12:03.319 ---->    INFO: Enviroment: PROD
+28/11/2021 17:12:04.005 ---->    INFO: Conexao com a nuvem realizada!
+28/11/2021 17:12:04.158 ---->    INFO: Capturando dados do processador.
+28/11/2021 17:12:04.158 ---->    INFO: Capturando dados do processador.
+28/11/2021 17:12:04.159 ---->    INFO: Capturando dados da memoria ram.
+28/11/2021 17:12:04.158 ---->    INFO: Capturando dados do processador.
+28/11/2021 17:12:04.159 ---->    INFO: Capturando dados da memoria ram.
+28/11/2021 17:12:04.160 ---->    INFO: Capturando dados do disco.
+28/11/2021 17:12:08.214 ---->    INFO: Enviroment: PROD
+28/11/2021 17:12:08.215 ---->    INFO: Enviroment: PROD
+28/11/2021 17:12:08.890 ---->    INFO: Conexao com a nuvem realizada!
+28/11/2021 17:12:09.020 ---->    INFO: Enviroment: PROD
+28/11/2021 17:12:09.021 ---->    INFO: Enviroment: PROD
+28/11/2021 17:12:09.690 ---->    INFO: Conexao com a nuvem realizada!
+28/11/2021 17:12:09.820 ---->    INFO: Enviroment: PROD
+28/11/2021 17:12:09.821 ---->    INFO: Enviroment: PROD
+28/11/2021 17:12:10.491 ---->    INFO: Conexao com a nuvem realizada!
+28/11/2021 17:12:10.621 ---->    INFO: Capturando dados do processador.
+28/11/2021 17:12:10.621 ---->    INFO: Capturando dados do processador.
+28/11/2021 17:12:10.621 ---->    INFO: Capturando dados da memoria ram.
+28/11/2021 17:12:10.621 ---->    INFO: Capturando dados do processador.
+28/11/2021 17:12:10.621 ---->    INFO: Capturando dados da memoria ram.
+28/11/2021 17:12:10.621 ---->    INFO: Capturando dados do disco.
+28/11/2021 17:12:14.648 ---->    INFO: Enviroment: PROD
+28/11/2021 17:12:14.648 ---->    INFO: Enviroment: PROD
+28/11/2021 17:12:15.313 ---->    INFO: Conexao com a nuvem realizada!
+28/11/2021 17:12:15.444 ---->    INFO: Enviroment: PROD
+28/11/2021 17:12:15.445 ---->    INFO: Enviroment: PROD
+28/11/2021 17:12:16.136 ---->    INFO: Conexao com a nuvem realizada!
+28/11/2021 17:12:16.268 ---->    INFO: Enviroment: PROD
+28/11/2021 17:12:16.268 ---->    INFO: Enviroment: PROD
+28/11/2021 17:12:16.977 ---->    INFO: Conexao com a nuvem realizada!
+28/11/2021 17:12:17.107 ---->    INFO: Capturando dados do processador.
+28/11/2021 17:12:17.107 ---->    INFO: Capturando dados do processador.
+28/11/2021 17:12:17.108 ---->    INFO: Capturando dados da memoria ram.
+28/11/2021 17:12:17.107 ---->    INFO: Capturando dados do processador.
+28/11/2021 17:12:17.108 ---->    INFO: Capturando dados da memoria ram.
+28/11/2021 17:12:17.108 ---->    INFO: Capturando dados do disco.
+28/11/2021 17:12:21.167 ---->    INFO: Enviroment: PROD
+28/11/2021 17:12:21.168 ---->    INFO: Enviroment: PROD
+28/11/2021 17:12:22.077 ---->    INFO: Conexao com a nuvem realizada!
+28/11/2021 17:12:22.208 ---->    INFO: Enviroment: PROD
+28/11/2021 17:12:22.208 ---->    INFO: Enviroment: PROD
+28/11/2021 17:12:22.924 ---->    INFO: Conexao com a nuvem realizada!
+28/11/2021 17:12:23.074 ---->    INFO: Enviroment: PROD
+28/11/2021 17:12:23.075 ---->    INFO: Enviroment: PROD
+28/11/2021 17:12:23.755 ---->    INFO: Conexao com a nuvem realizada!
+28/11/2021 17:12:23.884 ---->    INFO: Capturando dados do processador.
+28/11/2021 17:12:23.884 ---->    INFO: Capturando dados do processador.
+28/11/2021 17:12:23.884 ---->    INFO: Capturando dados da memoria ram.
+28/11/2021 17:12:23.884 ---->    INFO: Capturando dados do processador.
+28/11/2021 17:12:23.884 ---->    INFO: Capturando dados da memoria ram.
+28/11/2021 17:12:23.885 ---->    INFO: Capturando dados do disco.
+28/11/2021 17:12:27.936 ---->    INFO: Enviroment: PROD
+28/11/2021 17:12:27.936 ---->    INFO: Enviroment: PROD
+28/11/2021 17:12:28.604 ---->    INFO: Conexao com a nuvem realizada!
+28/11/2021 17:12:28.732 ---->    INFO: Enviroment: PROD
+28/11/2021 17:12:28.732 ---->    INFO: Enviroment: PROD
+28/11/2021 17:12:29.411 ---->    INFO: Conexao com a nuvem realizada!
+28/11/2021 17:12:29.547 ---->    INFO: Enviroment: PROD
+28/11/2021 17:12:29.548 ---->    INFO: Enviroment: PROD
+28/11/2021 17:12:30.216 ---->    INFO: Conexao com a nuvem realizada!
+28/11/2021 17:12:30.347 ---->    INFO: Capturando dados do processador.
+28/11/2021 17:12:30.347 ---->    INFO: Capturando dados do processador.
+28/11/2021 17:12:30.347 ---->    INFO: Capturando dados da memoria ram.
+28/11/2021 17:12:30.347 ---->    INFO: Capturando dados do processador.
+28/11/2021 17:12:30.347 ---->    INFO: Capturando dados da memoria ram.
+28/11/2021 17:12:30.348 ---->    INFO: Capturando dados do disco.
+28/11/2021 17:12:34.390 ---->    INFO: Enviroment: PROD
+28/11/2021 17:12:34.390 ---->    INFO: Enviroment: PROD
+28/11/2021 17:12:35.048 ---->    INFO: Conexao com a nuvem realizada!
+28/11/2021 17:12:35.177 ---->    INFO: Enviroment: PROD
+28/11/2021 17:12:35.178 ---->    INFO: Enviroment: PROD
+28/11/2021 17:12:35.843 ---->    INFO: Conexao com a nuvem realizada!
+28/11/2021 17:12:35.974 ---->    INFO: Enviroment: PROD
+28/11/2021 17:12:35.974 ---->    INFO: Enviroment: PROD
+28/11/2021 17:12:36.676 ---->    INFO: Conexao com a nuvem realizada!
+28/11/2021 17:12:36.807 ---->    INFO: Capturando dados do processador.
+28/11/2021 17:12:36.807 ---->    INFO: Capturando dados do processador.
+28/11/2021 17:12:36.807 ---->    INFO: Capturando dados da memoria ram.
+28/11/2021 17:12:36.807 ---->    INFO: Capturando dados do processador.
+28/11/2021 17:12:36.807 ---->    INFO: Capturando dados da memoria ram.
+28/11/2021 17:12:36.807 ---->    INFO: Capturando dados do disco.
+28/11/2021 17:12:40.838 ---->    INFO: Enviroment: PROD
+28/11/2021 17:12:40.838 ---->    INFO: Enviroment: PROD
+28/11/2021 17:12:41.528 ---->    INFO: Conexao com a nuvem realizada!
+28/11/2021 17:12:41.658 ---->    INFO: Enviroment: PROD
+28/11/2021 17:12:41.659 ---->    INFO: Enviroment: PROD
+28/11/2021 17:12:42.351 ---->    INFO: Conexao com a nuvem realizada!
+28/11/2021 17:12:42.482 ---->    INFO: Enviroment: PROD
+28/11/2021 17:12:42.483 ---->    INFO: Enviroment: PROD
+28/11/2021 17:12:43.139 ---->    INFO: Conexao com a nuvem realizada!
+28/11/2021 17:12:43.269 ---->    INFO: Capturando dados do processador.
+28/11/2021 17:12:43.269 ---->    INFO: Capturando dados do processador.
+28/11/2021 17:12:43.270 ---->    INFO: Capturando dados da memoria ram.
+28/11/2021 17:12:43.269 ---->    INFO: Capturando dados do processador.
+28/11/2021 17:12:43.270 ---->    INFO: Capturando dados da memoria ram.
+28/11/2021 17:12:43.271 ---->    INFO: Capturando dados do disco.
+28/11/2021 17:12:47.311 ---->    INFO: Enviroment: PROD
+28/11/2021 17:12:47.311 ---->    INFO: Enviroment: PROD
+28/11/2021 17:12:47.985 ---->    INFO: Conexao com a nuvem realizada!
+28/11/2021 17:12:48.120 ---->    INFO: Enviroment: PROD
+28/11/2021 17:12:48.120 ---->    INFO: Enviroment: PROD
+28/11/2021 17:12:48.788 ---->    INFO: Conexao com a nuvem realizada!
+28/11/2021 17:12:48.920 ---->    INFO: Enviroment: PROD
+28/11/2021 17:12:48.921 ---->    INFO: Enviroment: PROD
+28/11/2021 17:13:01.083 ---->    INFO: Conexao com a nuvem realizada!
+28/11/2021 17:13:01.215 ---->    INFO: Capturando dados do processador.
+28/11/2021 17:13:01.215 ---->    INFO: Capturando dados do processador.
+28/11/2021 17:13:01.216 ---->    INFO: Capturando dados da memoria ram.
+28/11/2021 17:13:01.215 ---->    INFO: Capturando dados do processador.
+28/11/2021 17:13:01.216 ---->    INFO: Capturando dados da memoria ram.
+28/11/2021 17:13:01.217 ---->    INFO: Capturando dados do disco.
+28/11/2021 17:13:05.266 ---->    INFO: Enviroment: PROD
+28/11/2021 17:13:05.266 ---->    INFO: Enviroment: PROD
+28/11/2021 17:13:15.286 ---->    INFO: Conexao com a nuvem realizada!
+28/11/2021 17:13:15.420 ---->    INFO: Enviroment: PROD
+28/11/2021 17:13:15.421 ---->    INFO: Enviroment: PROD
+28/11/2021 17:13:16.086 ---->    INFO: Conexao com a nuvem realizada!
+28/11/2021 17:13:16.218 ---->    INFO: Enviroment: PROD
+28/11/2021 17:13:16.219 ---->    INFO: Enviroment: PROD
+28/11/2021 17:13:16.948 ---->    INFO: Conexao com a nuvem realizada!
+28/11/2021 17:13:17.081 ---->    INFO: Capturando dados do processador.
+28/11/2021 17:13:17.081 ---->    INFO: Capturando dados do processador.
+28/11/2021 17:13:17.082 ---->    INFO: Capturando dados da memoria ram.
+28/11/2021 17:13:17.081 ---->    INFO: Capturando dados do processador.
+28/11/2021 17:13:17.082 ---->    INFO: Capturando dados da memoria ram.
+28/11/2021 17:13:17.083 ---->    INFO: Capturando dados do disco.
+28/11/2021 17:13:21.138 ---->    INFO: Enviroment: PROD
+28/11/2021 17:13:21.138 ---->    INFO: Enviroment: PROD
+28/11/2021 17:13:21.842 ---->    INFO: Conexao com a nuvem realizada!
+28/11/2021 17:13:21.985 ---->    INFO: Enviroment: PROD
+28/11/2021 17:13:21.986 ---->    INFO: Enviroment: PROD
+28/11/2021 17:13:22.659 ---->    INFO: Conexao com a nuvem realizada!
+28/11/2021 17:13:22.796 ---->    INFO: Enviroment: PROD
+28/11/2021 17:13:22.797 ---->    INFO: Enviroment: PROD
+28/11/2021 17:13:23.465 ---->    INFO: Conexao com a nuvem realizada!
+28/11/2021 17:13:23.594 ---->    INFO: Capturando dados do processador.
+28/11/2021 17:13:23.594 ---->    INFO: Capturando dados do processador.
+28/11/2021 17:13:23.595 ---->    INFO: Capturando dados da memoria ram.
+28/11/2021 17:13:23.594 ---->    INFO: Capturando dados do processador.
+28/11/2021 17:13:23.595 ---->    INFO: Capturando dados da memoria ram.
+28/11/2021 17:13:23.596 ---->    INFO: Capturando dados do disco.
+28/11/2021 17:13:27.632 ---->    INFO: Enviroment: PROD
+28/11/2021 17:13:27.633 ---->    INFO: Enviroment: PROD
+28/11/2021 17:13:28.610 ---->    INFO: Conexao com a nuvem realizada!
+28/11/2021 17:13:28.742 ---->    INFO: Enviroment: PROD
+28/11/2021 17:13:28.742 ---->    INFO: Enviroment: PROD
+28/11/2021 17:13:29.414 ---->    INFO: Conexao com a nuvem realizada!
+28/11/2021 17:13:29.543 ---->    INFO: Enviroment: PROD
+28/11/2021 17:13:29.543 ---->    INFO: Enviroment: PROD
+28/11/2021 17:13:30.214 ---->    INFO: Conexao com a nuvem realizada!
+28/11/2021 17:13:30.343 ---->    INFO: Capturando dados do processador.
+28/11/2021 17:13:30.343 ---->    INFO: Capturando dados do processador.
+28/11/2021 17:13:30.344 ---->    INFO: Capturando dados da memoria ram.
+28/11/2021 17:13:30.343 ---->    INFO: Capturando dados do processador.
+28/11/2021 17:13:30.344 ---->    INFO: Capturando dados da memoria ram.
+28/11/2021 17:13:30.345 ---->    INFO: Capturando dados do disco.
+28/11/2021 17:13:34.387 ---->    INFO: Enviroment: PROD
+28/11/2021 17:13:34.388 ---->    INFO: Enviroment: PROD
+28/11/2021 17:13:35.068 ---->    INFO: Conexao com a nuvem realizada!
+28/11/2021 17:13:35.199 ---->    INFO: Enviroment: PROD
+28/11/2021 17:13:35.199 ---->    INFO: Enviroment: PROD
+28/11/2021 17:13:35.868 ---->    INFO: Conexao com a nuvem realizada!
+28/11/2021 17:13:35.999 ---->    INFO: Enviroment: PROD
+28/11/2021 17:13:35.999 ---->    INFO: Enviroment: PROD
+28/11/2021 17:13:36.688 ---->    INFO: Conexao com a nuvem realizada!
+28/11/2021 17:13:36.816 ---->    INFO: Capturando dados do processador.
+28/11/2021 17:13:36.816 ---->    INFO: Capturando dados do processador.
+28/11/2021 17:13:36.817 ---->    INFO: Capturando dados da memoria ram.
+28/11/2021 17:13:36.816 ---->    INFO: Capturando dados do processador.
+28/11/2021 17:13:36.817 ---->    INFO: Capturando dados da memoria ram.
+28/11/2021 17:13:36.818 ---->    INFO: Capturando dados do disco.
+28/11/2021 17:13:40.878 ---->    INFO: Enviroment: PROD
+28/11/2021 17:13:40.879 ---->    INFO: Enviroment: PROD
+28/11/2021 17:13:41.546 ---->    INFO: Conexao com a nuvem realizada!
+28/11/2021 17:13:41.677 ---->    INFO: Enviroment: PROD
+28/11/2021 17:13:41.677 ---->    INFO: Enviroment: PROD
+28/11/2021 17:13:42.355 ---->    INFO: Conexao com a nuvem realizada!
+28/11/2021 17:13:42.488 ---->    INFO: Enviroment: PROD
+28/11/2021 17:13:42.489 ---->    INFO: Enviroment: PROD
+28/11/2021 17:13:43.150 ---->    INFO: Conexao com a nuvem realizada!
+28/11/2021 17:13:43.281 ---->    INFO: Capturando dados do processador.
+28/11/2021 17:13:43.281 ---->    INFO: Capturando dados do processador.
+28/11/2021 17:13:43.281 ---->    INFO: Capturando dados da memoria ram.
+28/11/2021 17:13:43.281 ---->    INFO: Capturando dados do processador.
+28/11/2021 17:13:43.281 ---->    INFO: Capturando dados da memoria ram.
+28/11/2021 17:13:43.282 ---->    INFO: Capturando dados do disco.
+28/11/2021 17:13:47.321 ---->    INFO: Enviroment: PROD
+28/11/2021 17:13:47.322 ---->    INFO: Enviroment: PROD
+28/11/2021 17:13:47.991 ---->    INFO: Conexao com a nuvem realizada!
+28/11/2021 17:13:48.122 ---->    INFO: Enviroment: PROD
+28/11/2021 17:13:48.123 ---->    INFO: Enviroment: PROD
+28/11/2021 17:13:48.786 ---->    INFO: Conexao com a nuvem realizada!
+28/11/2021 17:13:48.915 ---->    INFO: Enviroment: PROD
+28/11/2021 17:13:48.915 ---->    INFO: Enviroment: PROD
+28/11/2021 17:13:49.655 ---->    INFO: Conexao com a nuvem realizada!
+28/11/2021 17:13:49.786 ---->    INFO: Capturando dados do processador.
+28/11/2021 17:13:49.786 ---->    INFO: Capturando dados do processador.
+28/11/2021 17:13:49.786 ---->    INFO: Capturando dados da memoria ram.
+28/11/2021 17:13:49.786 ---->    INFO: Capturando dados do processador.
+28/11/2021 17:13:49.786 ---->    INFO: Capturando dados da memoria ram.
+28/11/2021 17:13:49.786 ---->    INFO: Capturando dados do disco.
+28/11/2021 17:13:53.826 ---->    INFO: Enviroment: PROD
+28/11/2021 17:13:53.827 ---->    INFO: Enviroment: PROD
+28/11/2021 17:13:54.499 ---->    INFO: Conexao com a nuvem realizada!
+28/11/2021 17:13:54.629 ---->    INFO: Enviroment: PROD
+28/11/2021 17:13:54.630 ---->    INFO: Enviroment: PROD
+28/11/2021 17:13:55.306 ---->    INFO: Conexao com a nuvem realizada!
+28/11/2021 17:13:55.755 ---->    INFO: Enviroment: PROD
+28/11/2021 17:13:55.755 ---->    INFO: Enviroment: PROD
+28/11/2021 17:13:56.420 ---->    INFO: Conexao com a nuvem realizada!
+28/11/2021 17:13:56.556 ---->    INFO: Capturando dados do processador.
+28/11/2021 17:13:56.556 ---->    INFO: Capturando dados do processador.
+28/11/2021 17:13:56.557 ---->    INFO: Capturando dados da memoria ram.
+28/11/2021 17:13:56.556 ---->    INFO: Capturando dados do processador.
+28/11/2021 17:13:56.557 ---->    INFO: Capturando dados da memoria ram.
+28/11/2021 17:13:56.557 ---->    INFO: Capturando dados do disco.
+28/11/2021 17:14:00.614 ---->    INFO: Enviroment: PROD
+28/11/2021 17:14:00.614 ---->    INFO: Enviroment: PROD
+28/11/2021 17:14:01.583 ---->    INFO: Conexao com a nuvem realizada!
+28/11/2021 17:14:01.722 ---->    INFO: Enviroment: PROD
+28/11/2021 17:14:01.723 ---->    INFO: Enviroment: PROD
+28/11/2021 17:14:02.422 ---->    INFO: Conexao com a nuvem realizada!
+28/11/2021 17:14:02.552 ---->    INFO: Enviroment: PROD
+28/11/2021 17:14:02.553 ---->    INFO: Enviroment: PROD
+28/11/2021 17:14:03.706 ---->    INFO: Conexao com a nuvem realizada!
+28/11/2021 17:14:03.843 ---->    INFO: Capturando dados do processador.
+28/11/2021 17:14:03.843 ---->    INFO: Capturando dados do processador.
+28/11/2021 17:14:03.843 ---->    INFO: Capturando dados da memoria ram.
+28/11/2021 17:14:03.843 ---->    INFO: Capturando dados do processador.
+28/11/2021 17:14:03.843 ---->    INFO: Capturando dados da memoria ram.
+28/11/2021 17:14:03.844 ---->    INFO: Capturando dados do disco.
+28/11/2021 17:14:07.901 ---->    INFO: Enviroment: PROD
+28/11/2021 17:14:07.901 ---->    INFO: Enviroment: PROD
+28/11/2021 17:14:08.580 ---->    INFO: Conexao com a nuvem realizada!
+28/11/2021 17:14:08.597 ---->    ERROR: Falha ao enviar mensagem slack.
+28/11/2021 17:14:08.597 ---->    INFO: Enviroment: PROD
+28/11/2021 17:14:08.598 ---->    INFO: Enviroment: PROD
+28/11/2021 17:14:09.284 ---->    INFO: Conexao com a nuvem realizada!
+28/11/2021 17:14:09.418 ---->    INFO: Enviroment: PROD
+28/11/2021 17:14:09.419 ---->    INFO: Enviroment: PROD
+28/11/2021 17:14:10.107 ---->    INFO: Conexao com a nuvem realizada!
+28/11/2021 17:14:10.243 ---->    INFO: Capturando dados do processador.
+28/11/2021 17:14:10.243 ---->    INFO: Capturando dados do processador.
+28/11/2021 17:14:10.243 ---->    INFO: Capturando dados da memoria ram.
+28/11/2021 17:14:10.243 ---->    INFO: Capturando dados do processador.
+28/11/2021 17:14:10.243 ---->    INFO: Capturando dados da memoria ram.
+28/11/2021 17:14:10.244 ---->    INFO: Capturando dados do disco.
+28/11/2021 17:14:14.295 ---->    INFO: Enviroment: PROD
+28/11/2021 17:14:14.296 ---->    INFO: Enviroment: PROD
+28/11/2021 17:14:14.983 ---->    INFO: Conexao com a nuvem realizada!
+28/11/2021 17:14:15.123 ---->    INFO: Enviroment: PROD
+28/11/2021 17:14:15.124 ---->    INFO: Enviroment: PROD
+28/11/2021 17:14:15.804 ---->    INFO: Conexao com a nuvem realizada!
+28/11/2021 17:14:15.934 ---->    INFO: Enviroment: PROD
+28/11/2021 17:14:15.935 ---->    INFO: Enviroment: PROD
+28/11/2021 17:14:17.696 ---->    INFO: Conexao com a nuvem realizada!
+28/11/2021 17:14:17.911 ---->    INFO: Capturando dados do processador.
+28/11/2021 17:14:17.911 ---->    INFO: Capturando dados do processador.
+28/11/2021 17:14:17.911 ---->    INFO: Capturando dados da memoria ram.
+28/11/2021 17:14:17.911 ---->    INFO: Capturando dados do processador.
+28/11/2021 17:14:17.911 ---->    INFO: Capturando dados da memoria ram.
+28/11/2021 17:14:17.912 ---->    INFO: Capturando dados do disco.
+28/11/2021 17:14:21.947 ---->    INFO: Enviroment: PROD
+28/11/2021 17:14:21.948 ---->    INFO: Enviroment: PROD
+28/11/2021 17:14:22.755 ---->    INFO: Conexao com a nuvem realizada!
+28/11/2021 17:14:22.884 ---->    INFO: Enviroment: PROD
+28/11/2021 17:14:22.885 ---->    INFO: Enviroment: PROD
+28/11/2021 17:14:23.560 ---->    INFO: Conexao com a nuvem realizada!
+28/11/2021 17:14:23.692 ---->    INFO: Enviroment: PROD
+28/11/2021 17:14:23.693 ---->    INFO: Enviroment: PROD
+28/11/2021 17:14:24.364 ---->    INFO: Conexao com a nuvem realizada!
+28/11/2021 17:14:24.495 ---->    INFO: Capturando dados do processador.
+28/11/2021 17:14:24.495 ---->    INFO: Capturando dados do processador.
+28/11/2021 17:14:24.496 ---->    INFO: Capturando dados da memoria ram.
+28/11/2021 17:14:24.495 ---->    INFO: Capturando dados do processador.
+28/11/2021 17:14:24.496 ---->    INFO: Capturando dados da memoria ram.
+28/11/2021 17:14:24.497 ---->    INFO: Capturando dados do disco.
+28/11/2021 17:14:28.541 ---->    INFO: Enviroment: PROD
+28/11/2021 17:14:28.541 ---->    INFO: Enviroment: PROD
+28/11/2021 17:14:29.222 ---->    INFO: Conexao com a nuvem realizada!
+28/11/2021 17:14:29.354 ---->    INFO: Enviroment: PROD
+28/11/2021 17:14:29.355 ---->    INFO: Enviroment: PROD
+28/11/2021 17:14:30.051 ---->    INFO: Conexao com a nuvem realizada!
+28/11/2021 17:14:30.183 ---->    INFO: Enviroment: PROD
+28/11/2021 17:14:30.184 ---->    INFO: Enviroment: PROD
+28/11/2021 17:14:30.863 ---->    INFO: Conexao com a nuvem realizada!
+28/11/2021 17:14:30.995 ---->    INFO: Capturando dados do processador.
+28/11/2021 17:14:30.995 ---->    INFO: Capturando dados do processador.
+28/11/2021 17:14:30.996 ---->    INFO: Capturando dados da memoria ram.
+28/11/2021 17:14:30.995 ---->    INFO: Capturando dados do processador.
+28/11/2021 17:14:30.996 ---->    INFO: Capturando dados da memoria ram.
+28/11/2021 17:14:30.996 ---->    INFO: Capturando dados do disco.
+28/11/2021 17:14:35.051 ---->    INFO: Enviroment: PROD
+28/11/2021 17:14:35.051 ---->    INFO: Enviroment: PROD
+28/11/2021 17:14:36.061 ---->    INFO: Conexao com a nuvem realizada!
+28/11/2021 17:14:36.190 ---->    INFO: Enviroment: PROD
+28/11/2021 17:14:36.190 ---->    INFO: Enviroment: PROD
+28/11/2021 17:14:36.948 ---->    INFO: Conexao com a nuvem realizada!
+28/11/2021 17:14:37.080 ---->    INFO: Enviroment: PROD
+28/11/2021 17:14:37.081 ---->    INFO: Enviroment: PROD
+28/11/2021 17:14:37.765 ---->    INFO: Conexao com a nuvem realizada!
+28/11/2021 17:14:37.893 ---->    INFO: Capturando dados do processador.
+28/11/2021 17:14:37.893 ---->    INFO: Capturando dados do processador.
+28/11/2021 17:14:37.893 ---->    INFO: Capturando dados da memoria ram.
+28/11/2021 17:14:37.893 ---->    INFO: Capturando dados do processador.
+28/11/2021 17:14:37.893 ---->    INFO: Capturando dados da memoria ram.
+28/11/2021 17:14:37.894 ---->    INFO: Capturando dados do disco.
+28/11/2021 17:14:41.929 ---->    INFO: Enviroment: PROD
+28/11/2021 17:14:41.930 ---->    INFO: Enviroment: PROD
+28/11/2021 17:14:42.610 ---->    INFO: Conexao com a nuvem realizada!
+28/11/2021 17:14:42.743 ---->    INFO: Enviroment: PROD
+28/11/2021 17:14:42.743 ---->    INFO: Enviroment: PROD
+28/11/2021 17:14:43.415 ---->    INFO: Conexao com a nuvem realizada!
+28/11/2021 17:14:43.550 ---->    INFO: Enviroment: PROD
+28/11/2021 17:14:43.551 ---->    INFO: Enviroment: PROD
+28/11/2021 17:14:44.839 ---->    INFO: Conexao com a nuvem realizada!
+28/11/2021 17:14:44.967 ---->    INFO: Capturando dados do processador.
+28/11/2021 17:14:44.967 ---->    INFO: Capturando dados do processador.
+28/11/2021 17:14:44.967 ---->    INFO: Capturando dados da memoria ram.
+28/11/2021 17:14:44.967 ---->    INFO: Capturando dados do processador.
+28/11/2021 17:14:44.967 ---->    INFO: Capturando dados da memoria ram.
+28/11/2021 17:14:44.968 ---->    INFO: Capturando dados do disco.
+28/11/2021 17:14:49.027 ---->    INFO: Enviroment: PROD
+28/11/2021 17:14:49.028 ---->    INFO: Enviroment: PROD
+28/11/2021 17:14:49.697 ---->    INFO: Conexao com a nuvem realizada!
+28/11/2021 17:14:49.828 ---->    INFO: Enviroment: PROD
+28/11/2021 17:14:49.829 ---->    INFO: Enviroment: PROD
+28/11/2021 17:14:50.494 ---->    INFO: Conexao com a nuvem realizada!
+28/11/2021 17:14:50.624 ---->    INFO: Enviroment: PROD
+28/11/2021 17:14:50.624 ---->    INFO: Enviroment: PROD
+28/11/2021 17:14:51.301 ---->    INFO: Conexao com a nuvem realizada!
+28/11/2021 17:14:51.431 ---->    INFO: Capturando dados do processador.
+28/11/2021 17:14:51.431 ---->    INFO: Capturando dados do processador.
+28/11/2021 17:14:51.431 ---->    INFO: Capturando dados da memoria ram.
+28/11/2021 17:14:51.431 ---->    INFO: Capturando dados do processador.
+28/11/2021 17:14:51.431 ---->    INFO: Capturando dados da memoria ram.
+28/11/2021 17:14:51.432 ---->    INFO: Capturando dados do disco.
+28/11/2021 17:14:55.473 ---->    INFO: Enviroment: PROD
+28/11/2021 17:14:55.474 ---->    INFO: Enviroment: PROD
+28/11/2021 17:14:56.161 ---->    INFO: Conexao com a nuvem realizada!
+28/11/2021 17:14:56.293 ---->    INFO: Enviroment: PROD
+28/11/2021 17:14:56.293 ---->    INFO: Enviroment: PROD
+28/11/2021 17:14:57.053 ---->    INFO: Conexao com a nuvem realizada!
+28/11/2021 17:14:57.184 ---->    INFO: Enviroment: PROD
+28/11/2021 17:14:57.184 ---->    INFO: Enviroment: PROD
+28/11/2021 17:14:57.867 ---->    INFO: Conexao com a nuvem realizada!
+28/11/2021 17:14:57.997 ---->    INFO: Capturando dados do processador.
+28/11/2021 17:14:57.997 ---->    INFO: Capturando dados do processador.
+28/11/2021 17:14:57.998 ---->    INFO: Capturando dados da memoria ram.
+28/11/2021 17:14:57.997 ---->    INFO: Capturando dados do processador.
+28/11/2021 17:14:57.998 ---->    INFO: Capturando dados da memoria ram.
+28/11/2021 17:14:57.998 ---->    INFO: Capturando dados do disco.
+28/11/2021 17:15:02.055 ---->    INFO: Enviroment: PROD
+28/11/2021 17:15:02.055 ---->    INFO: Enviroment: PROD
+28/11/2021 17:15:02.771 ---->    INFO: Conexao com a nuvem realizada!
+28/11/2021 17:15:02.904 ---->    INFO: Enviroment: PROD
+28/11/2021 17:15:02.905 ---->    INFO: Enviroment: PROD
+28/11/2021 17:15:03.563 ---->    INFO: Conexao com a nuvem realizada!
+28/11/2021 17:15:03.885 ---->    INFO: Enviando mensagem de alerta ao slack.
+28/11/2021 17:15:04.015 ---->    INFO: Enviroment: PROD
+28/11/2021 17:15:04.015 ---->    INFO: Enviroment: PROD
+28/11/2021 17:15:04.681 ---->    INFO: Conexao com a nuvem realizada!
+28/11/2021 17:15:04.810 ---->    INFO: Capturando dados do processador.
+28/11/2021 17:15:04.810 ---->    INFO: Capturando dados do processador.
+28/11/2021 17:15:04.811 ---->    INFO: Capturando dados da memoria ram.
+28/11/2021 17:15:04.810 ---->    INFO: Capturando dados do processador.
+28/11/2021 17:15:04.811 ---->    INFO: Capturando dados da memoria ram.
+28/11/2021 17:15:04.812 ---->    INFO: Capturando dados do disco.
+28/11/2021 17:15:08.862 ---->    INFO: Enviroment: PROD
+28/11/2021 17:15:08.863 ---->    INFO: Enviroment: PROD
+28/11/2021 17:15:10.393 ---->    INFO: Conexao com a nuvem realizada!
+28/11/2021 17:15:10.523 ---->    INFO: Enviroment: PROD
+28/11/2021 17:15:10.523 ---->    INFO: Enviroment: PROD
+28/11/2021 17:15:11.681 ---->    INFO: Conexao com a nuvem realizada!
+28/11/2021 17:15:11.844 ---->    INFO: Enviando mensagem de alerta ao slack.
+28/11/2021 17:15:11.974 ---->    INFO: Enviroment: PROD
+28/11/2021 17:15:11.974 ---->    INFO: Enviroment: PROD
+28/11/2021 17:15:12.643 ---->    INFO: Conexao com a nuvem realizada!
+28/11/2021 17:15:12.773 ---->    INFO: Capturando dados do processador.
+28/11/2021 17:15:12.773 ---->    INFO: Capturando dados do processador.
+28/11/2021 17:15:12.774 ---->    INFO: Capturando dados da memoria ram.
+28/11/2021 17:15:12.773 ---->    INFO: Capturando dados do processador.
+28/11/2021 17:15:12.774 ---->    INFO: Capturando dados da memoria ram.
+28/11/2021 17:15:12.774 ---->    INFO: Capturando dados do disco.
+28/11/2021 17:15:16.825 ---->    INFO: Enviroment: PROD
+28/11/2021 17:15:16.826 ---->    INFO: Enviroment: PROD
+28/11/2021 17:15:17.512 ---->    INFO: Conexao com a nuvem realizada!
+28/11/2021 17:15:17.645 ---->    INFO: Enviroment: PROD
+28/11/2021 17:15:17.646 ---->    INFO: Enviroment: PROD
+28/11/2021 17:15:18.344 ---->    INFO: Conexao com a nuvem realizada!
+28/11/2021 17:15:18.474 ---->    INFO: Enviroment: PROD
+28/11/2021 17:15:18.475 ---->    INFO: Enviroment: PROD
+28/11/2021 17:15:19.160 ---->    INFO: Conexao com a nuvem realizada!
+28/11/2021 17:15:19.290 ---->    INFO: Capturando dados do processador.
+28/11/2021 17:15:19.290 ---->    INFO: Capturando dados do processador.
+28/11/2021 17:15:19.290 ---->    INFO: Capturando dados da memoria ram.
+28/11/2021 17:15:19.290 ---->    INFO: Capturando dados do processador.
+28/11/2021 17:15:19.290 ---->    INFO: Capturando dados da memoria ram.
+28/11/2021 17:15:19.290 ---->    INFO: Capturando dados do disco.
+28/11/2021 17:15:23.338 ---->    INFO: Enviroment: PROD
+28/11/2021 17:15:23.338 ---->    INFO: Enviroment: PROD
+28/11/2021 17:15:24.616 ---->    INFO: Conexao com a nuvem realizada!
+28/11/2021 17:15:24.748 ---->    INFO: Enviroment: PROD
+28/11/2021 17:15:24.748 ---->    INFO: Enviroment: PROD
+28/11/2021 17:15:25.409 ---->    INFO: Conexao com a nuvem realizada!
+28/11/2021 17:15:25.540 ---->    INFO: Enviroment: PROD
+28/11/2021 17:15:25.540 ---->    INFO: Enviroment: PROD
+28/11/2021 17:15:26.211 ---->    INFO: Conexao com a nuvem realizada!
+28/11/2021 17:15:26.341 ---->    INFO: Capturando dados do processador.
+28/11/2021 17:15:26.341 ---->    INFO: Capturando dados do processador.
+28/11/2021 17:15:26.342 ---->    INFO: Capturando dados da memoria ram.
+28/11/2021 17:15:26.341 ---->    INFO: Capturando dados do processador.
+28/11/2021 17:15:26.342 ---->    INFO: Capturando dados da memoria ram.
+28/11/2021 17:15:26.343 ---->    INFO: Capturando dados do disco.
+28/11/2021 17:15:30.385 ---->    INFO: Enviroment: PROD
+28/11/2021 17:15:30.386 ---->    INFO: Enviroment: PROD
+28/11/2021 17:15:31.063 ---->    INFO: Conexao com a nuvem realizada!
+28/11/2021 17:15:31.193 ---->    INFO: Enviroment: PROD
+28/11/2021 17:15:31.194 ---->    INFO: Enviroment: PROD
+28/11/2021 17:15:31.880 ---->    INFO: Conexao com a nuvem realizada!
+28/11/2021 17:15:32.012 ---->    INFO: Enviroment: PROD
+28/11/2021 17:15:32.012 ---->    INFO: Enviroment: PROD
+28/11/2021 17:15:32.684 ---->    INFO: Conexao com a nuvem realizada!
+28/11/2021 17:15:32.816 ---->    INFO: Capturando dados do processador.
+28/11/2021 17:15:32.816 ---->    INFO: Capturando dados do processador.
+28/11/2021 17:15:32.816 ---->    INFO: Capturando dados da memoria ram.
+28/11/2021 17:15:32.816 ---->    INFO: Capturando dados do processador.
+28/11/2021 17:15:32.816 ---->    INFO: Capturando dados da memoria ram.
+28/11/2021 17:15:32.816 ---->    INFO: Capturando dados do disco.
+28/11/2021 17:15:36.868 ---->    INFO: Enviroment: PROD
+28/11/2021 17:15:36.868 ---->    INFO: Enviroment: PROD
+28/11/2021 17:15:37.538 ---->    INFO: Conexao com a nuvem realizada!
+28/11/2021 17:15:37.670 ---->    INFO: Enviroment: PROD
+28/11/2021 17:15:37.671 ---->    INFO: Enviroment: PROD
+28/11/2021 17:15:38.346 ---->    INFO: Conexao com a nuvem realizada!
+28/11/2021 17:15:38.478 ---->    INFO: Enviroment: PROD
+28/11/2021 17:15:38.479 ---->    INFO: Enviroment: PROD
+28/11/2021 17:15:39.164 ---->    INFO: Conexao com a nuvem realizada!
+28/11/2021 17:15:39.294 ---->    INFO: Capturando dados do processador.
+28/11/2021 17:15:39.294 ---->    INFO: Capturando dados do processador.
+28/11/2021 17:15:39.295 ---->    INFO: Capturando dados da memoria ram.
+28/11/2021 17:15:39.294 ---->    INFO: Capturando dados do processador.
+28/11/2021 17:15:39.295 ---->    INFO: Capturando dados da memoria ram.
+28/11/2021 17:15:39.296 ---->    INFO: Capturando dados do disco.
+28/11/2021 17:15:43.345 ---->    INFO: Enviroment: PROD
+28/11/2021 17:15:43.346 ---->    INFO: Enviroment: PROD
+28/11/2021 17:15:44.279 ---->    INFO: Conexao com a nuvem realizada!
+28/11/2021 17:15:44.410 ---->    INFO: Enviroment: PROD
+28/11/2021 17:15:44.411 ---->    INFO: Enviroment: PROD
+28/11/2021 17:15:45.077 ---->    INFO: Conexao com a nuvem realizada!
+28/11/2021 17:15:45.209 ---->    INFO: Enviroment: PROD
+28/11/2021 17:15:45.210 ---->    INFO: Enviroment: PROD
+28/11/2021 17:15:45.892 ---->    INFO: Conexao com a nuvem realizada!
+28/11/2021 17:15:46.025 ---->    INFO: Capturando dados do processador.
+28/11/2021 17:15:46.025 ---->    INFO: Capturando dados do processador.
+28/11/2021 17:15:46.025 ---->    INFO: Capturando dados da memoria ram.
+28/11/2021 17:15:46.025 ---->    INFO: Capturando dados do processador.
+28/11/2021 17:15:46.025 ---->    INFO: Capturando dados da memoria ram.
+28/11/2021 17:15:46.026 ---->    INFO: Capturando dados do disco.
+28/11/2021 17:15:50.080 ---->    INFO: Enviroment: PROD
+28/11/2021 17:15:50.081 ---->    INFO: Enviroment: PROD
+28/11/2021 17:15:50.765 ---->    INFO: Conexao com a nuvem realizada!
+28/11/2021 17:15:50.902 ---->    INFO: Enviroment: PROD
+28/11/2021 17:15:50.902 ---->    INFO: Enviroment: PROD
+28/11/2021 17:15:51.585 ---->    INFO: Conexao com a nuvem realizada!
+28/11/2021 17:15:51.715 ---->    INFO: Enviroment: PROD
+28/11/2021 17:15:51.716 ---->    INFO: Enviroment: PROD
+28/11/2021 17:15:52.409 ---->    INFO: Conexao com a nuvem realizada!
+28/11/2021 17:15:52.538 ---->    INFO: Capturando dados do processador.
+28/11/2021 17:15:52.538 ---->    INFO: Capturando dados do processador.
+28/11/2021 17:15:52.538 ---->    INFO: Capturando dados da memoria ram.
+28/11/2021 17:15:52.538 ---->    INFO: Capturando dados do processador.
+28/11/2021 17:15:52.538 ---->    INFO: Capturando dados da memoria ram.
+28/11/2021 17:15:52.538 ---->    INFO: Capturando dados do disco.
+28/11/2021 17:15:56.583 ---->    INFO: Enviroment: PROD
+28/11/2021 17:15:56.584 ---->    INFO: Enviroment: PROD
+28/11/2021 17:15:57.329 ---->    INFO: Conexao com a nuvem realizada!
+28/11/2021 17:15:57.458 ---->    INFO: Enviroment: PROD
+28/11/2021 17:15:57.459 ---->    INFO: Enviroment: PROD
+28/11/2021 17:15:58.125 ---->    INFO: Conexao com a nuvem realizada!
+28/11/2021 17:15:58.255 ---->    INFO: Enviroment: PROD
+28/11/2021 17:15:58.256 ---->    INFO: Enviroment: PROD
+28/11/2021 17:15:58.929 ---->    INFO: Conexao com a nuvem realizada!
+28/11/2021 17:15:59.060 ---->    INFO: Capturando dados do processador.
+28/11/2021 17:15:59.060 ---->    INFO: Capturando dados do processador.
+28/11/2021 17:15:59.060 ---->    INFO: Capturando dados da memoria ram.
+28/11/2021 17:15:59.060 ---->    INFO: Capturando dados do processador.
+28/11/2021 17:15:59.060 ---->    INFO: Capturando dados da memoria ram.
+28/11/2021 17:15:59.061 ---->    INFO: Capturando dados do disco.
+28/11/2021 17:16:03.111 ---->    INFO: Enviroment: PROD
+28/11/2021 17:16:03.111 ---->    INFO: Enviroment: PROD
+28/11/2021 17:16:06.492 ---->    INFO: Conexao com a nuvem realizada!
+28/11/2021 17:16:06.796 ---->    INFO: Enviroment: PROD
+28/11/2021 17:16:06.797 ---->    INFO: Enviroment: PROD
+28/11/2021 17:16:07.468 ---->    INFO: Conexao com a nuvem realizada!
+28/11/2021 17:16:07.598 ---->    INFO: Enviroment: PROD
+28/11/2021 17:16:07.598 ---->    INFO: Enviroment: PROD
+28/11/2021 17:16:08.488 ---->    INFO: Conexao com a nuvem realizada!
+28/11/2021 17:16:08.718 ---->    INFO: Capturando dados do processador.
+28/11/2021 17:16:08.718 ---->    INFO: Capturando dados do processador.
+28/11/2021 17:16:08.719 ---->    INFO: Capturando dados da memoria ram.
+28/11/2021 17:16:08.718 ---->    INFO: Capturando dados do processador.
+28/11/2021 17:16:08.719 ---->    INFO: Capturando dados da memoria ram.
+28/11/2021 17:16:08.720 ---->    INFO: Capturando dados do disco.
+28/11/2021 17:16:12.757 ---->    INFO: Enviroment: PROD
+28/11/2021 17:16:12.757 ---->    INFO: Enviroment: PROD
+28/11/2021 17:16:13.905 ---->    INFO: Conexao com a nuvem realizada!
+28/11/2021 17:16:14.036 ---->    INFO: Enviroment: PROD
+28/11/2021 17:16:14.037 ---->    INFO: Enviroment: PROD
+28/11/2021 17:16:14.977 ---->    INFO: Conexao com a nuvem realizada!
+28/11/2021 17:16:15.106 ---->    INFO: Enviroment: PROD
+28/11/2021 17:16:15.106 ---->    INFO: Enviroment: PROD
+28/11/2021 17:16:15.862 ---->    INFO: Conexao com a nuvem realizada!
+28/11/2021 17:16:15.991 ---->    INFO: Capturando dados do processador.
+28/11/2021 17:16:15.991 ---->    INFO: Capturando dados do processador.
+28/11/2021 17:16:15.992 ---->    INFO: Capturando dados da memoria ram.
+28/11/2021 17:16:15.991 ---->    INFO: Capturando dados do processador.
+28/11/2021 17:16:15.992 ---->    INFO: Capturando dados da memoria ram.
+28/11/2021 17:16:15.992 ---->    INFO: Capturando dados do disco.
+28/11/2021 17:16:20.043 ---->    INFO: Enviroment: PROD
+28/11/2021 17:16:20.044 ---->    INFO: Enviroment: PROD
+28/11/2021 17:16:20.928 ---->    INFO: Conexao com a nuvem realizada!
+28/11/2021 17:16:21.233 ---->    INFO: Enviroment: PROD
+28/11/2021 17:16:21.234 ---->    INFO: Enviroment: PROD
+28/11/2021 17:16:22.144 ---->    INFO: Conexao com a nuvem realizada!
+28/11/2021 17:16:22.406 ---->    INFO: Enviroment: PROD
+28/11/2021 17:16:22.407 ---->    INFO: Enviroment: PROD
+28/11/2021 17:16:23.296 ---->    INFO: Conexao com a nuvem realizada!
+28/11/2021 17:16:23.588 ---->    INFO: Capturando dados do processador.
+28/11/2021 17:16:23.588 ---->    INFO: Capturando dados do processador.
+28/11/2021 17:16:23.589 ---->    INFO: Capturando dados da memoria ram.
+28/11/2021 17:16:23.588 ---->    INFO: Capturando dados do processador.
+28/11/2021 17:16:23.589 ---->    INFO: Capturando dados da memoria ram.
+28/11/2021 17:16:23.589 ---->    INFO: Capturando dados do disco.
+28/11/2021 17:16:27.643 ---->    INFO: Enviroment: PROD
+28/11/2021 17:16:27.643 ---->    INFO: Enviroment: PROD
+28/11/2021 17:16:28.488 ---->    INFO: Conexao com a nuvem realizada!
+28/11/2021 17:16:28.843 ---->    INFO: Enviroment: PROD
+28/11/2021 17:16:28.843 ---->    INFO: Enviroment: PROD
+28/11/2021 17:16:29.770 ---->    INFO: Conexao com a nuvem realizada!
+28/11/2021 17:16:30.093 ---->    INFO: Enviroment: PROD
+28/11/2021 17:16:30.094 ---->    INFO: Enviroment: PROD
+28/11/2021 17:16:30.854 ---->    INFO: Conexao com a nuvem realizada!
+28/11/2021 17:16:31.157 ---->    INFO: Capturando dados do processador.
+28/11/2021 17:16:31.157 ---->    INFO: Capturando dados do processador.
+28/11/2021 17:16:31.157 ---->    INFO: Capturando dados da memoria ram.
+28/11/2021 17:16:31.157 ---->    INFO: Capturando dados do processador.
+28/11/2021 17:16:31.157 ---->    INFO: Capturando dados da memoria ram.
+28/11/2021 17:16:31.158 ---->    INFO: Capturando dados do disco.
+28/11/2021 17:16:35.207 ---->    INFO: Enviroment: PROD
+28/11/2021 17:16:35.207 ---->    INFO: Enviroment: PROD
+28/11/2021 17:16:36.441 ---->    INFO: Conexao com a nuvem realizada!
+28/11/2021 17:16:36.702 ---->    INFO: Enviroment: PROD
+28/11/2021 17:16:36.703 ---->    INFO: Enviroment: PROD
+28/11/2021 17:16:37.597 ---->    INFO: Conexao com a nuvem realizada!
+28/11/2021 17:16:37.875 ---->    INFO: Enviroment: PROD
+28/11/2021 17:16:37.875 ---->    INFO: Enviroment: PROD
+28/11/2021 17:16:38.832 ---->    INFO: Conexao com a nuvem realizada!
+28/11/2021 17:16:39.187 ---->    INFO: Capturando dados do processador.
+28/11/2021 17:16:39.187 ---->    INFO: Capturando dados do processador.
+28/11/2021 17:16:39.187 ---->    INFO: Capturando dados da memoria ram.
+28/11/2021 17:16:39.187 ---->    INFO: Capturando dados do processador.
+28/11/2021 17:16:39.187 ---->    INFO: Capturando dados da memoria ram.
+28/11/2021 17:16:39.188 ---->    INFO: Capturando dados do disco.
+28/11/2021 17:16:43.240 ---->    INFO: Enviroment: PROD
+28/11/2021 17:16:43.241 ---->    INFO: Enviroment: PROD
+28/11/2021 17:16:44.082 ---->    INFO: Conexao com a nuvem realizada!
+28/11/2021 17:16:44.421 ---->    INFO: Enviroment: PROD
+28/11/2021 17:16:44.422 ---->    INFO: Enviroment: PROD
+28/11/2021 17:16:45.689 ---->    INFO: Conexao com a nuvem realizada!
+28/11/2021 17:16:45.922 ---->    INFO: Enviroment: PROD
+28/11/2021 17:16:45.923 ---->    INFO: Enviroment: PROD
+28/11/2021 17:16:46.863 ---->    INFO: Conexao com a nuvem realizada!
+28/11/2021 17:16:47.156 ---->    INFO: Capturando dados do processador.
+28/11/2021 17:16:47.156 ---->    INFO: Capturando dados do processador.
+28/11/2021 17:16:47.157 ---->    INFO: Capturando dados da memoria ram.
+28/11/2021 17:16:47.156 ---->    INFO: Capturando dados do processador.
+28/11/2021 17:16:47.157 ---->    INFO: Capturando dados da memoria ram.
+28/11/2021 17:16:47.157 ---->    INFO: Capturando dados do disco.
+28/11/2021 17:16:51.207 ---->    INFO: Enviroment: PROD
+28/11/2021 17:16:51.207 ---->    INFO: Enviroment: PROD
+28/11/2021 17:16:52.083 ---->    INFO: Conexao com a nuvem realizada!
+28/11/2021 17:16:52.406 ---->    INFO: Enviroment: PROD
+28/11/2021 17:16:52.407 ---->    INFO: Enviroment: PROD
+28/11/2021 17:16:53.283 ---->    INFO: Conexao com a nuvem realizada!
+28/11/2021 17:16:53.516 ---->    INFO: Enviroment: PROD
+28/11/2021 17:16:53.516 ---->    INFO: Enviroment: PROD
+28/11/2021 17:16:55.145 ---->    INFO: Conexao com a nuvem realizada!
+28/11/2021 17:16:55.376 ---->    INFO: Capturando dados do processador.
+28/11/2021 17:16:55.376 ---->    INFO: Capturando dados do processador.
+28/11/2021 17:16:55.377 ---->    INFO: Capturando dados da memoria ram.
+28/11/2021 17:16:55.376 ---->    INFO: Capturando dados do processador.
+28/11/2021 17:16:55.377 ---->    INFO: Capturando dados da memoria ram.
+28/11/2021 17:16:55.377 ---->    INFO: Capturando dados do disco.
+28/11/2021 17:16:59.424 ---->    INFO: Enviroment: PROD
+28/11/2021 17:16:59.425 ---->    INFO: Enviroment: PROD
+28/11/2021 17:17:00.315 ---->    INFO: Conexao com a nuvem realizada!
+28/11/2021 17:17:00.516 ---->    INFO: Enviroment: PROD
+28/11/2021 17:17:00.517 ---->    INFO: Enviroment: PROD
+28/11/2021 17:17:01.386 ---->    INFO: Conexao com a nuvem realizada!
+28/11/2021 17:17:01.736 ---->    INFO: Enviroment: PROD
+28/11/2021 17:17:01.736 ---->    INFO: Enviroment: PROD
+28/11/2021 17:17:02.598 ---->    INFO: Conexao com a nuvem realizada!
+28/11/2021 17:17:02.829 ---->    INFO: Capturando dados do processador.
+28/11/2021 17:17:02.829 ---->    INFO: Capturando dados do processador.
+28/11/2021 17:17:02.830 ---->    INFO: Capturando dados da memoria ram.
+28/11/2021 17:17:02.829 ---->    INFO: Capturando dados do processador.
+28/11/2021 17:17:02.830 ---->    INFO: Capturando dados da memoria ram.
+28/11/2021 17:17:02.830 ---->    INFO: Capturando dados do disco.
+28/11/2021 17:17:06.879 ---->    INFO: Enviroment: PROD
+28/11/2021 17:17:06.880 ---->    INFO: Enviroment: PROD
+28/11/2021 17:17:08.176 ---->    INFO: Conexao com a nuvem realizada!
+28/11/2021 17:17:08.470 ---->    INFO: Enviroment: PROD
+28/11/2021 17:17:08.471 ---->    INFO: Enviroment: PROD
+28/11/2021 17:17:09.349 ---->    INFO: Conexao com a nuvem realizada!
+28/11/2021 17:17:09.676 ---->    INFO: Enviroment: PROD
+28/11/2021 17:17:09.677 ---->    INFO: Enviroment: PROD
+28/11/2021 17:17:10.583 ---->    INFO: Conexao com a nuvem realizada!
+28/11/2021 17:17:10.875 ---->    INFO: Capturando dados do processador.
+28/11/2021 17:17:10.875 ---->    INFO: Capturando dados do processador.
+28/11/2021 17:17:10.876 ---->    INFO: Capturando dados da memoria ram.
+28/11/2021 17:17:10.875 ---->    INFO: Capturando dados do processador.
+28/11/2021 17:17:10.876 ---->    INFO: Capturando dados da memoria ram.
+28/11/2021 17:17:10.876 ---->    INFO: Capturando dados do disco.
+28/11/2021 17:17:14.923 ---->    INFO: Enviroment: PROD
+28/11/2021 17:17:14.924 ---->    INFO: Enviroment: PROD
+28/11/2021 17:17:15.880 ---->    INFO: Conexao com a nuvem realizada!
+28/11/2021 17:17:16.236 ---->    INFO: Enviroment: PROD
+28/11/2021 17:17:16.236 ---->    INFO: Enviroment: PROD
+28/11/2021 17:17:17.240 ---->    INFO: Conexao com a nuvem realizada!
+28/11/2021 17:17:17.564 ---->    INFO: Enviroment: PROD
+28/11/2021 17:17:17.565 ---->    INFO: Enviroment: PROD
+28/11/2021 17:17:18.786 ---->    INFO: Conexao com a nuvem realizada!
+28/11/2021 17:17:19.126 ---->    INFO: Capturando dados do processador.
+28/11/2021 17:17:19.126 ---->    INFO: Capturando dados do processador.
+28/11/2021 17:17:19.127 ---->    INFO: Capturando dados da memoria ram.
+28/11/2021 17:17:19.126 ---->    INFO: Capturando dados do processador.
+28/11/2021 17:17:19.127 ---->    INFO: Capturando dados da memoria ram.
+28/11/2021 17:17:19.127 ---->    INFO: Capturando dados do disco.
+28/11/2021 17:17:23.159 ---->    INFO: Enviroment: PROD
+28/11/2021 17:17:23.160 ---->    INFO: Enviroment: PROD
+28/11/2021 17:17:24.020 ---->    INFO: Conexao com a nuvem realizada!
+28/11/2021 17:17:24.298 ---->    INFO: Enviroment: PROD
+28/11/2021 17:17:24.299 ---->    INFO: Enviroment: PROD
+28/11/2021 17:17:25.286 ---->    INFO: Conexao com a nuvem realizada!
+28/11/2021 17:17:25.532 ---->    INFO: Enviroment: PROD
+28/11/2021 17:17:25.533 ---->    INFO: Enviroment: PROD
+28/11/2021 17:17:26.377 ---->    INFO: Conexao com a nuvem realizada!
+28/11/2021 17:17:26.657 ---->    INFO: Capturando dados do processador.
+28/11/2021 17:17:26.657 ---->    INFO: Capturando dados do processador.
+28/11/2021 17:17:26.658 ---->    INFO: Capturando dados da memoria ram.
+28/11/2021 17:17:26.657 ---->    INFO: Capturando dados do processador.
+28/11/2021 17:17:26.658 ---->    INFO: Capturando dados da memoria ram.
+28/11/2021 17:17:26.658 ---->    INFO: Capturando dados do disco.
+28/11/2021 17:17:30.703 ---->    INFO: Enviroment: PROD
+28/11/2021 17:17:30.703 ---->    INFO: Enviroment: PROD
+28/11/2021 17:17:31.599 ---->    INFO: Conexao com a nuvem realizada!
+28/11/2021 17:17:31.908 ---->    INFO: Enviroment: PROD
+28/11/2021 17:17:31.908 ---->    INFO: Enviroment: PROD
+28/11/2021 17:23:46.670 ---->    INFO: Iniciando a aplicacao via interface grafica.
+28/11/2021 17:23:54.869 ---->    INFO: Enviroment: PROD
+28/11/2021 17:23:54.870 ---->    INFO: Enviroment: PROD
+28/11/2021 17:23:56.803 ---->    INFO: Conexao com a nuvem realizada!
+28/11/2021 17:23:57.098 ---->    INFO: Login realizado com sucesso.
+28/11/2021 17:23:57.126 ---->    INFO: Coletando endereco MAC.
+28/11/2021 17:23:57.429 ---->    INFO: Enviroment: PROD
+28/11/2021 17:23:57.429 ---->    INFO: Enviroment: PROD
+28/11/2021 17:23:58.325 ---->    INFO: Conexao com a nuvem realizada!
+28/11/2021 17:23:58.326 ---->    INFO: Checando registro da maquina.
+28/11/2021 17:23:57.098 ---->    INFO: Login realizado com sucesso.
+28/11/2021 17:23:59.065 ---->    INFO: Enviando mensagem de inicio de monitoramento ao slack.
+28/11/2021 17:24:01.626 ---->    INFO: Capturando dados do processador.
+28/11/2021 17:24:01.626 ---->    INFO: Capturando dados do processador.
+28/11/2021 17:24:01.627 ---->    INFO: Capturando dados da memoria ram.
+28/11/2021 17:24:01.626 ---->    INFO: Capturando dados do processador.
+28/11/2021 17:24:01.627 ---->    INFO: Capturando dados da memoria ram.
+28/11/2021 17:24:01.628 ---->    INFO: Capturando dados do disco.
+28/11/2021 17:23:57.098 ---->    INFO: Login realizado com sucesso.
+28/11/2021 17:23:59.065 ---->    INFO: Enviando mensagem de inicio de monitoramento ao slack.
+28/11/2021 17:24:01.700 ---->    INFO: Operacao em andamento.
+28/11/2021 17:38:47.652 ---->    INFO: Iniciando a aplicacao via interface grafica.
+28/11/2021 17:38:55.014 ---->    INFO: Enviroment: PROD
+28/11/2021 17:38:55.014 ---->    INFO: Enviroment: PROD
+28/11/2021 17:38:56.744 ---->    INFO: Conexao com a nuvem realizada!
+28/11/2021 17:38:57.077 ---->    INFO: Login realizado com sucesso.
+28/11/2021 17:38:57.118 ---->    INFO: Coletando endereco MAC.
+28/11/2021 17:38:57.411 ---->    INFO: Enviroment: PROD
+28/11/2021 17:38:57.412 ---->    INFO: Enviroment: PROD
+28/11/2021 17:38:58.311 ---->    INFO: Conexao com a nuvem realizada!
+28/11/2021 17:38:58.311 ---->    INFO: Checando registro da maquina.
+28/11/2021 17:38:57.077 ---->    INFO: Login realizado com sucesso.
+28/11/2021 17:38:59.151 ---->    INFO: Enviando mensagem de inicio de monitoramento ao slack.
+28/11/2021 17:39:07.058 ---->    INFO: Capturando dados do processador.
+28/11/2021 17:39:07.058 ---->    INFO: Capturando dados do processador.
+28/11/2021 17:39:07.060 ---->    INFO: Capturando dados da memoria ram.
+28/11/2021 17:39:07.058 ---->    INFO: Capturando dados do processador.
+28/11/2021 17:39:07.060 ---->    INFO: Capturando dados da memoria ram.
+28/11/2021 17:39:07.061 ---->    INFO: Capturando dados do disco.
+28/11/2021 17:38:57.077 ---->    INFO: Login realizado com sucesso.
+28/11/2021 17:38:59.151 ---->    INFO: Enviando mensagem de inicio de monitoramento ao slack.
+28/11/2021 17:39:07.182 ---->    INFO: Operacao em andamento.
+28/11/2021 17:39:11.727 ---->    INFO: Enviroment: PROD
+28/11/2021 17:39:11.728 ---->    INFO: Enviroment: PROD
+28/11/2021 17:39:12.610 ---->    INFO: Conexao com a nuvem realizada!
+28/11/2021 17:39:12.825 ---->    INFO: Enviroment: PROD
+28/11/2021 17:39:12.827 ---->    INFO: Enviroment: PROD
+28/11/2021 17:39:14.188 ---->    INFO: Conexao com a nuvem realizada!
+28/11/2021 17:39:14.542 ---->    INFO: Enviroment: PROD
+28/11/2021 17:39:14.544 ---->    INFO: Enviroment: PROD
+28/11/2021 17:39:15.405 ---->    INFO: Conexao com a nuvem realizada!
+28/11/2021 17:39:15.731 ---->    INFO: Capturando dados do processador.
+28/11/2021 17:39:15.731 ---->    INFO: Capturando dados do processador.
+28/11/2021 17:39:15.733 ---->    INFO: Capturando dados da memoria ram.
+28/11/2021 17:39:15.731 ---->    INFO: Capturando dados do processador.
+28/11/2021 17:39:15.733 ---->    INFO: Capturando dados da memoria ram.
+28/11/2021 17:39:15.734 ---->    INFO: Capturando dados do disco.
+28/11/2021 17:39:19.768 ---->    INFO: Enviroment: PROD
+28/11/2021 17:39:19.769 ---->    INFO: Enviroment: PROD
+28/11/2021 17:39:20.529 ---->    INFO: Conexao com a nuvem realizada!
+28/11/2021 17:39:20.661 ---->    INFO: Enviroment: PROD
+28/11/2021 17:39:20.662 ---->    INFO: Enviroment: PROD
+28/11/2021 17:39:21.547 ---->    INFO: Conexao com a nuvem realizada!
+28/11/2021 17:39:21.902 ---->    INFO: Enviroment: PROD
+28/11/2021 17:39:21.903 ---->    INFO: Enviroment: PROD
+28/11/2021 17:39:22.766 ---->    INFO: Conexao com a nuvem realizada!
+28/11/2021 17:39:23.104 ---->    INFO: Capturando dados do processador.
+28/11/2021 17:39:23.104 ---->    INFO: Capturando dados do processador.
+28/11/2021 17:39:23.105 ---->    INFO: Capturando dados da memoria ram.
+28/11/2021 17:39:23.104 ---->    INFO: Capturando dados do processador.
+28/11/2021 17:39:23.105 ---->    INFO: Capturando dados da memoria ram.
+28/11/2021 17:39:23.106 ---->    INFO: Capturando dados do disco.
