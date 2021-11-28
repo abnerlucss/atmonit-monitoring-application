@@ -17,10 +17,13 @@ import br.com.monilog.atmonit.service.TerminalService;
 import br.com.monilog.atmonit.util.ClientCep;
 import br.com.monilog.atmonit.util.HardwareInfo;
 import br.com.monilog.atmonit.view.systemtray.TrayClass;
+import br.com.monilog.atmonit.webhook.Slack;
 import com.github.britooo.looca.api.core.Looca;
+import org.json.JSONObject;
 
 import javax.swing.*;
 import java.awt.*;
+import java.io.IOException;
 import java.net.SocketException;
 import java.net.UnknownHostException;
 import java.sql.SQLException;
@@ -114,6 +117,12 @@ public class Login extends javax.swing.JFrame {
                 } catch (SQLException e) {
                     e.printStackTrace();
                     logs.saveLog("ERROR: Falha ao buscar no banco.");
+                } catch (IOException e) {
+                    e.printStackTrace();
+                    logs.saveLog("ERROR: Falha ao enviar mensagem slack.");
+                } catch (InterruptedException e) {
+                    e.printStackTrace();
+                    logs.saveLog("ERROR: Falha ao enviar mensagem slack.");
                 }
             }
         });
@@ -172,7 +181,7 @@ public class Login extends javax.swing.JFrame {
         pack();
     }// </editor-fold>//GEN-END:initComponents
 
-    public void loginEmployee() throws SocketException, UnknownHostException, SQLException {
+    public void loginEmployee() throws IOException, SQLException, InterruptedException {
         TerminalAddressDAO terminalAddressDAO = new TerminalAddressDAO();
         EmployeeDAO employeeDAO = new EmployeeDAO();
         TerminalDAO terminalDAO = new TerminalDAO();
@@ -196,12 +205,23 @@ public class Login extends javax.swing.JFrame {
 
         if (idEmpresa != null) {
             logs.saveLog("INFO: Login realizado com sucesso.");
+
             StringsJframe stringsJframe = new StringsJframe();
             System.out.println(stringsJframe.loginSucess);
 
             idTerminal = terminalService.checkTerminalRegister(idEmpresa);
 
             if (idTerminal != null) {
+
+                JSONObject json = new JSONObject();
+                String msgSlack = String.format("*Maquina id:* %d Iniciou o monitoramento de recursos com sucesso.\n\n" +
+                        "*Acompanhe em tempo real:*\n\n" +
+                        "https://monilog-atmonit-web.azurewebsites.net/", idTerminal);
+                json.put("text", msgSlack);
+                Slack.sendMessage(json);
+                logs.saveLog("INFO: Enviando mensagem de inicio de monitoramento ao slack.");
+
+
                 JOptionPane.showMessageDialog(this, stringsJframe.identifySucess);
                 new ComponentRegistrationService(idTerminal);
                 setVisible(false);
@@ -265,7 +285,7 @@ public class Login extends javax.swing.JFrame {
         //textFieldCep
     }//GEN-LAST:event_textFieldCepActionPerformed
 
-    private void btnEnterActionPerformed(java.awt.event.ActionEvent evt) throws SocketException, UnknownHostException, SQLException {//GEN-FIRST:event_btnEnterActionPerformed
+    private void btnEnterActionPerformed(java.awt.event.ActionEvent evt) throws IOException, SQLException, InterruptedException {//GEN-FIRST:event_btnEnterActionPerformed
         loginEmployee();
     }//GEN-LAST:event_btnEnterActionPerformed
 

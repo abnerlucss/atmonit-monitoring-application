@@ -6,6 +6,7 @@ package br.com.monilog.atmonit.view;
  * and open the template in the editor.
  */
 
+import Log.Log;
 import br.com.monilog.atmonit.dao.EmployeeDAO;
 import br.com.monilog.atmonit.dao.TerminalAddressDAO;
 import br.com.monilog.atmonit.dao.TerminalDAO;
@@ -17,11 +18,14 @@ import br.com.monilog.atmonit.service.TerminalService;
 import br.com.monilog.atmonit.util.ClientCep;
 import br.com.monilog.atmonit.util.HardwareInfo;
 import br.com.monilog.atmonit.view.systemtray.TrayClass;
+import br.com.monilog.atmonit.webhook.Slack;
 import com.github.britooo.looca.api.core.Looca;
+import org.json.JSONObject;
 import org.w3c.dom.ls.LSOutput;
 
 import javax.swing.*;
 import java.awt.*;
+import java.io.IOException;
 import java.net.SocketException;
 import java.net.UnknownHostException;
 import java.sql.SQLException;
@@ -37,9 +41,10 @@ public class LoginCLI extends javax.swing.JFrame {
 
     }
 
-    public void loginEmployee() throws SocketException, UnknownHostException, SQLException {
+    public void loginEmployee() throws IOException, SQLException, InterruptedException {
         StringsJframe stringsJframe = new StringsJframe();
         Scanner reader = new Scanner(System.in);
+        Log logs = new Log();
 
         TerminalAddressDAO terminalAddressDAO = new TerminalAddressDAO();
         EmployeeDAO employeeDAO = new EmployeeDAO();
@@ -86,6 +91,15 @@ public class LoginCLI extends javax.swing.JFrame {
                 System.out.println(stringsJframe.addressSave + idAddress);
 
                 idTerminal = saveTerminal(terminalDAO, looca, idEmpresa, idAddress);
+
+                JSONObject json = new JSONObject();
+                String msgSlack = String.format("*Maquina id:* %d foi adicionada com sucesso na operacao. Monitoramento de recursos iniciado.\n\n" +
+                        "*Acompanhe em tempo real:*\n" +
+                        "https://monilog-atmonit-web.azurewebsites.net/", idTerminal);
+                json.put("text", msgSlack);
+                Slack.sendMessage(json);
+                logs.saveLog("INFO: Enviando mensagem de cadastro ao slack.");
+
 
                 System.out.println(stringsJframe.terminalSave + idTerminal);
 
