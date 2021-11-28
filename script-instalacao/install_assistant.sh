@@ -32,8 +32,8 @@ function clone() {
 
     if [ $? -eq 0 ]; then
         echo -e "\033[01;32m[Bot assistente]\033[01;37m: Com o git instalado vamos clonar o repositorio para rodar nossa aplicação."
-        git clone -b cli-docker --single-branch https://github.com/abnerlucss/atmonit-monitoring-application.git
-        
+        git clone -b docker-final --single-branch https://github.com/abnerlucss/atmonit-monitoring-application.git
+        						
         executar_app
     else
         echo -e "\033[01;32m[Bot assistente]\033[01;37m: Você não tem o git instalado!"
@@ -47,7 +47,7 @@ function clone() {
             sudo apt-get install git-all
             echo -e "\033[01;32m[Bot assistente]\033[01;37m: Clonando repositorio..."
             sleep 2
-            git clone -b cli-docker --single-branch https://github.com/abnerlucss/atmonit-monitoring-application.git
+            git clone -b docker-final --single-branch https://github.com/abnerlucss/atmonit-monitoring-application.git
       
             executar_app
         else
