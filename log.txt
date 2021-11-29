@@ -1,0 +1,36 @@
+28/11/2021 22:02:33.950 ---->    INFO: Iniciando a aplicacao via interface grafica.
+28/11/2021 22:02:41.545 ---->    INFO: Enviroment: PROD
+28/11/2021 22:02:41.546 ---->    INFO: Enviroment: PROD
+28/11/2021 22:02:43.014 ---->    INFO: Conexao com a nuvem realizada!
+28/11/2021 22:02:43.288 ---->    INFO: Login realizado com sucesso.
+28/11/2021 22:02:43.321 ---->    INFO: Coletando endereco MAC.
+28/11/2021 22:02:43.608 ---->    INFO: Enviroment: PROD
+28/11/2021 22:02:43.609 ---->    INFO: Enviroment: PROD
+28/11/2021 22:02:44.420 ---->    INFO: Conexao com a nuvem realizada!
+28/11/2021 22:02:44.421 ---->    INFO: Checando registro da maquina.
+28/11/2021 22:02:43.288 ---->    INFO: Login realizado com sucesso.
+28/11/2021 22:02:45.049 ---->    INFO: Enviando mensagem de inicio de monitoramento ao slack.
+28/11/2021 22:02:47.553 ---->    INFO: Capturando dados do processador.
+28/11/2021 22:02:47.553 ---->    INFO: Capturando dados do processador.
+28/11/2021 22:02:47.554 ---->    INFO: Capturando dados da memoria ram.
+28/11/2021 22:02:47.553 ---->    INFO: Capturando dados do processador.
+28/11/2021 22:02:47.554 ---->    INFO: Capturando dados da memoria ram.
+28/11/2021 22:02:47.554 ---->    INFO: Capturando dados do disco.
+28/11/2021 22:02:43.288 ---->    INFO: Login realizado com sucesso.
+28/11/2021 22:02:45.049 ---->    INFO: Enviando mensagem de inicio de monitoramento ao slack.
+28/11/2021 22:02:47.639 ---->    INFO: Operacao em andamento.
+28/11/2021 22:02:52.032 ---->    INFO: Enviroment: PROD
+28/11/2021 22:02:52.033 ---->    INFO: Enviroment: PROD
+28/11/2021 22:02:52.728 ---->    INFO: Conexao com a nuvem realizada!
+28/11/2021 22:02:52.859 ---->    INFO: Enviroment: PROD
+28/11/2021 22:02:52.859 ---->    INFO: Enviroment: PROD
+28/11/2021 22:02:53.547 ---->    INFO: Conexao com a nuvem realizada!
+28/11/2021 22:02:53.677 ---->    INFO: Enviroment: PROD
+28/11/2021 22:02:53.678 ---->    INFO: Enviroment: PROD
+28/11/2021 22:02:54.348 ---->    INFO: Conexao com a nuvem realizada!
+28/11/2021 22:02:54.539 ---->    INFO: Capturando dados do processador.
+28/11/2021 22:02:54.539 ---->    INFO: Capturando dados do processador.
+28/11/2021 22:02:54.540 ---->    INFO: Capturando dados da memoria ram.
+28/11/2021 22:02:54.539 ---->    INFO: Capturando dados do processador.
+28/11/2021 22:02:54.540 ---->    INFO: Capturando dados da memoria ram.
+28/11/2021 22:02:54.541 ---->    INFO: Capturando dados do disco.
