@@ -8,9 +8,13 @@ import java.sql.SQLException;
 public class JavaConnect2SQL {
 
     public Connection recoverConnectionAzure() throws SQLException {
+        String urlMonilogAzure = System.getenv("URL_MONILOG_AZURE");
+        String userAzure = System.getenv("USER_AZURE");
+        String passwordAzure = System.getenv("PASSWORD_AZURE");
+
         return DriverManager.getConnection(
                 "jdbc:sqlserver://srvalunoatmonit.database.windows.net:1433;database=bdProjeto2sem;encrypt=true;trustServerCertificate=false;hostNameInCertificate=*.database.windows.net;loginTimeout=30;",
-                "atmonit",
-                "Bandtec123");
+                userAzure,
+                passwordAzure);
     }
 }
